@@ -1,0 +1,36 @@
+# Step 1: Get predictions at 80% threshold
+python master_workflow.py
+
+# Step 2: Should I lower to 75% for more action?
+python compare_tonight_thresholds.py
+
+# Step 3: What's the best parlay combo?
+python parlay_optimizer.py
+
+python compare_tonight_thresholds.py
+
+```
+
+---
+
+## 📊 **WHAT TO EXPECT TONIGHT**
+
+With **80% threshold**, you should typically see:
+
+**Example output from master_workflow.py:**
+```
+Total games: 6
+  YES decisions: 3-4     ← 80%+ confidence
+  MAYBE decisions: 1-2   ← 70-79% confidence
+  NO decisions: 1-2      ← Below 70%
+```
+
+**Then threshold comparison shows:**
+```
+At 80%: 3 picks
+At 75%: 5 picks (2 additional at 76-78%)
+```
+
+**Then parlay optimizer recommends:**
+```
+Best 3-leg: Games 1+2+3 (EV: +0.234)

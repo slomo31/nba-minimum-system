@@ -1,0 +1,261 @@
+date,parlay_size,parlay_result,game,minimum,actual,confidence,game_result
+2024-10-25,1,WIN,Memphis Grizzlies @ Houston Rockets,221.0,236,75,WIN
+2024-10-27,1,WIN,Atlanta Hawks @ Oklahoma City Thunder,223.5,232,75,WIN
+2024-10-28,2,LOSS,Cleveland Cavaliers @ New York Knicks,222.5,214,75,LOSS
+2024-10-28,2,LOSS,Chicago Bulls @ Memphis Grizzlies,224.5,249,75,WIN
+2024-10-31,1,LOSS,Milwaukee Bucks @ Memphis Grizzlies,222.0,221,85,LOSS
+2024-11-01,1,WIN,Denver Nuggets @ Minnesota Timberwolves,220.0,235,75,WIN
+2024-11-04,1,LOSS,Boston Celtics @ Atlanta Hawks,219.5,216,75,LOSS
+2024-11-06,4,WIN,New York Knicks @ Atlanta Hawks,219.0,237,75,WIN
+2024-11-06,4,WIN,Los Angeles Lakers @ Memphis Grizzlies,220.0,245,85,WIN
+2024-11-06,4,WIN,Cleveland Cavaliers @ New Orleans Pelicans,216.5,253,75,WIN
+2024-11-06,4,WIN,Chicago Bulls @ Dallas Mavericks,217.0,218,75,WIN
+2024-11-07,1,WIN,Minnesota Timberwolves @ Chicago Bulls,217.0,254,75,WIN
+2024-11-08,2,WIN,Golden State Warriors @ Cleveland Cavaliers,220.5,253,75,WIN
+2024-11-08,2,WIN,Atlanta Hawks @ Detroit Pistons,218.5,243,75,WIN
+2024-11-09,1,WIN,Chicago Bulls @ Atlanta Hawks,221.0,238,75,WIN
+2024-11-10,3,WIN,New York Knicks @ Indiana Pacers,218.0,253,75,WIN
+2024-11-10,3,WIN,Memphis Grizzlies @ Portland Trail Blazers,217.5,223,75,WIN
+2024-11-10,3,WIN,Dallas Mavericks @ Denver Nuggets,220.0,242,75,WIN
+2024-11-11,1,WIN,Cleveland Cavaliers @ Chicago Bulls,224.5,232,85,WIN
+2024-11-12,1,WIN,Atlanta Hawks @ Boston Celtics,219.5,233,75,WIN
+2024-11-13,3,WIN,Memphis Grizzlies @ Los Angeles Lakers,220.0,251,85,WIN
+2024-11-13,3,WIN,Chicago Bulls @ New York Knicks,218.5,247,75,WIN
+2024-11-13,3,WIN,Cleveland Cavaliers @ Philadelphia 76ers,216.5,220,75,WIN
+2024-11-15,3,LOSS,Phoenix Suns @ Oklahoma City Thunder,219.0,182,75,LOSS
+2024-11-15,3,LOSS,Memphis Grizzlies @ Golden State Warriors,220.5,241,85,WIN
+2024-11-15,3,LOSS,Chicago Bulls @ Cleveland Cavaliers,224.5,270,85,WIN
+2024-11-17,3,LOSS,Houston Rockets @ Chicago Bulls,217.0,250,75,WIN
+2024-11-17,3,LOSS,Dallas Mavericks @ Oklahoma City Thunder,219.5,240,75,WIN
+2024-11-17,3,LOSS,Denver Nuggets @ Memphis Grizzlies,227.5,195,85,LOSS
+2024-11-19,1,WIN,Denver Nuggets @ Memphis Grizzlies,227.5,232,85,WIN
+2024-11-20,2,LOSS,New Orleans Pelicans @ Cleveland Cavaliers,216.5,228,75,WIN
+2024-11-20,2,LOSS,Atlanta Hawks @ Golden State Warriors,217.0,217,75,LOSS
+2024-11-22,2,WIN,Dallas Mavericks @ Denver Nuggets,220.0,243,75,WIN
+2024-11-22,2,WIN,Atlanta Hawks @ Chicago Bulls,221.0,258,75,WIN
+2024-11-23,2,WIN,Denver Nuggets @ Los Angeles Lakers,219.0,229,75,WIN
+2024-11-23,2,WIN,Memphis Grizzlies @ Chicago Bulls,224.5,273,75,WIN
+2024-11-25,3,WIN,Portland Trail Blazers @ Memphis Grizzlies,217.5,221,75,WIN
+2024-11-25,3,WIN,New York Knicks @ Denver Nuggets,221.5,263,75,WIN
+2024-11-25,3,WIN,Oklahoma City Thunder @ Sacramento Kings,221.0,239,75,WIN
+2024-11-27,2,WIN,Detroit Pistons @ Memphis Grizzlies,222.0,242,85,WIN
+2024-11-27,2,WIN,Atlanta Hawks @ Cleveland Cavaliers,225.0,259,85,WIN
+2024-11-29,3,LOSS,Cleveland Cavaliers @ Atlanta Hawks,225.0,218,85,LOSS
+2024-11-29,3,LOSS,New Orleans Pelicans @ Memphis Grizzlies,216.5,229,75,WIN
+2024-11-29,3,LOSS,Boston Celtics @ Chicago Bulls,219.0,267,75,WIN
+2024-12-01,2,WIN,Denver Nuggets @ Los Angeles Clippers,218.5,248,75,WIN
+2024-12-01,2,WIN,Indiana Pacers @ Memphis Grizzlies,224.0,257,85,WIN
+2024-12-03,3,WIN,Memphis Grizzlies @ Dallas Mavericks,221.0,237,80,WIN
+2024-12-03,3,WIN,Golden State Warriors @ Denver Nuggets,219.5,234,75,WIN
+2024-12-03,3,WIN,Houston Rockets @ Sacramento Kings,215.0,231,75,WIN
+2024-12-04,1,WIN,Atlanta Hawks @ Milwaukee Bucks,218.5,223,75,WIN
+2024-12-05,3,WIN,Chicago Bulls @ San Antonio Spurs,216.5,263,75,WIN
+2024-12-05,3,WIN,Sacramento Kings @ Memphis Grizzlies,222.5,225,80,WIN
+2024-12-05,3,WIN,Denver Nuggets @ Cleveland Cavaliers,227.5,240,75,WIN
+2024-12-06,2,WIN,Los Angeles Lakers @ Atlanta Hawks,216.5,266,75,WIN
+2024-12-06,2,WIN,Indiana Pacers @ Chicago Bulls,220.0,255,75,WIN
+2024-12-07,1,WIN,Memphis Grizzlies @ Boston Celtics,223.0,248,75,WIN
+2024-12-08,2,WIN,Denver Nuggets @ Atlanta Hawks,224.0,252,85,WIN
+2024-12-08,2,WIN,Cleveland Cavaliers @ Miami Heat,217.5,235,75,WIN
+2024-12-10,1,WIN,Dallas Mavericks @ Oklahoma City Thunder,219.5,222,75,WIN
+2024-12-11,1,LOSS,Atlanta Hawks @ New York Knicks,219.0,208,75,LOSS
+2024-12-13,1,LOSS,Los Angeles Clippers @ Denver Nuggets,218.5,218,75,LOSS
+2024-12-14,1,LOSS,Atlanta Hawks @ Milwaukee Bucks,218.5,212,75,LOSS
+2024-12-15,1,WIN,Memphis Grizzlies @ Los Angeles Lakers,220.0,226,85,WIN
+2024-12-16,1,WIN,Denver Nuggets @ Sacramento Kings,221.5,259,75,WIN
+2024-12-17,1,LOSS,Milwaukee Bucks @ Oklahoma City Thunder,221.0,178,75,LOSS
+2024-12-19,4,WIN,Golden State Warriors @ Memphis Grizzlies,220.5,237,85,WIN
+2024-12-19,4,WIN,Atlanta Hawks @ San Antonio Spurs,217.0,259,75,WIN
+2024-12-19,4,WIN,Chicago Bulls @ Boston Celtics,219.0,225,75,WIN
+2024-12-19,4,WIN,Indiana Pacers @ Phoenix Suns,216.0,231,75,WIN
+2024-12-20,1,LOSS,Oklahoma City Thunder @ Miami Heat,216.0,201,75,LOSS
+2024-12-21,3,WIN,Philadelphia 76ers @ Cleveland Cavaliers,216.5,225,75,WIN
+2024-12-21,3,WIN,Boston Celtics @ Chicago Bulls,219.0,221,75,WIN
+2024-12-21,3,WIN,Memphis Grizzlies @ Atlanta Hawks,225.0,240,80,WIN
+2024-12-22,1,LOSS,Indiana Pacers @ Sacramento Kings,218.0,217,75,LOSS
+2024-12-23,1,WIN,Los Angeles Clippers @ Memphis Grizzlies,219.5,224,85,WIN
+2024-12-25,1,WIN,San Antonio Spurs @ New York Knicks,214.5,231,75,WIN
+2024-12-26,2,WIN,Chicago Bulls @ Atlanta Hawks,221.0,274,75,WIN
+2024-12-26,2,WIN,Toronto Raptors @ Memphis Grizzlies,217.5,281,75,WIN
+2024-12-27,2,WIN,Memphis Grizzlies @ New Orleans Pelicans,216.5,256,75,WIN
+2024-12-27,2,WIN,Cleveland Cavaliers @ Denver Nuggets,227.5,284,75,WIN
+2024-12-29,1,WIN,Memphis Grizzlies @ Oklahoma City Thunder,227.0,236,85,WIN
+2024-12-30,1,LOSS,Cleveland Cavaliers @ Golden State Warriors,220.5,208,75,LOSS
+2024-12-31,1,WIN,Memphis Grizzlies @ Phoenix Suns,220.5,229,80,WIN
+2025-01-01,1,WIN,Atlanta Hawks @ Denver Nuggets,224.0,259,85,WIN
+2025-01-03,4,WIN,Atlanta Hawks @ Los Angeles Lakers,216.5,221,75,WIN
+2025-01-03,4,WIN,Memphis Grizzlies @ Sacramento Kings,222.5,271,80,WIN
+2025-01-03,4,WIN,San Antonio Spurs @ Denver Nuggets,219.5,223,75,WIN
+2025-01-03,4,WIN,Cleveland Cavaliers @ Dallas Mavericks,221.0,256,75,WIN
+2025-01-04,5,WIN,Phoenix Suns @ Indiana Pacers,216.0,234,75,WIN
+2025-01-04,5,WIN,New York Knicks @ Chicago Bulls,218.5,265,75,WIN
+2025-01-04,5,WIN,Memphis Grizzlies @ Golden State Warriors,220.5,234,85,WIN
+2025-01-04,5,WIN,Denver Nuggets @ San Antonio Spurs,219.5,233,75,WIN
+2025-01-04,5,WIN,Atlanta Hawks @ Los Angeles Clippers,216.0,236,75,WIN
+2025-01-06,2,WIN,San Antonio Spurs @ Chicago Bulls,216.5,224,75,WIN
+2025-01-06,2,WIN,Dallas Mavericks @ Memphis Grizzlies,221.0,223,80,WIN
+2025-01-08,2,WIN,Chicago Bulls @ Indiana Pacers,220.0,242,75,WIN
+2025-01-08,2,WIN,Los Angeles Clippers @ Denver Nuggets,218.5,229,75,WIN
+2025-01-09,1,WIN,Houston Rockets @ Memphis Grizzlies,221.0,234,85,WIN
+2025-01-11,1,WIN,Memphis Grizzlies @ Minnesota Timberwolves,221.0,252,85,WIN
+2025-01-12,2,LOSS,Denver Nuggets @ Dallas Mavericks,220.0,213,75,LOSS
+2025-01-12,2,LOSS,Sacramento Kings @ Chicago Bulls,218.5,243,75,WIN
+2025-01-13,1,WIN,Memphis Grizzlies @ Houston Rockets,221.0,238,85,WIN
+2025-01-14,3,LOSS,Sacramento Kings @ Milwaukee Bucks,216.0,245,75,WIN
+2025-01-14,3,LOSS,Oklahoma City Thunder @ Philadelphia 76ers,215.0,220,75,WIN
+2025-01-14,3,LOSS,Denver Nuggets @ Dallas Mavericks,220.0,217,75,LOSS
+2025-01-15,3,LOSS,Houston Rockets @ Denver Nuggets,220.0,236,75,WIN
+2025-01-15,3,LOSS,Memphis Grizzlies @ San Antonio Spurs,220.5,244,85,WIN
+2025-01-15,3,LOSS,Atlanta Hawks @ Chicago Bulls,221.0,204,75,LOSS
+2025-01-16,1,WIN,Houston Rockets @ Sacramento Kings,215.0,259,75,WIN
+2025-01-17,2,LOSS,Memphis Grizzlies @ San Antonio Spurs,220.5,252,85,WIN
+2025-01-17,2,LOSS,Oklahoma City Thunder @ Dallas Mavericks,219.5,204,75,LOSS
+2025-01-18,2,WIN,Atlanta Hawks @ Boston Celtics,219.5,234,75,WIN
+2025-01-18,2,WIN,Cleveland Cavaliers @ Minnesota Timberwolves,221.0,241,75,WIN
+2025-01-20,4,LOSS,Phoenix Suns @ Cleveland Cavaliers,220.5,210,75,LOSS
+2025-01-20,4,LOSS,Chicago Bulls @ Los Angeles Clippers,215.5,211,75,LOSS
+2025-01-20,4,LOSS,Minnesota Timberwolves @ Memphis Grizzlies,221.0,214,85,LOSS
+2025-01-20,4,LOSS,Atlanta Hawks @ New York Knicks,219.0,229,75,WIN
+2025-01-22,2,LOSS,Cleveland Cavaliers @ Houston Rockets,221.0,217,75,LOSS
+2025-01-22,2,LOSS,Detroit Pistons @ Atlanta Hawks,218.5,218,75,LOSS
+2025-01-23,3,WIN,Dallas Mavericks @ Oklahoma City Thunder,219.5,236,75,WIN
+2025-01-23,3,WIN,Sacramento Kings @ Denver Nuggets,221.5,255,75,WIN
+2025-01-23,3,WIN,Chicago Bulls @ Golden State Warriors,216.5,237,75,WIN
+2025-01-24,2,WIN,Cleveland Cavaliers @ Philadelphia 76ers,216.5,261,75,WIN
+2025-01-24,2,WIN,New Orleans Pelicans @ Memphis Grizzlies,216.5,265,75,WIN
+2025-01-25,3,WIN,Denver Nuggets @ Minnesota Timberwolves,220.0,237,75,WIN
+2025-01-25,3,WIN,Houston Rockets @ Cleveland Cavaliers,221.0,266,75,WIN
+2025-01-25,3,WIN,Utah Jazz @ Memphis Grizzlies,218.5,228,75,WIN
+2025-01-27,2,WIN,Memphis Grizzlies @ New York Knicks,222.5,249,85,WIN
+2025-01-27,2,WIN,Denver Nuggets @ Chicago Bulls,223.5,250,85,WIN
+2025-01-28,1,LOSS,Houston Rockets @ Atlanta Hawks,217.5,196,75,LOSS
+2025-01-29,3,WIN,Chicago Bulls @ Boston Celtics,219.0,222,75,WIN
+2025-01-29,3,WIN,Cleveland Cavaliers @ Miami Heat,217.5,232,75,WIN
+2025-01-29,3,WIN,Denver Nuggets @ New York Knicks,221.5,234,75,WIN
+2025-01-30,2,WIN,Houston Rockets @ Memphis Grizzlies,221.0,239,85,WIN
+2025-01-30,2,WIN,Atlanta Hawks @ Cleveland Cavaliers,225.0,252,85,WIN
+2025-02-01,2,WIN,Atlanta Hawks @ Indiana Pacers,220.5,259,75,WIN
+2025-02-01,2,WIN,Sacramento Kings @ Oklahoma City Thunder,221.0,254,75,WIN
+2025-02-02,2,WIN,Dallas Mavericks @ Cleveland Cavaliers,221.0,245,75,WIN
+2025-02-02,2,WIN,Memphis Grizzlies @ Milwaukee Bucks,222.0,251,85,WIN
+2025-02-03,3,LOSS,Milwaukee Bucks @ Oklahoma City Thunder,221.0,221,75,LOSS
+2025-02-03,3,LOSS,San Antonio Spurs @ Memphis Grizzlies,220.5,237,85,WIN
+2025-02-03,3,LOSS,Atlanta Hawks @ Detroit Pistons,218.5,262,75,WIN
+2025-02-05,4,WIN,Chicago Bulls @ Minnesota Timberwolves,217.0,235,75,WIN
+2025-02-05,4,WIN,Memphis Grizzlies @ Toronto Raptors,217.5,245,75,WIN
+2025-02-05,4,WIN,San Antonio Spurs @ Atlanta Hawks,217.0,251,75,WIN
+2025-02-05,4,WIN,Phoenix Suns @ Oklahoma City Thunder,219.0,249,75,WIN
+2025-02-07,1,WIN,Milwaukee Bucks @ Atlanta Hawks,218.5,225,75,WIN
+2025-02-08,2,WIN,Oklahoma City Thunder @ Memphis Grizzlies,227.0,237,85,WIN
+2025-02-08,2,WIN,Golden State Warriors @ Chicago Bulls,216.5,243,75,WIN
+2025-02-10,1,WIN,Minnesota Timberwolves @ Cleveland Cavaliers,221.0,235,75,WIN
+2025-02-11,2,WIN,New York Knicks @ Indiana Pacers,218.0,243,75,WIN
+2025-02-11,2,WIN,Memphis Grizzlies @ Phoenix Suns,220.5,231,80,WIN
+2025-02-12,3,LOSS,Atlanta Hawks @ New York Knicks,219.0,297,75,WIN
+2025-02-12,3,LOSS,Miami Heat @ Oklahoma City Thunder,216.0,216,75,LOSS
+2025-02-12,3,LOSS,Memphis Grizzlies @ Los Angeles Clippers,219.5,242,85,WIN
+2025-02-20,2,WIN,Memphis Grizzlies @ Indiana Pacers,224.0,240,85,WIN
+2025-02-20,2,WIN,Chicago Bulls @ New York Knicks,218.5,224,75,WIN
+2025-02-21,1,WIN,New York Knicks @ Cleveland Cavaliers,222.5,247,75,WIN
+2025-02-22,1,WIN,Los Angeles Lakers @ Denver Nuggets,219.0,223,75,WIN
+2025-02-23,2,WIN,Memphis Grizzlies @ Cleveland Cavaliers,228.5,252,85,WIN
+2025-02-23,2,WIN,Detroit Pistons @ Atlanta Hawks,218.5,291,75,WIN
+2025-02-24,1,WIN,Denver Nuggets @ Indiana Pacers,223.0,241,75,WIN
+2025-02-25,1,WIN,Phoenix Suns @ Memphis Grizzlies,220.5,299,80,WIN
+2025-02-26,1,WIN,Los Angeles Clippers @ Chicago Bulls,215.5,239,75,WIN
+2025-02-28,2,WIN,Oklahoma City Thunder @ Atlanta Hawks,223.5,254,85,WIN
+2025-02-28,2,WIN,New York Knicks @ Memphis Grizzlies,222.5,227,85,WIN
+2025-03-01,2,WIN,Sacramento Kings @ Houston Rockets,215.0,216,75,WIN
+2025-03-01,2,WIN,San Antonio Spurs @ Memphis Grizzlies,220.5,258,85,WIN
+2025-03-02,1,WIN,Chicago Bulls @ Indiana Pacers,220.0,239,75,WIN
+2025-03-03,1,WIN,Atlanta Hawks @ Memphis Grizzlies,225.0,262,80,WIN
+2025-03-04,2,WIN,Milwaukee Bucks @ Atlanta Hawks,218.5,248,75,WIN
+2025-03-04,2,WIN,Cleveland Cavaliers @ Chicago Bulls,224.5,256,85,WIN
+2025-03-05,3,LOSS,Sacramento Kings @ Denver Nuggets,221.5,226,75,WIN
+2025-03-05,3,LOSS,Oklahoma City Thunder @ Memphis Grizzlies,227.0,223,85,LOSS
+2025-03-05,3,LOSS,Miami Heat @ Cleveland Cavaliers,217.5,219,75,WIN
+2025-03-06,1,WIN,Indiana Pacers @ Atlanta Hawks,220.5,242,75,WIN
+2025-03-07,1,WIN,Memphis Grizzlies @ Dallas Mavericks,221.0,233,80,WIN
+2025-03-08,1,WIN,Indiana Pacers @ Atlanta Hawks,220.5,238,75,WIN
+2025-03-09,1,LOSS,Memphis Grizzlies @ New Orleans Pelicans,216.5,211,75,LOSS
+2025-03-10,2,WIN,Phoenix Suns @ Memphis Grizzlies,220.5,238,80,WIN
+2025-03-10,2,WIN,Indiana Pacers @ Chicago Bulls,220.0,224,75,WIN
+2025-03-12,2,LOSS,Minnesota Timberwolves @ Denver Nuggets,220.0,210,75,LOSS
+2025-03-12,2,LOSS,Utah Jazz @ Memphis Grizzlies,218.5,237,75,WIN
+2025-03-14,3,WIN,Cleveland Cavaliers @ Memphis Grizzlies,228.5,257,85,WIN
+2025-03-14,3,WIN,Los Angeles Clippers @ Atlanta Hawks,216.0,219,75,WIN
+2025-03-14,3,WIN,Los Angeles Lakers @ Denver Nuggets,219.0,257,75,WIN
+2025-03-15,2,LOSS,Chicago Bulls @ Houston Rockets,217.0,231,75,WIN
+2025-03-15,2,LOSS,Oklahoma City Thunder @ Detroit Pistons,221.0,220,75,LOSS
+2025-03-16,1,WIN,Oklahoma City Thunder @ Milwaukee Bucks,221.0,226,75,WIN
+2025-03-17,3,LOSS,Denver Nuggets @ Golden State Warriors,219.5,219,75,LOSS
+2025-03-17,3,LOSS,Memphis Grizzlies @ Sacramento Kings,222.5,254,80,WIN
+2025-03-17,3,LOSS,Indiana Pacers @ Minnesota Timberwolves,216.5,262,75,WIN
+2025-03-19,5,LOSS,Memphis Grizzlies @ Portland Trail Blazers,217.5,214,75,LOSS
+2025-03-19,5,LOSS,Denver Nuggets @ Los Angeles Lakers,219.0,228,75,WIN
+2025-03-19,5,LOSS,New York Knicks @ San Antonio Spurs,214.5,225,75,WIN
+2025-03-19,5,LOSS,Philadelphia 76ers @ Oklahoma City Thunder,215.0,233,75,WIN
+2025-03-19,5,LOSS,Cleveland Cavaliers @ Sacramento Kings,222.5,242,75,WIN
+2025-03-20,1,WIN,Chicago Bulls @ Sacramento Kings,218.5,244,75,WIN
+2025-03-21,2,WIN,Cleveland Cavaliers @ Phoenix Suns,220.5,235,75,WIN
+2025-03-21,2,WIN,Memphis Grizzlies @ Los Angeles Clippers,219.5,236,85,WIN
+2025-03-22,3,WIN,Golden State Warriors @ Atlanta Hawks,217.0,239,75,WIN
+2025-03-22,3,WIN,Chicago Bulls @ Los Angeles Lakers,216.0,261,75,WIN
+2025-03-22,3,WIN,Milwaukee Bucks @ Sacramento Kings,216.0,222,75,WIN
+2025-03-23,1,WIN,Denver Nuggets @ Houston Rockets,220.0,227,75,WIN
+2025-03-24,3,LOSS,Milwaukee Bucks @ Phoenix Suns,214.0,214,75,LOSS
+2025-03-24,3,LOSS,Minnesota Timberwolves @ Indiana Pacers,216.5,222,75,WIN
+2025-03-24,3,LOSS,Chicago Bulls @ Denver Nuggets,223.5,248,85,WIN
+2025-03-25,3,WIN,Atlanta Hawks @ Houston Rockets,217.5,235,75,WIN
+2025-03-25,3,WIN,Memphis Grizzlies @ Utah Jazz,218.5,243,75,WIN
+2025-03-25,3,WIN,Oklahoma City Thunder @ Sacramento Kings,221.0,226,75,WIN
+2025-03-27,2,WIN,Memphis Grizzlies @ Oklahoma City Thunder,227.0,229,85,WIN
+2025-03-27,2,WIN,Los Angeles Lakers @ Chicago Bulls,216.0,236,75,WIN
+2025-03-29,2,WIN,Dallas Mavericks @ Chicago Bulls,217.0,239,75,WIN
+2025-03-29,2,WIN,Los Angeles Lakers @ Memphis Grizzlies,220.0,261,85,WIN
+2025-03-30,1,WIN,Atlanta Hawks @ Milwaukee Bucks,218.5,269,75,WIN
+2025-03-31,3,LOSS,Boston Celtics @ Memphis Grizzlies,223.0,220,75,LOSS
+2025-03-31,3,LOSS,Chicago Bulls @ Oklahoma City Thunder,223.5,262,80,WIN
+2025-03-31,3,LOSS,Sacramento Kings @ Indiana Pacers,218.0,220,75,WIN
+2025-04-01,3,WIN,Golden State Warriors @ Memphis Grizzlies,220.5,259,85,WIN
+2025-04-01,3,WIN,Phoenix Suns @ Milwaukee Bucks,214.0,256,75,WIN
+2025-04-01,3,WIN,Minnesota Timberwolves @ Denver Nuggets,220.0,279,75,WIN
+2025-04-02,3,LOSS,New York Knicks @ Cleveland Cavaliers,222.5,229,75,WIN
+2025-04-02,3,LOSS,San Antonio Spurs @ Denver Nuggets,219.5,219,75,LOSS
+2025-04-02,3,LOSS,Detroit Pistons @ Oklahoma City Thunder,221.0,222,75,WIN
+2025-04-04,1,WIN,Denver Nuggets @ Golden State Warriors,219.5,222,75,WIN
+2025-04-05,2,LOSS,New York Knicks @ Atlanta Hawks,219.0,226,75,WIN
+2025-04-05,2,LOSS,Memphis Grizzlies @ Detroit Pistons,222.0,212,85,LOSS
+2025-04-06,2,WIN,Indiana Pacers @ Denver Nuggets,223.0,245,75,WIN
+2025-04-06,2,WIN,Sacramento Kings @ Cleveland Cavaliers,222.5,233,75,WIN
+2025-04-08,1,WIN,Chicago Bulls @ Cleveland Cavaliers,224.5,248,85,WIN
+2025-04-09,2,WIN,Denver Nuggets @ Sacramento Kings,221.5,240,75,WIN
+2025-04-09,2,WIN,Oklahoma City Thunder @ Phoenix Suns,219.0,237,75,WIN
+2025-04-10,1,WIN,Minnesota Timberwolves @ Memphis Grizzlies,221.0,266,85,WIN
+2025-04-11,2,LOSS,Memphis Grizzlies @ Denver Nuggets,227.5,226,85,LOSS
+2025-04-11,2,LOSS,Cleveland Cavaliers @ New York Knicks,222.5,210,75,LOSS
+2025-04-13,2,WIN,Dallas Mavericks @ Memphis Grizzlies,221.0,229,80,WIN
+2025-04-13,2,WIN,Denver Nuggets @ Houston Rockets,220.0,237,75,WIN
+2025-04-15,1,WIN,Memphis Grizzlies @ Golden State Warriors,220.5,237,85,WIN
+2025-04-18,1,WIN,Dallas Mavericks @ Memphis Grizzlies,221.0,226,80,WIN
+2025-04-19,1,WIN,Los Angeles Clippers @ Denver Nuggets,218.5,222,75,WIN
+2025-04-20,2,LOSS,Miami Heat @ Cleveland Cavaliers,217.5,221,75,WIN
+2025-04-20,2,LOSS,Memphis Grizzlies @ Oklahoma City Thunder,227.0,211,85,LOSS
+2025-04-21,1,LOSS,Los Angeles Clippers @ Denver Nuggets,218.5,207,75,LOSS
+2025-04-22,1,LOSS,Memphis Grizzlies @ Oklahoma City Thunder,227.0,217,85,LOSS
+2025-04-23,1,WIN,Miami Heat @ Cleveland Cavaliers,217.5,233,75,WIN
+2025-04-24,2,LOSS,Denver Nuggets @ Los Angeles Clippers,218.5,200,75,LOSS
+2025-04-24,2,LOSS,Oklahoma City Thunder @ Memphis Grizzlies,227.0,222,85,LOSS
+2025-04-26,3,LOSS,Oklahoma City Thunder @ Memphis Grizzlies,227.0,232,85,WIN
+2025-04-26,3,LOSS,Denver Nuggets @ Los Angeles Clippers,218.5,200,75,LOSS
+2025-04-26,3,LOSS,Cleveland Cavaliers @ Miami Heat,217.5,211,75,LOSS
+2025-04-28,1,WIN,Cleveland Cavaliers @ Miami Heat,217.5,221,75,WIN
+2025-04-29,1,WIN,Los Angeles Clippers @ Denver Nuggets,218.5,246,75,WIN
+2025-05-01,1,LOSS,Denver Nuggets @ Los Angeles Clippers,218.5,216,75,LOSS
+2025-05-03,1,WIN,Los Angeles Clippers @ Denver Nuggets,218.5,221,75,WIN
+2025-05-21,1,WIN,Indiana Pacers @ New York Knicks,218.0,273,75,WIN
+2025-05-23,1,WIN,Indiana Pacers @ New York Knicks,218.0,223,75,WIN
+2025-05-25,1,LOSS,New York Knicks @ Indiana Pacers,218.0,206,75,LOSS
+2025-05-27,1,WIN,New York Knicks @ Indiana Pacers,218.0,251,75,WIN
+2025-05-29,1,LOSS,Indiana Pacers @ New York Knicks,218.0,205,75,LOSS
+2025-05-31,1,WIN,New York Knicks @ Indiana Pacers,218.0,233,75,WIN

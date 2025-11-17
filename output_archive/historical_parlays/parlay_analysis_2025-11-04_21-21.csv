@@ -1,0 +1,48 @@
+date,parlay_size,parlay_result,game,minimum,actual,confidence,game_result
+2024-10-25,1,WIN,Memphis Grizzlies @ Houston Rockets,221.0,236,78,WIN
+2024-11-06,1,WIN,Los Angeles Lakers @ Memphis Grizzlies,220.0,245,78,WIN
+2024-11-08,1,WIN,Golden State Warriors @ Cleveland Cavaliers,220.5,253,80,WIN
+2024-11-11,1,WIN,Cleveland Cavaliers @ Chicago Bulls,224.5,232,82,WIN
+2024-11-13,1,WIN,Memphis Grizzlies @ Los Angeles Lakers,220.0,251,78,WIN
+2024-11-15,2,WIN,Memphis Grizzlies @ Golden State Warriors,220.5,241,82,WIN
+2024-11-15,2,WIN,Chicago Bulls @ Cleveland Cavaliers,224.5,270,82,WIN
+2024-11-17,1,LOSS,Denver Nuggets @ Memphis Grizzlies,227.5,195,78,LOSS
+2024-11-27,2,WIN,Detroit Pistons @ Memphis Grizzlies,222.0,242,78,WIN
+2024-11-27,2,WIN,Atlanta Hawks @ Cleveland Cavaliers,225.0,259,82,WIN
+2024-11-29,1,LOSS,Cleveland Cavaliers @ Atlanta Hawks,225.0,218,82,LOSS
+2024-12-01,1,WIN,Indiana Pacers @ Memphis Grizzlies,224.0,257,78,WIN
+2024-12-03,2,LOSS,Memphis Grizzlies @ Dallas Mavericks,221.0,237,77,WIN
+2024-12-03,2,LOSS,Washington Wizards @ Cleveland Cavaliers,215.0,205,75,LOSS
+2024-12-15,1,WIN,Memphis Grizzlies @ Los Angeles Lakers,220.0,226,78,WIN
+2024-12-19,1,WIN,Golden State Warriors @ Memphis Grizzlies,220.5,237,78,WIN
+2024-12-23,1,WIN,Los Angeles Clippers @ Memphis Grizzlies,219.5,224,78,WIN
+2025-01-01,1,WIN,Atlanta Hawks @ Denver Nuggets,224.0,259,78,WIN
+2025-01-09,1,WIN,Houston Rockets @ Memphis Grizzlies,221.0,234,82,WIN
+2025-01-13,1,WIN,Memphis Grizzlies @ Houston Rockets,221.0,238,82,WIN
+2025-01-15,1,WIN,Houston Rockets @ Denver Nuggets,220.0,236,75,WIN
+2025-01-22,1,LOSS,Cleveland Cavaliers @ Houston Rockets,221.0,217,80,LOSS
+2025-01-25,1,WIN,Houston Rockets @ Cleveland Cavaliers,221.0,266,75,WIN
+2025-01-27,1,WIN,Memphis Grizzlies @ New York Knicks,222.5,249,82,WIN
+2025-01-30,2,WIN,Houston Rockets @ Memphis Grizzlies,221.0,239,82,WIN
+2025-01-30,2,WIN,Atlanta Hawks @ Cleveland Cavaliers,225.0,252,77,WIN
+2025-02-02,2,WIN,Dallas Mavericks @ Cleveland Cavaliers,221.0,245,80,WIN
+2025-02-02,2,WIN,Memphis Grizzlies @ Milwaukee Bucks,222.0,251,82,WIN
+2025-02-07,1,WIN,Cleveland Cavaliers @ Washington Wizards,215.0,258,75,WIN
+2025-02-20,1,WIN,Memphis Grizzlies @ Indiana Pacers,224.0,240,78,WIN
+2025-02-23,1,WIN,Memphis Grizzlies @ Cleveland Cavaliers,228.5,252,82,WIN
+2025-02-28,1,WIN,New York Knicks @ Memphis Grizzlies,222.5,227,82,WIN
+2025-03-04,1,WIN,Cleveland Cavaliers @ Chicago Bulls,224.5,256,82,WIN
+2025-03-07,1,WIN,Memphis Grizzlies @ Dallas Mavericks,221.0,233,77,WIN
+2025-03-14,1,WIN,Cleveland Cavaliers @ Memphis Grizzlies,228.5,257,82,WIN
+2025-03-21,2,WIN,Cleveland Cavaliers @ Phoenix Suns,220.5,235,80,WIN
+2025-03-21,2,WIN,Memphis Grizzlies @ Los Angeles Clippers,219.5,236,78,WIN
+2025-03-23,1,LOSS,Cleveland Cavaliers @ Utah Jazz,219.0,211,75,LOSS
+2025-03-24,1,LOSS,Milwaukee Bucks @ Phoenix Suns,214.0,214,80,LOSS
+2025-03-28,1,WIN,New York Knicks @ Milwaukee Bucks,216.5,223,75,WIN
+2025-03-29,1,WIN,Los Angeles Lakers @ Memphis Grizzlies,220.0,261,82,WIN
+2025-04-02,1,WIN,New York Knicks @ Cleveland Cavaliers,222.5,229,75,WIN
+2025-04-08,1,WIN,Chicago Bulls @ Cleveland Cavaliers,224.5,248,82,WIN
+2025-04-10,1,WIN,Minnesota Timberwolves @ Memphis Grizzlies,221.0,266,78,WIN
+2025-04-13,1,WIN,Dallas Mavericks @ Memphis Grizzlies,221.0,229,77,WIN
+2025-04-15,1,WIN,Memphis Grizzlies @ Golden State Warriors,220.5,237,78,WIN
+2025-04-18,1,WIN,Dallas Mavericks @ Memphis Grizzlies,221.0,226,77,WIN

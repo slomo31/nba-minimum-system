@@ -1,0 +1,104 @@
+date,game,minimum,prediction,confidence,score,actual_total,went_over,result,reasoning
+2025-10-24,Boston Celtics @ New York Knicks,212.0,NO,38,38,200.0,False,SKIPPED,Strong offense (avg ORtg: 116.0) | Both teams neutral form | Both teams rested (2+ days)
+2025-10-24,Cleveland Cavaliers @ Brooklyn Nets,211.0,NO,48,48,255.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.5) | Above average pace (100.5) | Both teams neutral form
+2025-10-24,Atlanta Hawks @ Orlando Magic,217.0,NO,58,58,218.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.0) | Very fast pace (102.7) | Both teams neutral form
+2025-10-24,Milwaukee Bucks @ Toronto Raptors,227.0,MAYBE,78,78,238.0,True,SKIPPED,Elite offense (avg ORtg: 118.4) | Very fast pace (102.2) | Both teams neutral form
+2025-10-24,San Antonio Spurs @ New Orleans Pelicans,211.0,NO,28,28,236.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.2) | Both teams neutral form | Both teams rested (2+ days)
+2025-10-24,Miami Heat @ Memphis Grizzlies,224.5,NO,63,63,260.0,True,SKIPPED,Strong offense (avg ORtg: 115.3) | Very fast pace (103.8) | Both teams neutral form
+2025-10-24,Detroit Pistons @ Houston Rockets,225.5,NO,61,61,226.0,True,SKIPPED,Elite offense (avg ORtg: 119.7) | Average pace (98.8) | Both teams neutral form
+2025-10-24,Minnesota Timberwolves @ Los Angeles Lakers,221.5,NO,61,61,238.0,True,SKIPPED,Elite offense (avg ORtg: 118.5) | Average pace (99.8) | Both teams neutral form
+2025-10-24,Golden State Warriors @ Portland Trail Blazers,223.0,NO,58,58,258.0,True,SKIPPED,Strong offense (avg ORtg: 115.5) | Very fast pace (102.2) | Both teams neutral form
+2025-10-24,Utah Jazz @ Sacramento Kings,217.0,NO,53,53,209.0,False,SKIPPED,Strong offense (avg ORtg: 114.7) | Above average pace (100.3) | Both teams neutral form
+2025-10-24,Phoenix Suns @ Los Angeles Clippers,216.0,NO,46,46,231.0,True,SKIPPED,Strong offense (avg ORtg: 115.8) | Average pace (99.0) | Both teams neutral form
+2025-10-24,Washington Wizards @ Dallas Mavericks,205.0,NO,43,43,224.0,True,SKIPPED,Very fast pace (104.0) | Both teams neutral form | Both teams rested (2+ days)
+2025-10-31,New Orleans Pelicans @ Los Angeles Clippers,205.0,NO,33,33,250.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.3) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-31,Denver Nuggets @ Portland Trail Blazers,230.5,MAYBE,73,73,216.0,False,SKIPPED,Elite offense (avg ORtg: 119.2) | Very fast pace (102.0) | Both teams neutral form
+2025-10-31,Los Angeles Lakers @ Memphis Grizzlies,220.5,NO,63,63,229.0,True,SKIPPED,Elite offense (avg ORtg: 116.0) | Above average pace (101.4) | Both teams neutral form
+2025-10-31,New York Knicks @ Chicago Bulls,223.0,NO,68,68,260.0,True,SKIPPED,Elite offense (avg ORtg: 118.7) | Above average pace (100.2) | Both teams neutral form
+2025-10-31,Toronto Raptors @ Cleveland Cavaliers,218.5,NO,68,68,213.0,False,SKIPPED,Strong offense (avg ORtg: 114.4) | Very fast pace (102.1) | Both teams neutral form
+2025-10-31,Boston Celtics @ Philadelphia 76ers,221.0,NO,61,61,217.0,False,SKIPPED,Elite offense (avg ORtg: 118.8) | Average pace (98.4) | Both teams neutral form
+2025-10-31,Atlanta Hawks @ Indiana Pacers,213.0,NO,48,48,236.0,True,SKIPPED,Very fast pace (102.2) | Both teams neutral form | Moderate buffer (15.0 pts above minimum)
+2025-10-31,Utah Jazz @ Phoenix Suns,219.0,NO,53,53,214.0,False,SKIPPED,Strong offense (avg ORtg: 115.0) | Above average pace (100.2) | Both teams neutral form
+2025-11-03,Los Angeles Lakers @ Portland Trail Blazers,225.0,MAYBE,73,73,238.0,True,SKIPPED,Elite offense (avg ORtg: 117.4) | Very fast pace (102.2) | Both teams neutral form
+2025-11-03,Miami Heat @ Los Angeles Clippers,221.5,NO,58,58,239.0,True,SKIPPED,Elite offense (avg ORtg: 116.9) | Above average pace (101.1) | Both teams neutral form
+2025-11-03,Minnesota Timberwolves @ Brooklyn Nets,214.0,NO,41,41,234.0,True,SKIPPED,Strong offense (avg ORtg: 115.5) | Average pace (99.0) | Both teams neutral form
+2025-11-03,Milwaukee Bucks @ Indiana Pacers,220.5,NO,58,58,232.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.8) | Very fast pace (102.1) | Both teams neutral form
+2025-11-03,Utah Jazz @ Boston Celtics,211.0,NO,38,38,208.0,False,SKIPPED,Strong offense (avg ORtg: 114.7) | Both teams neutral form | Moderate buffer (15.1 pts above minimum)
+2025-11-03,Washington Wizards @ New York Knicks,214.0,NO,28,28,221.0,True,SKIPPED,Above average pace (101.9) | Both teams neutral form | New York Knicks on back-to-back
+2025-11-03,Dallas Mavericks @ Houston Rockets,217.0,NO,58,58,212.0,False,SKIPPED,Strong offense (avg ORtg: 114.3) | Above average pace (100.0) | Both teams neutral form
+2025-11-03,Detroit Pistons @ Memphis Grizzlies,216.5,NO,38,38,220.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.9) | Above average pace (101.6) | Both teams neutral form
+2025-11-03,Sacramento Kings @ Denver Nuggets,226.5,NO,63,63,254.0,True,SKIPPED,Elite offense (avg ORtg: 118.7) | Above average pace (100.8) | Both teams neutral form
+2025-10-27,Atlanta Hawks @ Chicago Bulls,222.0,NO,63,63,251.0,True,SKIPPED,Elite offense (avg ORtg: 116.2) | Above average pace (101.9) | Both teams neutral form
+2025-10-27,Brooklyn Nets @ Houston Rockets,221.5,NO,48,48,246.0,True,SKIPPED,Elite offense (avg ORtg: 118.8) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-27,Boston Celtics @ New Orleans Pelicans,203.0,NO,18,18,212.0,True,SKIPPED,Both teams neutral form | Moderate buffer (15.2 pts above minimum) | Boston Celtics on back-to-back
+2025-10-27,Toronto Raptors @ San Antonio Spurs,222.5,NO,58,58,224.0,True,SKIPPED,Elite offense (avg ORtg: 117.5) | Above average pace (100.2) | Both teams neutral form
+2025-10-27,Denver Nuggets @ Minnesota Timberwolves,227.0,NO,51,51,241.0,True,SKIPPED,Elite offense (avg ORtg: 120.3) | Average pace (99.6) | Both teams neutral form
+2025-10-27,Phoenix Suns @ Utah Jazz,219.0,NO,53,53,272.0,True,SKIPPED,Strong offense (avg ORtg: 115.0) | Above average pace (100.2) | Both teams neutral form
+2025-10-27,Orlando Magic @ Philadelphia 76ers,227.5,NO,68,68,260.0,True,SKIPPED,Elite offense (avg ORtg: 118.4) | Above average pace (101.6) | Both teams neutral form
+2025-10-27,Portland Trail Blazers @ Los Angeles Lakers,225.0,NO,68,68,230.0,True,SKIPPED,Elite offense (avg ORtg: 117.4) | Very fast pace (102.2) | Both teams neutral form
+2025-10-27,Oklahoma City Thunder @ Dallas Mavericks,214.5,NO,32,32,195.0,False,SKIPPED,Above average pace (100.5) | Oklahoma City Thunder hot (WARM) | Dallas Mavericks on back-to-back
+2025-10-27,Cleveland Cavaliers @ Detroit Pistons,215.0,NO,38,38,211.0,False,SKIPPED,Above-avg offense (avg ORtg: 113.4) | Above average pace (101.5) | Both teams neutral form
+2025-10-27,Memphis Grizzlies @ Golden State Warriors,218.0,NO,58,58,249.0,True,SKIPPED,Strong offense (avg ORtg: 114.2) | Above average pace (101.3) | Both teams neutral form
+2025-11-01,Sacramento Kings @ Milwaukee Bucks,224.0,NO,68,68,268.0,True,SKIPPED,Elite offense (avg ORtg: 117.3) | Above average pace (101.8) | Both teams neutral form
+2025-11-01,Minnesota Timberwolves @ Charlotte Hornets,223.5,NO,68,68,227.0,True,SKIPPED,Elite offense (avg ORtg: 118.7) | Above average pace (100.4) | Both teams neutral form
+2025-11-01,Golden State Warriors @ Indiana Pacers,215.5,NO,33,33,223.0,True,SKIPPED,Above average pace (101.2) | Both teams neutral form | Moderate buffer (15.0 pts above minimum)
+2025-11-01,Orlando Magic @ Washington Wizards,214.5,NO,48,48,219.0,True,SKIPPED,Very fast pace (103.8) | Both teams neutral form | Moderate buffer (15.0 pts above minimum)
+2025-11-01,Houston Rockets @ Boston Celtics,220.5,NO,43,43,229.0,True,SKIPPED,Elite offense (avg ORtg: 119.5) | Both teams neutral form | Boston Celtics on back-to-back
+2025-11-01,Dallas Mavericks @ Detroit Pistons,208.0,NO,48,48,232.0,True,SKIPPED,Very fast pace (102.1) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-25,Indiana Pacers @ Memphis Grizzlies,213.5,NO,38,38,231.0,True,SKIPPED,Very fast pace (102.1) | Both teams neutral form | Memphis Grizzlies on back-to-back
+2025-10-25,Phoenix Suns @ Denver Nuggets,228.5,NO,58,58,244.0,True,SKIPPED,Elite offense (avg ORtg: 119.0) | Above average pace (100.7) | Both teams neutral form
+2025-10-25,Charlotte Hornets @ Philadelphia 76ers,232.5,NO,63,63,246.0,True,SKIPPED,Elite offense (avg ORtg: 121.3) | Above average pace (101.0) | Both teams neutral form
+2025-10-25,Oklahoma City Thunder @ Atlanta Hawks,222.0,NO,57,57,217.0,False,SKIPPED,Strong offense (avg ORtg: 115.2) | Above average pace (100.1) | Oklahoma City Thunder hot (WARM)
+2025-10-25,Chicago Bulls @ Orlando Magic,223.5,MAYBE,73,73,208.0,False,SKIPPED,Elite offense (avg ORtg: 116.8) | Very fast pace (102.2) | Both teams neutral form
+2025-11-02,Memphis Grizzlies @ Toronto Raptors,220.0,NO,63,63,221.0,True,SKIPPED,Strong offense (avg ORtg: 114.9) | Very fast pace (102.2) | Both teams neutral form
+2025-11-02,Chicago Bulls @ New York Knicks,223.0,NO,68,68,244.0,True,SKIPPED,Elite offense (avg ORtg: 118.7) | Above average pace (100.2) | Both teams neutral form
+2025-11-02,Philadelphia 76ers @ Brooklyn Nets,222.5,NO,61,61,234.0,True,SKIPPED,Elite offense (avg ORtg: 118.2) | Average pace (99.6) | Both teams neutral form
+2025-11-02,San Antonio Spurs @ Phoenix Suns,221.5,NO,61,61,248.0,True,SKIPPED,Elite offense (avg ORtg: 116.7) | Average pace (99.7) | Both teams neutral form
+2025-11-02,Atlanta Hawks @ Cleveland Cavaliers,214.0,NO,58,58,226.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.2) | Very fast pace (102.2) | Both teams neutral form
+2025-11-02,New Orleans Pelicans @ Oklahoma City Thunder,215.0,NO,32,32,243.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.2) | Oklahoma City Thunder hot (WARM) | Both teams rested (2+ days)
+2025-11-02,Miami Heat @ Los Angeles Lakers,228.5,MAYBE,78,78,250.0,True,SKIPPED,Elite offense (avg ORtg: 118.3) | Very fast pace (103.0) | Both teams neutral form
+2025-11-02,Utah Jazz @ Charlotte Hornets,222.0,NO,63,63,229.0,True,SKIPPED,Elite offense (avg ORtg: 117.2) | Above average pace (100.5) | Both teams neutral form
+2025-10-26,Los Angeles Lakers @ Sacramento Kings,221.0,NO,68,68,247.0,True,SKIPPED,Elite offense (avg ORtg: 116.8) | Above average pace (101.0) | Both teams neutral form
+2025-10-26,Brooklyn Nets @ San Antonio Spurs,215.0,NO,51,51,225.0,True,SKIPPED,Strong offense (avg ORtg: 115.7) | Average pace (98.6) | Both teams neutral form
+2025-10-26,Boston Celtics @ Detroit Pistons,211.5,NO,46,46,232.0,True,SKIPPED,Strong offense (avg ORtg: 114.7) | Average pace (98.7) | Both teams neutral form
+2025-10-26,Charlotte Hornets @ Washington Wizards,219.0,NO,53,53,252.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.7) | Very fast pace (103.2) | Both teams neutral form
+2025-10-26,New York Knicks @ Miami Heat,225.0,MAYBE,78,78,222.0,False,SKIPPED,Elite offense (avg ORtg: 117.5) | Very fast pace (102.2) | Both teams neutral form
+2025-10-26,Milwaukee Bucks @ Cleveland Cavaliers,222.0,MAYBE,73,73,231.0,True,SKIPPED,Elite offense (avg ORtg: 116.0) | Very fast pace (102.1) | Both teams neutral form
+2025-10-26,Indiana Pacers @ Minnesota Timberwolves,215.0,NO,38,38,224.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.8) | Above average pace (100.5) | Both teams neutral form
+2025-10-26,Portland Trail Blazers @ Los Angeles Clippers,218.0,NO,63,63,221.0,True,SKIPPED,Elite offense (avg ORtg: 116.0) | Above average pace (100.3) | Both teams neutral form
+2025-10-26,Toronto Raptors @ Dallas Mavericks,211.5,NO,48,48,268.0,True,SKIPPED,Very fast pace (102.7) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-23,Oklahoma City Thunder @ Indiana Pacers,220.0,NO,45,45,276.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.8) | Average pace (99.8) | Oklahoma City Thunder hot (WARM)
+2025-10-23,Denver Nuggets @ Golden State Warriors,227.5,NO,68,68,268.0,True,SKIPPED,Elite offense (avg ORtg: 119.0) | Above average pace (100.3) | Both teams neutral form
+2025-10-30,Miami Heat @ San Antonio Spurs,227.0,NO,68,68,208.0,False,SKIPPED,Elite offense (avg ORtg: 117.9) | Above average pace (101.8) | Both teams neutral form
+2025-10-30,Golden State Warriors @ Milwaukee Bucks,225.5,NO,63,63,230.0,True,SKIPPED,Elite offense (avg ORtg: 117.7) | Above average pace (101.3) | Both teams neutral form
+2025-10-30,Orlando Magic @ Charlotte Hornets,223.5,MAYBE,73,73,230.0,True,SKIPPED,Elite offense (avg ORtg: 116.5) | Very fast pace (102.3) | Both teams neutral form
+2025-10-30,Washington Wizards @ Oklahoma City Thunder,219.5,NO,42,42,235.0,True,SKIPPED,Above average pace (101.2) | Oklahoma City Thunder hot (WARM) | Moderate buffer (15.2 pts above minimum)
+2025-10-21,Golden State Warriors @ Los Angeles Lakers,222.5,NO,63,63,228.0,True,SKIPPED,Elite offense (avg ORtg: 117.1) | Above average pace (100.5) | Both teams neutral form
+2025-10-21,Houston Rockets @ Oklahoma City Thunder,232.0,NO,52,52,249.0,True,SKIPPED,Elite offense (avg ORtg: 121.3) | Oklahoma City Thunder hot (WARM) | Both teams rested (99+ days)
+2025-10-28,Los Angeles Clippers @ Golden State Warriors,215.0,NO,46,46,177.0,False,SKIPPED,Strong offense (avg ORtg: 115.8) | Average pace (98.7) | Both teams neutral form
+2025-10-28,Philadelphia 76ers @ Washington Wizards,223.5,NO,58,58,273.0,True,SKIPPED,Strong offense (avg ORtg: 114.6) | Very fast pace (102.5) | Both teams neutral form
+2025-10-28,Charlotte Hornets @ Miami Heat,230.5,MAYBE,78,78,261.0,True,SKIPPED,Elite offense (avg ORtg: 118.5) | Very fast pace (103.6) | Both teams neutral form
+2025-10-28,New York Knicks @ Milwaukee Bucks,224.0,NO,68,68,232.0,True,SKIPPED,Elite offense (avg ORtg: 118.8) | Above average pace (100.7) | Both teams neutral form
+2025-10-28,Sacramento Kings @ Oklahoma City Thunder,223.5,NO,55,55,208.0,False,SKIPPED,Elite offense (avg ORtg: 116.3) | Average pace (99.6) | Oklahoma City Thunder hot (WARM)
+2025-10-22,Brooklyn Nets @ Charlotte Hornets,218.5,NO,68,68,253.0,True,SKIPPED,Elite offense (avg ORtg: 116.3) | Above average pace (100.3) | Both teams neutral form
+2025-10-22,Cleveland Cavaliers @ New York Knicks,215.5,NO,53,53,230.0,True,SKIPPED,Strong offense (avg ORtg: 114.7) | Above average pace (100.5) | Both teams neutral form
+2025-10-22,Miami Heat @ Orlando Magic,226.0,NO,63,63,246.0,True,SKIPPED,Strong offense (avg ORtg: 115.6) | Very fast pace (104.2) | Both teams neutral form
+2025-10-22,Philadelphia 76ers @ Boston Celtics,221.0,NO,61,61,233.0,True,SKIPPED,Elite offense (avg ORtg: 118.8) | Average pace (98.4) | Both teams neutral form
+2025-10-22,Toronto Raptors @ Atlanta Hawks,219.5,NO,68,68,256.0,True,SKIPPED,Strong offense (avg ORtg: 114.6) | Very fast pace (102.3) | Both teams neutral form
+2025-10-22,Detroit Pistons @ Chicago Bulls,222.5,NO,68,68,226.0,True,SKIPPED,Elite offense (avg ORtg: 117.4) | Above average pace (101.2) | Both teams neutral form
+2025-10-22,Minnesota Timberwolves @ Portland Trail Blazers,222.0,NO,68,68,232.0,True,SKIPPED,Elite offense (avg ORtg: 116.8) | Above average pace (101.5) | Both teams neutral form
+2025-10-22,San Antonio Spurs @ Dallas Mavericks,210.5,NO,38,38,217.0,True,SKIPPED,Above average pace (100.7) | Both teams neutral form | Moderate buffer (15.0 pts above minimum)
+2025-10-22,Sacramento Kings @ Phoenix Suns,219.5,NO,58,58,236.0,True,SKIPPED,Strong offense (avg ORtg: 114.9) | Above average pace (101.3) | Both teams neutral form
+2025-10-22,New Orleans Pelicans @ Memphis Grizzlies,208.0,NO,31,31,250.0,True,SKIPPED,Average pace (100.0) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-22,Washington Wizards @ Milwaukee Bucks,220.5,NO,53,53,253.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.0) | Very fast pace (103.5) | Both teams neutral form
+2025-10-22,Los Angeles Clippers @ Utah Jazz,213.0,NO,51,51,237.0,True,SKIPPED,Strong offense (avg ORtg: 115.5) | Average pace (98.0) | Both teams neutral form
+2025-10-29,Cleveland Cavaliers @ Boston Celtics,209.5,NO,41,41,230.0,True,SKIPPED,Above-avg offense (avg ORtg: 113.2) | Average pace (99.2) | Both teams neutral form
+2025-10-29,Atlanta Hawks @ Brooklyn Nets,212.0,NO,48,48,229.0,True,SKIPPED,Above-avg offense (avg ORtg: 112.8) | Above average pace (100.7) | Both teams neutral form
+2025-10-29,Sacramento Kings @ Chicago Bulls,223.0,NO,63,63,239.0,True,SKIPPED,Elite offense (avg ORtg: 117.3) | Above average pace (101.5) | Both teams neutral form
+2025-10-29,Indiana Pacers @ Dallas Mavericks,205.0,NO,48,48,212.0,True,SKIPPED,Very fast pace (102.6) | Both teams neutral form | Moderate buffer (15.2 pts above minimum)
+2025-10-29,Portland Trail Blazers @ Utah Jazz,221.0,NO,53,53,270.0,True,SKIPPED,Strong offense (avg ORtg: 115.3) | Above average pace (101.6) | Both teams neutral form
+2025-10-29,New Orleans Pelicans @ Denver Nuggets,217.5,NO,51,51,210.0,False,SKIPPED,Strong offense (avg ORtg: 115.5) | Average pace (98.9) | Both teams neutral form
+2025-10-29,Los Angeles Lakers @ Minnesota Timberwolves,221.5,NO,61,61,231.0,True,SKIPPED,Elite offense (avg ORtg: 118.5) | Average pace (99.8) | Both teams neutral form
+2025-10-29,Memphis Grizzlies @ Phoenix Suns,219.0,NO,53,53,227.0,True,SKIPPED,Strong offense (avg ORtg: 114.2) | Above average pace (101.7) | Both teams neutral form
+2025-10-29,Houston Rockets @ Toronto Raptors,229.0,NO,61,61,260.0,True,SKIPPED,Elite offense (avg ORtg: 120.7) | Average pace (99.5) | Both teams neutral form
+2025-10-29,Orlando Magic @ Detroit Pistons,218.0,NO,53,53,251.0,True,SKIPPED,Strong offense (avg ORtg: 114.2) | Above average pace (101.9) | Both teams neutral form

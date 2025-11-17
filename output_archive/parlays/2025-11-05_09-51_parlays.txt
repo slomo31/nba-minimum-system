@@ -1,0 +1,84 @@
+PARLAY RECOMMENDATIONS
+======================================================================
+
+
+======================================================================
+2-LEG PARLAY
+======================================================================
+
+Combined Probability: 74.5%
+Parlay Odds: -416
+Payout: $1.24 per $1
+Expected Value: +0.670
+
+GAMES:
+
+  1. Miami Heat @ Denver Nuggets
+     Over 220.5 at -820
+     Confidence: 92%
+     Reasoning: Elite offense (avg ORtg: 120.2) | Fast pace (102.8) | Denver Nuggets hot (WARM)
+
+  2. Utah Jazz @ Detroit Pistons
+     Over 210.5 at -950
+     Confidence: 90%
+     Reasoning: Strong offense (avg ORtg: 114.8) | Fast pace (100.1) | Both teams hot (HOT/HOT)
+
+
+======================================================================
+3-LEG PARLAY
+======================================================================
+
+Combined Probability: 61.9%
+Parlay Odds: -249
+Payout: $1.40 per $1
+Expected Value: +0.485
+
+GAMES:
+
+  1. Miami Heat @ Denver Nuggets
+     Over 220.5 at -820
+     Confidence: 92%
+     Reasoning: Elite offense (avg ORtg: 120.2) | Fast pace (102.8) | Denver Nuggets hot (WARM)
+
+  2. Utah Jazz @ Detroit Pistons
+     Over 210.5 at -950
+     Confidence: 90%
+     Reasoning: Strong offense (avg ORtg: 114.8) | Fast pace (100.1) | Both teams hot (HOT/HOT)
+
+  3. Philadelphia 76ers @ Cleveland Cavaliers
+     Over 214.5 at -770
+     Confidence: 83%
+     Reasoning: Elite offense (avg ORtg: 116.5) | Fast pace (101.3) | Both teams neutral form
+
+
+======================================================================
+4-LEG PARLAY
+======================================================================
+
+Combined Probability: 51.3%
+Parlay Odds: -174
+Payout: $1.57 per $1
+Expected Value: +0.322
+
+GAMES:
+
+  1. Miami Heat @ Denver Nuggets
+     Over 220.5 at -820
+     Confidence: 92%
+     Reasoning: Elite offense (avg ORtg: 120.2) | Fast pace (102.8) | Denver Nuggets hot (WARM)
+
+  2. Utah Jazz @ Detroit Pistons
+     Over 210.5 at -950
+     Confidence: 90%
+     Reasoning: Strong offense (avg ORtg: 114.8) | Fast pace (100.1) | Both teams hot (HOT/HOT)
+
+  3. Philadelphia 76ers @ Cleveland Cavaliers
+     Over 214.5 at -770
+     Confidence: 83%
+     Reasoning: Elite offense (avg ORtg: 116.5) | Fast pace (101.3) | Both teams neutral form
+
+  4. Oklahoma City Thunder @ Portland Trail Blazers
+     Over 208.5 at -810
+     Confidence: 83%
+     Reasoning: Elite offense (avg ORtg: 117.5) | Fast pace (100.8) | Both teams neutral form
+

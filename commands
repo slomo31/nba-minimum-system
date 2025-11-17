@@ -1,0 +1,13 @@
+# Test 75% threshold (30 seconds)
+python analyze_75_threshold.py
+
+# Generate PDF report (30 seconds)
+python generate_parlay_pdf.py
+
+# Open HTML report
+open output_archive/reports/*_parlay_report.html
+
+#by date 
+open output_archive/reports/2025-11-04_16-30_parlay_report.html
+
+# Print to PDF: Cmd+P → Save as PDF

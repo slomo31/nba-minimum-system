@@ -1,0 +1,25 @@
+PARLAY RECOMMENDATIONS
+======================================================================
+
+
+======================================================================
+2-LEG PARLAY
+======================================================================
+
+Combined Probability: 68.1%
+Parlay Odds: -371
+Payout: $1.27 per $1
+Expected Value: +0.546
+
+GAMES:
+
+  1. Toronto Raptors @ Philadelphia 76ers
+     Over 215.5 at -860
+     Confidence: 87%
+     Reasoning: Elite offense (avg ORtg: 119.0) | Fast pace (101.3) | Toronto Raptors hot (HOT)
+
+  2. Portland Trail Blazers @ Miami Heat
+     Over 219.5 at -730
+     Confidence: 87%
+     Reasoning: Elite offense (avg ORtg: 116.2) | Fast pace (104.5) | Portland Trail Blazers hot (WARM)
+

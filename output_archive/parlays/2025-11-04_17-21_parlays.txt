@@ -1,0 +1,25 @@
+PARLAY RECOMMENDATIONS
+======================================================================
+
+
+======================================================================
+2-LEG PARLAY
+======================================================================
+
+Combined Probability: 69.7%
+Parlay Odds: -370
+Payout: $1.27 per $1
+Expected Value: +0.582
+
+GAMES:
+
+  1. Milwaukee Bucks @ Toronto Raptors
+     Over 215.5 at -830
+     Confidence: 88%
+     Reasoning: Elite offense (avg ORtg: 118.4) | Fast pace (102.2) | Both teams neutral form
+
+  2. Philadelphia 76ers @ Chicago Bulls
+     Over 218.5 at -750
+     Confidence: 88%
+     Reasoning: Elite offense (avg ORtg: 121.6) | Fast pace (100.8) | Both teams neutral form
+

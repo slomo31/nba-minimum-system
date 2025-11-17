@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Parlay Backtest Report</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        .summary-box {
+            background: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .win {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .loss {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .game-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin: 10px 0;
+            page-break-inside: avoid;
+        }
+        .game-header {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .game-detail {
+            font-size: 13px;
+            color: #555;
+            margin: 3px 0;
+        }
+        .recommendation {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏀 NBA Minimum Alternate Parlay System</h1>
+    <h2>Backtest Performance Report</h2>
+    
+    <div class="summary-box">
+        <strong>Report Generated:</strong> November 04, 2025 at 04:34 PM<br>
+        <strong>Analysis Period:</strong> 2025-2026 NBA Season<br>
+        <strong>Total Games Analyzed:</strong> 103<br>
+        <strong>Strategy:</strong> Parlay all YES predictions per night
+    </div>
+    
+    <h2>Executive Summary</h2>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">13</div>
+            <div class="stat-label">Betting Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">10</div>
+            <div class="stat-label">Perfect Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Losing Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">76.9%</div>
+            <div class="stat-label">Win Rate</div>
+        </div>
+    </div>
+    
+    <h2>Performance by Parlay Size</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Parlay Size</th>
+                <th>Nights</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1-Game Parlay</td>
+                <td>5</td>
+                <td class="win">5</td>
+                <td class="loss">0</td>
+                <td><strong>100.0%</strong></td>
+            </tr>
+
+            <tr>
+                <td>2-Game Parlay</td>
+                <td>5</td>
+                <td class="win">4</td>
+                <td class="loss">1</td>
+                <td><strong>80.0%</strong></td>
+            </tr>
+
+            <tr>
+                <td>3-Game Parlay</td>
+                <td>2</td>
+                <td class="win">1</td>
+                <td class="loss">1</td>
+                <td><strong>50.0%</strong></td>
+            </tr>
+
+            <tr>
+                <td>4-Game Parlay</td>
+                <td>1</td>
+                <td class="win">0</td>
+                <td class="loss">1</td>
+                <td><strong>0.0%</strong></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    <h2>Profitability Analysis</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Parlay Type</th>
+                <th>Typical Odds</th>
+                <th>Your Win Rate</th>
+                <th>Expected Value</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>2-Leg Parlay</td>
+                <td>+260</td>
+                <td><strong>80.0%</strong></td>
+                <td>$+108.00 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+            <tr>
+                <td>2-Leg Parlay</td>
+                <td>+280</td>
+                <td><strong>80.0%</strong></td>
+                <td>$+124.00 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+            <tr>
+                <td>3-Leg Parlay</td>
+                <td>+600</td>
+                <td><strong>50.0%</strong></td>
+                <td>$+200.00 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+            <tr>
+                <td>3-Leg Parlay</td>
+                <td>+650</td>
+                <td><strong>50.0%</strong></td>
+                <td>$+225.00 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    <div class="page-break"></div>
+    
+    <h2>Detailed Night-by-Night Results</h2>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 21, 2025 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Golden State Warriors @ Los Angeles Lakers - 
+            Min: 222.5 | Actual: 228.0 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 22, 2025 - 3-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (3W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Brooklyn Nets @ Charlotte Hornets - 
+            Min: 218.5 | Actual: 253.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Detroit Pistons @ Chicago Bulls - 
+            Min: 222.5 | Actual: 226.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Minnesota Timberwolves @ Portland Trail Blazers - 
+            Min: 222.0 | Actual: 232.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 23, 2025 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Denver Nuggets @ Golden State Warriors - 
+            Min: 227.5 | Actual: 268.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 24, 2025 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Milwaukee Bucks @ Toronto Raptors - 
+            Min: 227.0 | Actual: 238.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 25, 2025 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Charlotte Hornets @ Philadelphia 76ers - 
+            Min: 232.5 | Actual: 246.0 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ October 26, 2025 - 4-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (3W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Los Angeles Lakers @ Sacramento Kings - 
+            Min: 221.0 | Actual: 247.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ❌ New York Knicks @ Miami Heat - 
+            Min: 225.0 | Actual: 222.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Milwaukee Bucks @ Cleveland Cavaliers - 
+            Min: 222.0 | Actual: 231.0 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ Portland Trail Blazers @ Los Angeles Clippers - 
+            Min: 218.0 | Actual: 221.0 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 27, 2025 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Atlanta Hawks @ Chicago Bulls - 
+            Min: 222.0 | Actual: 251.0 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ Orlando Magic @ Philadelphia 76ers - 
+            Min: 227.5 | Actual: 260.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ October 28, 2025 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Charlotte Hornets @ Miami Heat - 
+            Min: 230.5 | Actual: 261.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ New York Knicks @ Milwaukee Bucks - 
+            Min: 224.0 | Actual: 232.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ October 30, 2025 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (1W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Miami Heat @ San Antonio Spurs - 
+            Min: 227.0 | Actual: 208.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Golden State Warriors @ Milwaukee Bucks - 
+            Min: 225.5 | Actual: 230.0 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ October 31, 2025 - 3-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (2W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Denver Nuggets @ Portland Trail Blazers - 
+            Min: 230.5 | Actual: 216.0 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ Los Angeles Lakers @ Memphis Grizzlies - 
+            Min: 220.5 | Actual: 229.0 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ New York Knicks @ Chicago Bulls - 
+            Min: 223.0 | Actual: 260.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ November 01, 2025 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Sacramento Kings @ Milwaukee Bucks - 
+            Min: 224.0 | Actual: 268.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Minnesota Timberwolves @ Charlotte Hornets - 
+            Min: 223.5 | Actual: 227.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ November 02, 2025 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Chicago Bulls @ New York Knicks - 
+            Min: 223.0 | Actual: 244.0 | 
+            Conf: 83%
+        </div>
+
+        <div class="game-detail">
+            ✅ Miami Heat @ Los Angeles Lakers - 
+            Min: 228.5 | Actual: 250.0 | 
+            Conf: 83%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ November 03, 2025 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Sacramento Kings @ Denver Nuggets - 
+            Min: 226.5 | Actual: 254.0 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    
+    <div class="page-break"></div>
+    
+    <h2>System Optimization Insights</h2>
+    
+    <h3>False Negatives (Missed Opportunities)</h3>
+    <p>
+        Your system said NO to 45 games, but <strong>38 of them went over</strong> (84.4%).
+        This suggests your 80% confidence threshold may be too conservative.
+    </p>
+    
+    <div class="recommendation">
+        <h3>💡 Recommendations</h3>
+        <ul>
+            <li><strong>2-Leg Parlays:</strong> Your 80.0% win rate is excellent. 
+                Focus your strategy here.</li>
+            <li><strong>3-Leg Parlays:</strong> Win rate of 50.0% on limited sample. 
+                Be selective - only bet when all games are 90%+ confidence.</li>
+
+            <li><strong>4+ Leg Parlays:</strong> Win rate of 0.0%. 
+                High correlation risk - consider avoiding.</li>
+
+            <li><strong>Threshold Optimization:</strong> With 84.4% false negative rate, 
+                consider testing 75% threshold to capture more opportunities.</li>
+        </ul>
+    </div>
+    
+    <h3>Key Takeaways</h3>
+    <ul>
+        <li>Overall parlay win rate: <strong>76.9%</strong></li>
+        <li>Perfect nights: <strong>10 of 13</strong></li>
+        <li>Losing nights: <strong>3</strong></li>
+        <li>Best performing parlay size: <strong>1-game parlays</strong> 
+            at 100.0%</li>
+    </ul>
+    
+    <div class="footer">
+        <p>NBA Minimum Alternate Totals System | Backtest Report | 2025</p>
+        <p>This report analyzes historical performance and does not guarantee future results.</p>
+    </div>
+    
+</body>
+</html>

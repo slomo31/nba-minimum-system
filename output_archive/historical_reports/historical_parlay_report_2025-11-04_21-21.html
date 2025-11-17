@@ -1,0 +1,996 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Historical Parlay Backtest Report - 2024-2025 Season</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        .summary-box {
+            background: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .win {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .loss {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .game-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin: 10px 0;
+            page-break-inside: avoid;
+        }
+        .game-header {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .game-detail {
+            font-size: 13px;
+            color: #555;
+            margin: 3px 0;
+        }
+        .recommendation {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏀 NBA Minimum Alternate - Historical Backtest</h1>
+    <h2>2024-2025 Season Parlay Performance</h2>
+    
+    <div class="summary-box">
+        <strong>Report Generated:</strong> November 04, 2025 at 09:21 PM<br>
+        <strong>Analysis Period:</strong> 2024-2025 NBA Season (Complete)<br>
+        <strong>Total Nights:</strong> 41<br>
+        <strong>Strategy:</strong> All YES predictions parlayed per night
+    </div>
+    
+    <h2>Executive Summary</h2>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">41</div>
+            <div class="stat-label">Betting Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">35</div>
+            <div class="stat-label">Perfect Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Losing Nights</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">85.4%</div>
+            <div class="stat-label">Parlay Win Rate</div>
+        </div>
+    </div>
+    
+    <h2>Performance by Parlay Size</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Parlay Size</th>
+                <th>Nights</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1-Game Parlay</td>
+                <td>35</td>
+                <td class="win">30</td>
+                <td class="loss">5</td>
+                <td><strong>85.7%</strong></td>
+            </tr>
+
+            <tr>
+                <td>2-Game Parlay</td>
+                <td>6</td>
+                <td class="win">5</td>
+                <td class="loss">1</td>
+                <td><strong>83.3%</strong></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    <h2>Profitability Analysis</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Parlay Type</th>
+                <th>Typical Odds</th>
+                <th>Your Win Rate</th>
+                <th>Expected Value</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1-Game </td>
+                <td>Individual</td>
+                <td><strong>85.7%</strong></td>
+                <td>$+4.76 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+            <tr>
+                <td>2-Game Parlay</td>
+                <td>+260</td>
+                <td><strong>83.3%</strong></td>
+                <td>$+200.00 per $100</td>
+                <td>✅ PROFITABLE</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    <div class="page-break"></div>
+    
+    <h2>Night-by-Night Results</h2>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-10-25 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Houston Rockets - 
+            Min: 221.0 | Actual: 236 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-06 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Los Angeles Lakers @ Memphis Grizzlies - 
+            Min: 220.0 | Actual: 245 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-08 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Golden State Warriors @ Cleveland Cavaliers - 
+            Min: 220.5 | Actual: 253 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-11 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Cleveland Cavaliers @ Chicago Bulls - 
+            Min: 224.5 | Actual: 232 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-13 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Los Angeles Lakers - 
+            Min: 220.0 | Actual: 251 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-15 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Golden State Warriors - 
+            Min: 220.5 | Actual: 241 | 
+            Conf: 82%
+        </div>
+
+        <div class="game-detail">
+            ✅ Chicago Bulls @ Cleveland Cavaliers - 
+            Min: 224.5 | Actual: 270 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2024-11-17 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (0W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Denver Nuggets @ Memphis Grizzlies - 
+            Min: 227.5 | Actual: 195 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-11-27 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Detroit Pistons @ Memphis Grizzlies - 
+            Min: 222.0 | Actual: 242 | 
+            Conf: 78%
+        </div>
+
+        <div class="game-detail">
+            ✅ Atlanta Hawks @ Cleveland Cavaliers - 
+            Min: 225.0 | Actual: 259 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2024-11-29 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (0W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Cleveland Cavaliers @ Atlanta Hawks - 
+            Min: 225.0 | Actual: 218 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-12-01 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Indiana Pacers @ Memphis Grizzlies - 
+            Min: 224.0 | Actual: 257 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2024-12-03 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (1W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Dallas Mavericks - 
+            Min: 221.0 | Actual: 237 | 
+            Conf: 77%
+        </div>
+
+        <div class="game-detail">
+            ❌ Washington Wizards @ Cleveland Cavaliers - 
+            Min: 215.0 | Actual: 205 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-12-15 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Los Angeles Lakers - 
+            Min: 220.0 | Actual: 226 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-12-19 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Golden State Warriors @ Memphis Grizzlies - 
+            Min: 220.5 | Actual: 237 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2024-12-23 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Los Angeles Clippers @ Memphis Grizzlies - 
+            Min: 219.5 | Actual: 224 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-01 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Atlanta Hawks @ Denver Nuggets - 
+            Min: 224.0 | Actual: 259 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-09 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Houston Rockets @ Memphis Grizzlies - 
+            Min: 221.0 | Actual: 234 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-13 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Houston Rockets - 
+            Min: 221.0 | Actual: 238 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-15 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Houston Rockets @ Denver Nuggets - 
+            Min: 220.0 | Actual: 236 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2025-01-22 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (0W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Cleveland Cavaliers @ Houston Rockets - 
+            Min: 221.0 | Actual: 217 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-25 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Houston Rockets @ Cleveland Cavaliers - 
+            Min: 221.0 | Actual: 266 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-27 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ New York Knicks - 
+            Min: 222.5 | Actual: 249 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-01-30 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Houston Rockets @ Memphis Grizzlies - 
+            Min: 221.0 | Actual: 239 | 
+            Conf: 82%
+        </div>
+
+        <div class="game-detail">
+            ✅ Atlanta Hawks @ Cleveland Cavaliers - 
+            Min: 225.0 | Actual: 252 | 
+            Conf: 77%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-02-02 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Dallas Mavericks @ Cleveland Cavaliers - 
+            Min: 221.0 | Actual: 245 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Milwaukee Bucks - 
+            Min: 222.0 | Actual: 251 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-02-07 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Cleveland Cavaliers @ Washington Wizards - 
+            Min: 215.0 | Actual: 258 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-02-20 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Indiana Pacers - 
+            Min: 224.0 | Actual: 240 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-02-23 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Cleveland Cavaliers - 
+            Min: 228.5 | Actual: 252 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-02-28 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ New York Knicks @ Memphis Grizzlies - 
+            Min: 222.5 | Actual: 227 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-04 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Cleveland Cavaliers @ Chicago Bulls - 
+            Min: 224.5 | Actual: 256 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-07 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Dallas Mavericks - 
+            Min: 221.0 | Actual: 233 | 
+            Conf: 77%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-14 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Cleveland Cavaliers @ Memphis Grizzlies - 
+            Min: 228.5 | Actual: 257 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-21 - 2-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (2W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Cleveland Cavaliers @ Phoenix Suns - 
+            Min: 220.5 | Actual: 235 | 
+            Conf: 80%
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Los Angeles Clippers - 
+            Min: 219.5 | Actual: 236 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2025-03-23 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (0W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Cleveland Cavaliers @ Utah Jazz - 
+            Min: 219.0 | Actual: 211 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ❌ 2025-03-24 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="loss">LOSS</span> 
+            (0W - 1L)
+        </div>
+
+        <div class="game-detail">
+            ❌ Milwaukee Bucks @ Phoenix Suns - 
+            Min: 214.0 | Actual: 214 | 
+            Conf: 80%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-28 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ New York Knicks @ Milwaukee Bucks - 
+            Min: 216.5 | Actual: 223 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-03-29 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Los Angeles Lakers @ Memphis Grizzlies - 
+            Min: 220.0 | Actual: 261 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-02 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ New York Knicks @ Cleveland Cavaliers - 
+            Min: 222.5 | Actual: 229 | 
+            Conf: 75%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-08 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Chicago Bulls @ Cleveland Cavaliers - 
+            Min: 224.5 | Actual: 248 | 
+            Conf: 82%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-10 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Minnesota Timberwolves @ Memphis Grizzlies - 
+            Min: 221.0 | Actual: 266 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-13 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Dallas Mavericks @ Memphis Grizzlies - 
+            Min: 221.0 | Actual: 229 | 
+            Conf: 77%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-15 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Memphis Grizzlies @ Golden State Warriors - 
+            Min: 220.5 | Actual: 237 | 
+            Conf: 78%
+        </div>
+
+    </div>
+
+    <div class="game-card">
+        <div class="game-header">
+            ✅ 2025-04-18 - 1-Game Parlay
+        </div>
+        <div class="game-detail">
+            <strong>Result:</strong> <span class="win">WIN</span> 
+            (1W - 0L)
+        </div>
+
+        <div class="game-detail">
+            ✅ Dallas Mavericks @ Memphis Grizzlies - 
+            Min: 221.0 | Actual: 226 | 
+            Conf: 77%
+        </div>
+
+    </div>
+
+    
+    <div class="page-break"></div>
+    
+    <h2>Key Insights</h2>
+    
+    <div class="recommendation">
+        <h3>💡 Findings from 2024-2025 Season</h3>
+        <ul>
+            <li><strong>Overall Parlay Win Rate:</strong> 85.4% across 41 nights</li>
+            <li><strong>Best Performing Size:</strong> 1-game parlays 
+                at 85.7% win rate</li>
+
+            <li><strong>1-Game Parlays:</strong> 85.7% win rate - STRONG performance</li>
+
+            <li><strong>2-Game Parlays:</strong> 83.3% win rate - STRONG performance</li>
+
+        </ul>
+    </div>
+    
+    <h3>Strategic Takeaways</h3>
+    <ul>
+        <li>Parlaying all YES bets per night creates variable parlay sizes</li>
+        <li>Smaller parlays (1-2 games) typically have higher win rates</li>
+        <li>Larger parlays (3+ games) face increased correlation risk</li>
+        <li>Consider selective parlaying: bet best 2 games, skip or bet others individually</li>
+    </ul>
+    
+    <div class="footer">
+        <p>NBA Minimum Alternate Totals System | Historical Backtest | 2024-2025 Season</p>
+        <p>This report analyzes historical performance and does not guarantee future results.</p>
+    </div>
+    
+</body>
+</html>
