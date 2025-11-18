@@ -1,9 +1,7 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-8a3a6ccbc11731675de956d61bd4f95d,2025-11-17 19:00:00-05:00,Milwaukee Bucks,Cleveland Cavaliers,213.5,-820,DraftKings
-a6422c3a56ec257e30b91638ef36a48e,2025-11-17 19:00:00-05:00,Indiana Pacers,Detroit Pistons,208.5,-820,DraftKings
-ffb9ef562c0313b3eb5c27e80822ae3f,2025-11-17 19:10:00-05:00,Los Angeles Clippers,Philadelphia 76ers,199.5,-850,DraftKings
-386b2abe66400fda8e18e80151fb0512,2025-11-17 19:30:00-05:00,Charlotte Hornets,Toronto Raptors,216.5,-850,DraftKings
-b1e7571e112833a08a46072bdf44a478,2025-11-17 19:30:00-05:00,New York Knicks,Miami Heat,220.5,-740,DraftKings
-471ffaffeffd40b0387b1a398fb2f8d9,2025-11-17 20:00:00-05:00,Dallas Mavericks,Minnesota Timberwolves,207.5,-840,DraftKings
-bc86ba3d19479aea6af13b12f3c29f68,2025-11-17 20:10:00-05:00,Oklahoma City Thunder,New Orleans Pelicans,205.5,-900,DraftKings
-0a353943755e93979775f392eb64d80a,2025-11-17 21:10:00-05:00,Chicago Bulls,Denver Nuggets,218.5,-830,DraftKings
+12aebc1081f4713b9ad2705d5364df58,2025-11-18 19:10:00-05:00,Golden State Warriors,Orlando Magic,201.5,-810,DraftKings
+b4b0491751ea1e073d53d393d72cfc2d,2025-11-18 19:40:00-05:00,Boston Celtics,Brooklyn Nets,201.5,-880,DraftKings
+0e5d47b1a4c507af55eafadbd01f0e9d,2025-11-18 20:10:00-05:00,Detroit Pistons,Atlanta Hawks,207.5,-800,DraftKings
+21a2823d808c3891e6bec16cbc206cb2,2025-11-18 20:10:00-05:00,Memphis Grizzlies,San Antonio Spurs,211.5,-800,DraftKings
+9c3c19beca914238f77162f180beba5b,2025-11-18 22:40:00-05:00,Utah Jazz,Los Angeles Lakers,216.5,-820,DraftKings
+e2ca3fc2c1c2fe0fac1d9fe069fe0779,2025-11-18 23:10:00-05:00,Phoenix Suns,Portland Trail Blazers,215.5,-850,DraftKings
