@@ -1,7 +1,24 @@
 # 📅 NBA MINIMUM SYSTEM - DAILY WORKFLOW
 
 **Your complete guide to running the system every day**
+# EVENING (5 PM):
+cd ~/Documents/nba_minimun_system && \
+python master_workflow.py && \
+python compare_tonight_thresholds.py && \
+python track_minimum_results.py && \
+python generate_dashboard.py && \
+git add . && \
+git commit -m "Picks $(date +%Y-%m-%d)" && \
+git push
 
+# AFTERNOON NEXT DAY (12-2 PM): ⬅️ Changed timing
+cd ~/Documents/nba_minimun_system && \
+python data_collection/game_results_collector.py && \
+python track_minimum_results.py && \
+python generate_dashboard.py && \
+git add . && \
+git commit -m "Results $(date +%Y-%m-%d)" && \
+git push
 ---
 
 ## ⏰ **WHEN TO RUN**
