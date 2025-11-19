@@ -1,7 +1,10 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-12aebc1081f4713b9ad2705d5364df58,2025-11-18 19:10:00-05:00,Golden State Warriors,Orlando Magic,201.5,-810,DraftKings
-b4b0491751ea1e073d53d393d72cfc2d,2025-11-18 19:40:00-05:00,Boston Celtics,Brooklyn Nets,201.5,-880,DraftKings
-0e5d47b1a4c507af55eafadbd01f0e9d,2025-11-18 20:10:00-05:00,Detroit Pistons,Atlanta Hawks,207.5,-800,DraftKings
-21a2823d808c3891e6bec16cbc206cb2,2025-11-18 20:10:00-05:00,Memphis Grizzlies,San Antonio Spurs,211.5,-800,DraftKings
-9c3c19beca914238f77162f180beba5b,2025-11-18 22:40:00-05:00,Utah Jazz,Los Angeles Lakers,216.5,-820,DraftKings
-e2ca3fc2c1c2fe0fac1d9fe069fe0779,2025-11-18 23:10:00-05:00,Phoenix Suns,Portland Trail Blazers,215.5,-850,DraftKings
+bffc94ea34d3aceace2f4536d77c5925,2025-11-19 19:00:00-05:00,Charlotte Hornets,Indiana Pacers,214.5,-880,DraftKings
+1c9e418efd98eb8040dc783345e4bc24,2025-11-19 19:00:00-05:00,Houston Rockets,Cleveland Cavaliers,211.5,-900,DraftKings
+ee79094a98d3645115a3e9c083f01a74,2025-11-19 19:00:00-05:00,Toronto Raptors,Philadelphia 76ers,212.5,-830,DraftKings
+301506911df04b3ac148721fae1aceae,2025-11-19 19:30:00-05:00,Golden State Warriors,Miami Heat,212.5,-670,DraftKings
+ffc5a7963fb53f25e210c1acc25e2fd2,2025-11-19 20:00:00-05:00,Denver Nuggets,New Orleans Pelicans,212.5,-900,DraftKings
+f43516e89095a0b6edbe793745a2e6ca,2025-11-19 20:00:00-05:00,Washington Wizards,Minnesota Timberwolves,216.5,-800,DraftKings
+6a4ab9a1ce6d4f90b0dafd6d6461c5eb,2025-11-19 20:00:00-05:00,Sacramento Kings,Oklahoma City Thunder,210.5,-820,DraftKings
+0bba63ebea7fd06ccc1a76376361195c,2025-11-19 21:30:00-05:00,New York Knicks,Dallas Mavericks,207.5,-770,DraftKings
+27a47dd17db5b4e2788c58cb75b827df,2025-11-19 22:10:00-05:00,Chicago Bulls,Portland Trail Blazers,222.5,-760,DraftKings
