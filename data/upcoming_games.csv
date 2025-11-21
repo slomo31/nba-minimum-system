@@ -1,5 +1,10 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-ff24293a6e10588cf0464c3b15faec80,2025-11-20 19:10:00-05:00,Los Angeles Clippers,Orlando Magic,197.5,-890,DraftKings
-79339c63d557efe85f89187c10bd15c4,2025-11-20 20:10:00-05:00,Atlanta Hawks,San Antonio Spurs,210.5,-770,DraftKings
-088f5bc93c60e40ff3b46827e155d74a,2025-11-20 20:10:00-05:00,Sacramento Kings,Memphis Grizzlies,212.5,-820,DraftKings
-613d151e38c4eba00ae07b8a72960d12,2025-11-20 20:10:00-05:00,Philadelphia 76ers,Milwaukee Bucks,204.5,-770,DraftKings
+58c5d4f9449efc54b2a2ceb71ca6878b,2025-11-21 19:00:00-05:00,Indiana Pacers,Cleveland Cavaliers,217.5,-790,DraftKings
+58e766fa4c1a69247703beea18def6cf,2025-11-21 19:40:00-05:00,Brooklyn Nets,Boston Celtics,200.5,-940,DraftKings
+731fa66351071a1e5cd387fd7087aa8f,2025-11-21 19:40:00-05:00,Washington Wizards,Toronto Raptors,218.5,-800,DraftKings
+76c06946a763643d09655bdcad0ccd33,2025-11-21 20:10:00-05:00,Miami Heat,Chicago Bulls,228.5,-680,DraftKings
+f383ac51e8102cfb59ce70f5e1a308ff,2025-11-21 20:40:00-05:00,New Orleans Pelicans,Dallas Mavericks,211.5,-830,DraftKings
+95d399e5dd6898e13b30f7aafb0ad214,2025-11-21 21:10:00-05:00,Minnesota Timberwolves,Phoenix Suns,212.5,-820,DraftKings
+8162993fb172c214bf7e7338079a0e79,2025-11-21 21:40:00-05:00,Denver Nuggets,Houston Rockets,213.5,-900,DraftKings
+460ca5da65548d349cb007bdceb84163,2025-11-21 22:10:00-05:00,Portland Trail Blazers,Golden State Warriors,216.5,-740,DraftKings
+ac0e9728d14d0db6b110a0e7eb050929,2025-11-21 22:10:00-05:00,Oklahoma City Thunder,Utah Jazz,213.5,-860,DraftKings
