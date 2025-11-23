@@ -1,8 +1,9 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-078f0883a88c1fb2deaf8a47b59c671f,2025-11-22 13:10:00-05:00,Los Angeles Clippers,Charlotte Hornets,205.5,-830,DraftKings
-99eadf1bba6ca10f585edb7d3c4a3e6c,2025-11-22 17:10:00-05:00,New York Knicks,Orlando Magic,207.5,-820,DraftKings
-0fdd095e3e0689aede516def5ccb891f,2025-11-22 19:10:00-05:00,Atlanta Hawks,New Orleans Pelicans,208.5,-860,DraftKings
-f4044c89efb759cfdc3bf2545ffcf0bc,2025-11-22 20:10:00-05:00,Washington Wizards,Chicago Bulls,221.5,-750,DraftKings
-46118acd6bad6d91e3a202453d0f8f50,2025-11-22 20:10:00-05:00,Detroit Pistons,Milwaukee Bucks,201.5,-820,DraftKings
-38c536954f1b21020fbae78711a00d28,2025-11-22 20:40:00-05:00,Memphis Grizzlies,Dallas Mavericks,205.5,-830,DraftKings
-9e0e2a7be4f8871e4a4d2ae25ed7d6f1,2025-11-22 22:10:00-05:00,Sacramento Kings,Denver Nuggets,215.5,-710,DraftKings
+afc47a0aae772c23a3c9b8a75f743291,2025-11-23 13:10:00-05:00,Miami Heat,Philadelphia 76ers,218.5,-770,DraftKings
+9221d7f71811f8a52214c26e5991a294,2025-11-23 18:10:00-05:00,Charlotte Hornets,Atlanta Hawks,210.5,-770,DraftKings
+202da3ad3e50703f37e61852b31c139e,2025-11-23 18:10:00-05:00,Orlando Magic,Boston Celtics,199.5,-820,DraftKings
+6164a6e8d6c9ed4af78103e929e2dddd,2025-11-23 18:10:00-05:00,Brooklyn Nets,Toronto Raptors,207.5,-870,DraftKings
+38be9cf3227ca4d2ff10639d21d2db4a,2025-11-23 18:10:00-05:00,Los Angeles Clippers,Cleveland Cavaliers,206.5,-880,DraftKings
+5c7ba711cc75765ee4a291d1ac6642d0,2025-11-23 19:10:00-05:00,Portland Trail Blazers,Oklahoma City Thunder,213.5,-790,DraftKings
+31f8f03b475171fb3f3e77385f1e7699,2025-11-23 20:10:00-05:00,Los Angeles Lakers,Utah Jazz,223.5,-780,DraftKings
+209008bee381b4efba5ff2c8de03bc60,2025-11-23 20:10:00-05:00,San Antonio Spurs,Phoenix Suns,213.5,-780,DraftKings
