@@ -1,9 +1,11 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-afc47a0aae772c23a3c9b8a75f743291,2025-11-23 13:10:00-05:00,Miami Heat,Philadelphia 76ers,218.5,-770,DraftKings
-9221d7f71811f8a52214c26e5991a294,2025-11-23 18:10:00-05:00,Charlotte Hornets,Atlanta Hawks,210.5,-770,DraftKings
-202da3ad3e50703f37e61852b31c139e,2025-11-23 18:10:00-05:00,Orlando Magic,Boston Celtics,199.5,-820,DraftKings
-6164a6e8d6c9ed4af78103e929e2dddd,2025-11-23 18:10:00-05:00,Brooklyn Nets,Toronto Raptors,207.5,-870,DraftKings
-38be9cf3227ca4d2ff10639d21d2db4a,2025-11-23 18:10:00-05:00,Los Angeles Clippers,Cleveland Cavaliers,206.5,-880,DraftKings
-5c7ba711cc75765ee4a291d1ac6642d0,2025-11-23 19:10:00-05:00,Portland Trail Blazers,Oklahoma City Thunder,213.5,-790,DraftKings
-31f8f03b475171fb3f3e77385f1e7699,2025-11-23 20:10:00-05:00,Los Angeles Lakers,Utah Jazz,223.5,-780,DraftKings
-209008bee381b4efba5ff2c8de03bc60,2025-11-23 20:10:00-05:00,San Antonio Spurs,Phoenix Suns,213.5,-780,DraftKings
+5cedd844958a51d5529d01526c06c65d,2025-11-24 19:10:00-05:00,Cleveland Cavaliers,Toronto Raptors,215.5,-810,DraftKings
+4509c58fbf9b92ed59ba8f130267673a,2025-11-24 19:10:00-05:00,Detroit Pistons,Indiana Pacers,213.5,-790,DraftKings
+c5f91d856d647cb5a6c1d0899b8e330f,2025-11-24 19:40:00-05:00,New York Knicks,Brooklyn Nets,208.5,-900,DraftKings
+64f069ba2bdd44a1a8b827e3a0a58c5d,2025-11-24 19:40:00-05:00,Dallas Mavericks,Miami Heat,220.5,-740,DraftKings
+6a1207eb38c703385ba9624905fab3ba,2025-11-24 20:10:00-05:00,Chicago Bulls,New Orleans Pelicans,222.5,-800,DraftKings
+a5a8ffb9d6f603e31350f25ce5c5c6f0,2025-11-24 20:10:00-05:00,Denver Nuggets,Memphis Grizzlies,212.5,-830,DraftKings
+f6c28ca116d0a8731714246ea506b242,2025-11-24 20:10:00-05:00,Portland Trail Blazers,Milwaukee Bucks,212.5,-780,DraftKings
+bd5ab48d88ac2df3a17c43a6d06e52ad,2025-11-24 21:40:00-05:00,Houston Rockets,Phoenix Suns,203.5,-850,DraftKings
+c59eff6b208318c28ec7d189749e568d,2025-11-24 22:10:00-05:00,Utah Jazz,Golden State Warriors,218.5,-690,DraftKings
+3640b757990601e61f5ca4fb241d99a8,2025-11-24 22:10:00-05:00,Minnesota Timberwolves,Sacramento Kings,216.5,-780,DraftKings
