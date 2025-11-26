@@ -1,4 +1,10 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-9ad9826a5e6c2de97a7596b87f1e3c76,2025-11-25 19:10:00-05:00,Atlanta Hawks,Washington Wizards,214.5,-820,DraftKings
-a43d5e85ccdf728d56f44bfda12b9d06,2025-11-25 20:10:00-05:00,Orlando Magic,Philadelphia 76ers,206.5,-820,DraftKings
-b7209d3aae71bb2dc1ca8f9412a95a4a,2025-11-25 23:10:00-05:00,Los Angeles Clippers,Los Angeles Lakers,207.5,-840,DraftKings
+e69335f9f4054ca683c7219dabdeac53,2025-11-26 17:10:00-05:00,Detroit Pistons,Boston Celtics,209.5,-830,DraftKings
+b054e05bbd0dadc5f4947032a332045e,2025-11-26 19:10:00-05:00,New York Knicks,Charlotte Hornets,217.5,-770,DraftKings
+54ab67c4d54079c2044f6de8397ad072,2025-11-26 19:40:00-05:00,Indiana Pacers,Toronto Raptors,212.5,-890,DraftKings
+932a6b46c8f41cd9df4a23db7aaf9988,2025-11-26 19:40:00-05:00,Milwaukee Bucks,Miami Heat,215.5,-800,DraftKings
+63748218430054c9c947b1beeab351c9,2025-11-26 19:40:00-05:00,Minnesota Timberwolves,Oklahoma City Thunder,205.5,-760,DraftKings
+7a866eae268b30cd60aacad8fd8f3786,2025-11-26 20:10:00-05:00,Memphis Grizzlies,New Orleans Pelicans,213.5,-830,DraftKings
+c728773fb406fb68e411f28e838ef9ed,2025-11-26 22:10:00-05:00,Houston Rockets,Golden State Warriors,203.5,-830,DraftKings
+640a3b0d618c26bd0e462da74aad454f,2025-11-26 22:10:00-05:00,Phoenix Suns,Sacramento Kings,211.5,-840,DraftKings
+9d56baa432e13e1879c5a7e08ac23e79,2025-11-26 22:10:00-05:00,San Antonio Spurs,Portland Trail Blazers,218.5,-710,DraftKings
