@@ -10,6 +10,7 @@ python generate_dashboard.py && \
 git add . && \
 git commit -m "Picks $(date +%Y-%m-%d)" && \
 git push
+git add . && git commit -m "Update" && git push origin main
 
 # AFTERNOON NEXT DAY (12-2 PM): ⬅️ Changed timing
 cd ~/Documents/nba_minimun_system && \
