@@ -26,8 +26,8 @@ def dashboard():
             """
         
         # Read the dashboard HTML
-        if os.path.exists('min_total_dashboard.html'):
-            with open('min_total_dashboard.html', 'r') as f:
+        if os.path.exists('index.html'):
+            with open('index.html', 'r') as f:
                 html_content = f.read()
             return html_content
         else:
