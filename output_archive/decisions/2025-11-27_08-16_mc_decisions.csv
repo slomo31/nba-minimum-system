@@ -1,0 +1,12 @@
+game_time,away_team,home_team,game,minimum_total,minimum_odds,original_confidence,original_decision,mc_probability,mc_decision,mc_level,avg_simulated_total,std_simulated_total,percentile_5,percentile_95,risk_factors,flag
+2025-11-28 19:40:00-05:00,Cleveland Cavaliers,Atlanta Hawks,Cleveland Cavaliers @ Atlanta Hawks,216.5,-800,87,YES,86.35,YES,HIGH,235.8,17.6,207.1,265.2,['Cleveland Cavaliers high variance (±12.8)'],
+2025-11-28 19:40:00-05:00,Philadelphia 76ers,Brooklyn Nets,Philadelphia 76ers @ Brooklyn Nets,206.5,-820,72,MAYBE,90.25,YES,HIGH,226.5,15.5,201.9,252.2,[],📈 UPGRADED: Original missed this - MC shows it's safer than expected
+2025-11-28 19:40:00-05:00,Chicago Bulls,Charlotte Hornets,Chicago Bulls @ Charlotte Hornets,224.5,-760,84,YES,77.84,LEAN_NO,LOW,237.5,16.7,210.3,265.0,[],⚠️ DOWNGRADED: Original confidence high but MC found hidden risk
+2025-11-28 19:40:00-05:00,Orlando Magic,Detroit Pistons,Orlando Magic @ Detroit Pistons,211.5,-770,92,YES,96.04,STRONG_YES,VERY HIGH,239.4,16.1,213.2,265.8,[],
+2025-11-28 19:40:00-05:00,Washington Wizards,Indiana Pacers,Washington Wizards @ Indiana Pacers,215.5,-820,46,NO,68.78,NO,VERY LOW,224.6,17.8,195.9,254.1,[],
+2025-11-28 19:40:00-05:00,Milwaukee Bucks,New York Knicks,Milwaukee Bucks @ New York Knicks,213.5,-740,78,MAYBE,89.88,YES,HIGH,236.9,18.2,207.1,266.8,['Milwaukee Bucks high variance (±12.8)'],
+2025-11-28 21:40:00-05:00,San Antonio Spurs,Denver Nuggets,San Antonio Spurs @ Denver Nuggets,214.5,-1060,78,MAYBE,98.86,STRONG_YES,VERY HIGH,242.3,12.6,221.4,263.0,[],
+2025-11-28 21:40:00-05:00,Phoenix Suns,Oklahoma City Thunder,Phoenix Suns @ Oklahoma City Thunder,205.5,-1040,78,MAYBE,98.05,STRONG_YES,VERY HIGH,240.0,16.7,212.8,267.9,[],
+2025-11-28 21:40:00-05:00,Sacramento Kings,Utah Jazz,Sacramento Kings @ Utah Jazz,219.5,-840,62,NO,69.59,NO,VERY LOW,230.9,20.7,197.3,265.6,['Utah Jazz high variance (±17.1)'],
+2025-11-28 22:10:00-05:00,Dallas Mavericks,Los Angeles Lakers,Dallas Mavericks @ Los Angeles Lakers,209.5,-800,45,NO,83.29,MAYBE,MEDIUM,228.0,18.5,198.3,259.5,['Dallas Mavericks high variance (±13.1)'],
+2025-11-28 22:10:00-05:00,Memphis Grizzlies,Los Angeles Clippers,Memphis Grizzlies @ Los Angeles Clippers,205.5,-920,57,NO,85.04,YES,HIGH,224.7,18.2,195.4,255.1,['Los Angeles Clippers high variance (±13.0)'],📈 UPGRADED: Original missed this - MC shows it's safer than expected

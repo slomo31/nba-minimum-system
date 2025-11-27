@@ -1,113 +1,4 @@
-"""
-NBA Minimum Totals Dashboard Generator
-=======================================
-Creates a modern dashboard with Monte Carlo and Legacy tabs
-Matching the CBB dashboard style
-"""
-
-import pandas as pd
-import os
-import glob
-from datetime import datetime
-import json
-
-
-def load_mc_predictions():
-    """Load the latest MC predictions"""
-    mc_files = glob.glob('output_archive/decisions/*_mc_decisions.csv')
-    if not mc_files:
-        return None
-    
-    latest = max(mc_files, key=os.path.getctime)
-    return pd.read_csv(latest)
-
-
-def load_legacy_predictions():
-    """Load legacy (original) predictions from tracker"""
-    if os.path.exists('min_total_results_tracker.csv'):
-        return pd.read_csv('min_total_results_tracker.csv')
-    return None
-
-
-def load_mc_results():
-    """Load MC results tracker if exists"""
-    if os.path.exists('mc_results_tracker.csv'):
-        return pd.read_csv('mc_results_tracker.csv')
-    return None
-
-
-def generate_dashboard():
-    """Generate the full dashboard HTML"""
-    
-    # Load data
-    mc_predictions = load_mc_predictions()
-    legacy_data = load_legacy_predictions()
-    mc_results = load_mc_results()
-    
-    # Calculate MC stats
-    mc_record = "0-0"
-    mc_win_rate = "0.0"
-    mc_pending = 0
-    mc_avg_hit_rate = "0.0"
-    mc_picks = []
-    
-    if mc_predictions is not None:
-        # Get YES and STRONG_YES picks
-        yes_picks = mc_predictions[mc_predictions['mc_decision'].isin(['STRONG_YES', 'YES'])]
-        mc_pending = len(yes_picks)
-        mc_avg_hit_rate = f"{yes_picks['mc_probability'].mean():.1f}" if len(yes_picks) > 0 else "0.0"
-        
-        for _, row in mc_predictions.iterrows():
-            mc_picks.append({
-                'game': row.get('game', f"{row.get('away_team', '')} @ {row.get('home_team', '')}"),
-                'line': row.get('minimum_total', 0),
-                'mc_prob': row.get('mc_probability', 0),
-                'decision': row.get('mc_decision', 'NO'),
-                'avg_sim': row.get('avg_simulated_total', 0),
-                'risk_factors': row.get('risk_factors', '')
-            })
-    
-    if mc_results is not None:
-        wins = len(mc_results[mc_results['result'] == 'WIN'])
-        losses = len(mc_results[mc_results['result'] == 'LOSS'])
-        mc_record = f"{wins}-{losses}"
-        mc_win_rate = f"{wins/(wins+losses)*100:.1f}" if (wins+losses) > 0 else "0.0"
-    
-    # Calculate Legacy stats
-    legacy_record = "0-0"
-    legacy_win_rate = "0.0"
-    legacy_pending = 0
-    legacy_picks = []
-    
-    if legacy_data is not None:
-        completed = legacy_data[legacy_data['result'].isin(['WIN', 'LOSS'])]
-        wins = len(completed[completed['result'] == 'WIN'])
-        losses = len(completed[completed['result'] == 'LOSS'])
-        legacy_record = f"{wins}-{losses}"
-        legacy_win_rate = f"{wins/(wins+losses)*100:.1f}" if (wins+losses) > 0 else "0.0"
-        legacy_pending = len(legacy_data[legacy_data['result'] == 'PENDING'])
-        
-        # Get recent legacy picks
-        for _, row in legacy_data.tail(20).iterrows():
-            legacy_picks.append({
-                'game': row.get('game', ''),
-                'line': row.get('minimum_total', 0),
-                'confidence': row.get('confidence', 0),
-                'decision': row.get('decision', ''),
-                'result': row.get('result', 'PENDING')
-            })
-    
-    # Sort MC picks by probability
-    mc_picks.sort(key=lambda x: x['mc_prob'], reverse=True)
-    
-    # Categorize MC picks
-    strong_yes_picks = [p for p in mc_picks if p['decision'] == 'STRONG_YES']
-    yes_picks = [p for p in mc_picks if p['decision'] == 'YES']
-    maybe_picks = [p for p in mc_picks if p['decision'] == 'MAYBE']
-    skip_picks = [p for p in mc_picks if p['decision'] in ['LEAN_NO', 'NO']]
-    
-    # Generate HTML
-    html = f'''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -115,44 +6,44 @@ def generate_dashboard():
     <title>NBA Minimum Totals</title>
     <meta http-equiv="refresh" content="300">
     <style>
-        * {{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }}
+        }
         
-        body {{
+        body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
             color: #ffffff;
             padding: 20px;
-        }}
+        }
         
-        .container {{
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-        }}
+        }
         
         /* Header */
-        .header {{
+        .header {
             text-align: center;
             margin-bottom: 30px;
-        }}
+        }
         
-        .header h1 {{
+        .header h1 {
             font-size: 2.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
-        }}
+        }
         
-        .header h1 .emoji {{
+        .header h1 .emoji {
             font-size: 2.5rem;
-        }}
+        }
         
-        .badge {{
+        .badge {
             background: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
             color: #000;
             padding: 6px 16px;
@@ -160,29 +51,29 @@ def generate_dashboard():
             font-size: 0.9rem;
             font-weight: 600;
             margin-left: 15px;
-        }}
+        }
         
-        .subtitle {{
+        .subtitle {
             color: #94a3b8;
             margin-top: 8px;
             font-size: 1rem;
-        }}
+        }
         
-        .last-updated {{
+        .last-updated {
             color: #64748b;
             font-size: 0.85rem;
             margin-top: 5px;
-        }}
+        }
         
         /* Tab Navigation */
-        .tab-nav {{
+        .tab-nav {
             display: flex;
             gap: 10px;
             margin-bottom: 25px;
             justify-content: center;
-        }}
+        }
         
-        .tab-btn {{
+        .tab-btn {
             background: rgba(255, 255, 255, 0.1);
             border: none;
             color: #fff;
@@ -195,78 +86,78 @@ def generate_dashboard():
             display: flex;
             align-items: center;
             gap: 8px;
-        }}
+        }
         
-        .tab-btn:hover {{
+        .tab-btn:hover {
             background: rgba(255, 255, 255, 0.2);
-        }}
+        }
         
-        .tab-btn.active {{
+        .tab-btn.active {
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-        }}
+        }
         
-        .tab-btn .count {{
+        .tab-btn .count {
             background: rgba(255, 255, 255, 0.2);
             padding: 2px 10px;
             border-radius: 12px;
             font-size: 0.85rem;
-        }}
+        }
         
-        .tab-btn.active .count {{
+        .tab-btn.active .count {
             background: rgba(255, 255, 255, 0.3);
-        }}
+        }
         
         /* Tab Content */
-        .tab-content {{
+        .tab-content {
             display: none;
-        }}
+        }
         
-        .tab-content.active {{
+        .tab-content.active {
             display: block;
-        }}
+        }
         
         /* Stats Grid */
-        .stats-grid {{
+        .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             margin-bottom: 25px;
-        }}
+        }
         
-        @media (max-width: 768px) {{
-            .stats-grid {{
+        @media (max-width: 768px) {
+            .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
-            }}
-        }}
+            }
+        }
         
-        .stat-card {{
+        .stat-card {
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 20px;
             text-align: center;
-        }}
+        }
         
-        .stat-label {{
+        .stat-label {
             color: #94a3b8;
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 8px;
-        }}
+        }
         
-        .stat-value {{
+        .stat-value {
             font-size: 2.2rem;
             font-weight: 700;
             color: #fff;
-        }}
+        }
         
-        .stat-value.green {{
+        .stat-value.green {
             color: #22c55e;
-        }}
+        }
         
         /* Refresh Button */
-        .refresh-btn {{
+        .refresh-btn {
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             border: none;
             color: #fff;
@@ -280,43 +171,43 @@ def generate_dashboard():
             align-items: center;
             gap: 8px;
             transition: transform 0.2s ease;
-        }}
+        }
         
-        .refresh-btn:hover {{
+        .refresh-btn:hover {
             transform: scale(1.02);
-        }}
+        }
         
         /* Section Headers */
-        .section-header {{
+        .section-header {
             display: flex;
             align-items: center;
             gap: 10px;
             margin: 25px 0 15px;
             font-size: 1.1rem;
             font-weight: 600;
-        }}
+        }
         
-        .section-header .dot {{
+        .section-header .dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-        }}
+        }
         
-        .section-header .dot.green {{ background: #22c55e; }}
-        .section-header .dot.yellow {{ background: #eab308; }}
-        .section-header .dot.orange {{ background: #f97316; }}
-        .section-header .dot.red {{ background: #ef4444; }}
-        .section-header .dot.gray {{ background: #6b7280; }}
+        .section-header .dot.green { background: #22c55e; }
+        .section-header .dot.yellow { background: #eab308; }
+        .section-header .dot.orange { background: #f97316; }
+        .section-header .dot.red { background: #ef4444; }
+        .section-header .dot.gray { background: #6b7280; }
         
-        .section-subtext {{
+        .section-subtext {
             color: #6b7280;
             font-size: 0.85rem;
             margin-left: 10px;
             font-weight: 400;
-        }}
+        }
         
         /* Pick Cards */
-        .pick-card {{
+        .pick-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
             padding: 16px 20px;
@@ -326,93 +217,93 @@ def generate_dashboard():
             align-items: center;
             border-left: 4px solid transparent;
             transition: all 0.2s ease;
-        }}
+        }
         
-        .pick-card:hover {{
+        .pick-card:hover {
             background: rgba(255, 255, 255, 0.08);
-        }}
+        }
         
-        .pick-card.strong-yes {{ border-left-color: #22c55e; }}
-        .pick-card.yes {{ border-left-color: #84cc16; }}
-        .pick-card.maybe {{ border-left-color: #f97316; }}
-        .pick-card.skip {{ border-left-color: #6b7280; }}
-        .pick-card.win {{ border-left-color: #22c55e; }}
-        .pick-card.loss {{ border-left-color: #ef4444; }}
-        .pick-card.pending {{ border-left-color: #eab308; }}
+        .pick-card.strong-yes { border-left-color: #22c55e; }
+        .pick-card.yes { border-left-color: #84cc16; }
+        .pick-card.maybe { border-left-color: #f97316; }
+        .pick-card.skip { border-left-color: #6b7280; }
+        .pick-card.win { border-left-color: #22c55e; }
+        .pick-card.loss { border-left-color: #ef4444; }
+        .pick-card.pending { border-left-color: #eab308; }
         
-        .pick-info h3 {{
+        .pick-info h3 {
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 4px;
-        }}
+        }
         
-        .pick-info .details {{
+        .pick-info .details {
             color: #94a3b8;
             font-size: 0.85rem;
-        }}
+        }
         
-        .pick-prob {{
+        .pick-prob {
             text-align: right;
-        }}
+        }
         
-        .pick-prob .value {{
+        .pick-prob .value {
             font-size: 1.4rem;
             font-weight: 700;
-        }}
+        }
         
-        .pick-prob .value.green {{ color: #22c55e; }}
-        .pick-prob .value.lime {{ color: #84cc16; }}
-        .pick-prob .value.orange {{ color: #f97316; }}
-        .pick-prob .value.gray {{ color: #6b7280; }}
+        .pick-prob .value.green { color: #22c55e; }
+        .pick-prob .value.lime { color: #84cc16; }
+        .pick-prob .value.orange { color: #f97316; }
+        .pick-prob .value.gray { color: #6b7280; }
         
-        .pick-prob .label {{
+        .pick-prob .label {
             font-size: 0.7rem;
             padding: 3px 8px;
             border-radius: 4px;
             text-transform: uppercase;
             font-weight: 600;
-        }}
+        }
         
-        .pick-prob .label.yes {{ background: #22c55e; color: #000; }}
-        .pick-prob .label.maybe {{ background: #f97316; color: #000; }}
-        .pick-prob .label.skip {{ background: #6b7280; color: #fff; }}
-        .pick-prob .label.win {{ background: #22c55e; color: #000; }}
-        .pick-prob .label.loss {{ background: #ef4444; color: #fff; }}
-        .pick-prob .label.pending {{ background: #eab308; color: #000; }}
+        .pick-prob .label.yes { background: #22c55e; color: #000; }
+        .pick-prob .label.maybe { background: #f97316; color: #000; }
+        .pick-prob .label.skip { background: #6b7280; color: #fff; }
+        .pick-prob .label.win { background: #22c55e; color: #000; }
+        .pick-prob .label.loss { background: #ef4444; color: #fff; }
+        .pick-prob .label.pending { background: #eab308; color: #000; }
         
         /* Parlay Section */
-        .parlay-section {{
+        .parlay-section {
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.2) 100%);
             border-radius: 16px;
             padding: 20px;
             margin-top: 25px;
             border: 1px solid rgba(59, 130, 246, 0.3);
-        }}
+        }
         
-        .parlay-section h3 {{
+        .parlay-section h3 {
             font-size: 1.1rem;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 10px;
-        }}
+        }
         
-        .parlay-legs {{
+        .parlay-legs {
             margin-bottom: 15px;
-        }}
+        }
         
-        .parlay-leg {{
+        .parlay-leg {
             display: flex;
             justify-content: space-between;
             padding: 8px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }}
+        }
         
-        .parlay-leg:last-child {{
+        .parlay-leg:last-child {
             border-bottom: none;
-        }}
+        }
         
-        .parlay-combined {{
+        .parlay-combined {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -420,27 +311,27 @@ def generate_dashboard():
             padding: 12px 16px;
             border-radius: 8px;
             margin-top: 10px;
-        }}
+        }
         
-        .parlay-combined .label {{
+        .parlay-combined .label {
             font-weight: 600;
-        }}
+        }
         
-        .parlay-combined .value {{
+        .parlay-combined .value {
             font-size: 1.3rem;
             font-weight: 700;
             color: #22c55e;
-        }}
+        }
         
         /* Footer */
-        .footer {{
+        .footer {
             text-align: center;
             color: #64748b;
             font-size: 0.8rem;
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }}
+        }
     </style>
 </head>
 <body>
@@ -453,18 +344,18 @@ def generate_dashboard():
                 <span class="badge">MONTE CARLO</span>
             </h1>
             <p class="subtitle">Simulation-Based Analysis (10,000 sims per game)</p>
-            <p class="last-updated">Last updated: {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
+            <p class="last-updated">Last updated: November 27, 2025 at 10:20 AM</p>
         </div>
         
         <!-- Tab Navigation -->
         <div class="tab-nav">
             <button class="tab-btn active" onclick="showTab('mc')">
                 🎲 Monte Carlo
-                <span class="count">{len([p for p in mc_picks if p['decision'] in ['STRONG_YES', 'YES']])}</span>
+                <span class="count">6</span>
             </button>
             <button class="tab-btn" onclick="showTab('legacy')">
                 📊 Legacy
-                <span class="count">{legacy_pending}</span>
+                <span class="count">20</span>
             </button>
         </div>
         
@@ -474,19 +365,19 @@ def generate_dashboard():
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Record</div>
-                    <div class="stat-value">{mc_record}</div>
+                    <div class="stat-value">0-0</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Win Rate</div>
-                    <div class="stat-value green">{mc_win_rate}%</div>
+                    <div class="stat-value green">0.0%</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Pending Picks</div>
-                    <div class="stat-value">{len([p for p in mc_picks if p['decision'] in ['STRONG_YES', 'YES']])}</div>
+                    <div class="stat-value">6</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Avg Hit Rate</div>
-                    <div class="stat-value green">{mc_avg_hit_rate}%</div>
+                    <div class="stat-value green">91.8%</div>
                 </div>
             </div>
             
@@ -497,176 +388,174 @@ def generate_dashboard():
             <!-- STRONG YES Section -->
             <div class="section-header">
                 <span class="dot green"></span>
-                STRONG YES - Lock It In ({len(strong_yes_picks)})
+                STRONG YES - Lock It In (3)
                 <span class="section-subtext">92%+ Hit Rate</span>
             </div>
-'''
-    
-    # Add STRONG YES picks
-    for pick in strong_yes_picks:
-        html += f'''
+
             <div class="pick-card strong-yes">
                 <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
+                    <h3>San Antonio Spurs @ Denver Nuggets</h3>
+                    <div class="details">OVER 214.5 • Sim avg: 241.9</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value green">{pick['mc_prob']}%</div>
+                    <div class="value green">98.71%</div>
                     <span class="label yes">YES</span>
                 </div>
             </div>
-'''
-    
-    if not strong_yes_picks:
-        html += '''
-            <div class="pick-card">
+
+            <div class="pick-card strong-yes">
                 <div class="pick-info">
-                    <h3>No STRONG YES picks today</h3>
-                    <div class="details">Check back later for updates</div>
+                    <h3>Phoenix Suns @ Oklahoma City Thunder</h3>
+                    <div class="details">OVER 205.5 • Sim avg: 235.0</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value green">96.43%</div>
+                    <span class="label yes">YES</span>
                 </div>
             </div>
-'''
-    
-    # YES Section
-    html += f'''
+
+            <div class="pick-card strong-yes">
+                <div class="pick-info">
+                    <h3>Orlando Magic @ Detroit Pistons</h3>
+                    <div class="details">OVER 213.5 • Sim avg: 239.3</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value green">94.61%</div>
+                    <span class="label yes">YES</span>
+                </div>
+            </div>
+
             <!-- YES Section -->
             <div class="section-header">
                 <span class="dot yellow"></span>
-                YES - Bet These ({len(yes_picks)})
+                YES - Bet These (3)
                 <span class="section-subtext">85%+ Hit Rate</span>
             </div>
-'''
-    
-    for pick in yes_picks:
-        html += f'''
+
             <div class="pick-card yes">
                 <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
+                    <h3>Milwaukee Bucks @ New York Knicks</h3>
+                    <div class="details">OVER 213.5 • Sim avg: 237.0</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value lime">{pick['mc_prob']}%</div>
+                    <div class="value lime">90.4%</div>
                     <span class="label yes">YES</span>
                 </div>
             </div>
-'''
-    
-    if not yes_picks:
-        html += '''
-            <div class="pick-card">
+
+            <div class="pick-card yes">
                 <div class="pick-info">
-                    <h3>No YES picks today</h3>
-                    <div class="details">Check back later for updates</div>
+                    <h3>Dallas Mavericks @ Los Angeles Lakers</h3>
+                    <div class="details">OVER 208.5 • Sim avg: 228.3</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value lime">85.31%</div>
+                    <span class="label yes">YES</span>
                 </div>
             </div>
-'''
-    
-    # MAYBE Section
-    html += f'''
+
+            <div class="pick-card yes">
+                <div class="pick-info">
+                    <h3>Cleveland Cavaliers @ Atlanta Hawks</h3>
+                    <div class="details">OVER 217.5 • Sim avg: 236.0</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value lime">85.06%</div>
+                    <span class="label yes">YES</span>
+                </div>
+            </div>
+
             <!-- MAYBE Section -->
             <div class="section-header">
                 <span class="dot orange"></span>
-                MAYBE - Consider ({len(maybe_picks)})
+                MAYBE - Consider (1)
                 <span class="section-subtext">78-85% Hit Rate - Higher Risk</span>
             </div>
-'''
-    
-    for pick in maybe_picks:
-        html += f'''
+
             <div class="pick-card maybe">
                 <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
+                    <h3>Philadelphia 76ers @ Brooklyn Nets</h3>
+                    <div class="details">OVER 206.5 • Sim avg: 219.7</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value orange">{pick['mc_prob']}%</div>
+                    <div class="value orange">81.2%</div>
                     <span class="label maybe">MAYBE</span>
                 </div>
             </div>
-'''
-    
-    if not maybe_picks:
-        html += '''
-            <div class="pick-card">
-                <div class="pick-info">
-                    <h3>No MAYBE picks today</h3>
-                </div>
-            </div>
-'''
-    
-    # SKIP Section
-    html += f'''
+
             <!-- SKIP Section -->
             <div class="section-header">
                 <span class="dot gray"></span>
-                SKIP ({len(skip_picks)})
+                SKIP (4)
                 <span class="section-subtext">Below 78% - Do Not Bet</span>
             </div>
-'''
-    
-    for pick in skip_picks[:5]:  # Only show first 5
-        html += f'''
+
             <div class="pick-card skip">
                 <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']}</div>
+                    <h3>Chicago Bulls @ Charlotte Hornets</h3>
+                    <div class="details">OVER 225.5</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value gray">{pick['mc_prob']}%</div>
+                    <div class="value gray">75.98%</div>
                     <span class="label skip">SKIP</span>
                 </div>
             </div>
-'''
-    
-    if len(skip_picks) > 5:
-        html += f'''
+
             <div class="pick-card skip">
                 <div class="pick-info">
-                    <h3>... and {len(skip_picks) - 5} more</h3>
+                    <h3>Memphis Grizzlies @ Los Angeles Clippers</h3>
+                    <div class="details">OVER 205.5</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">75.46%</div>
+                    <span class="label skip">SKIP</span>
                 </div>
             </div>
-'''
-    
-    # Parlay Section
-    if len(strong_yes_picks) + len(yes_picks) >= 2:
-        all_yes = strong_yes_picks + yes_picks
-        all_yes.sort(key=lambda x: x['mc_prob'], reverse=True)
-        top_picks = all_yes[:3]
-        
-        combined_prob = 1.0
-        for p in top_picks[:2]:
-            combined_prob *= (p['mc_prob'] / 100)
-        combined_2leg = combined_prob * 100
-        
-        combined_prob_3 = 1.0
-        for p in top_picks[:3]:
-            combined_prob_3 *= (p['mc_prob'] / 100)
-        combined_3leg = combined_prob_3 * 100
-        
-        html += f'''
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Sacramento Kings @ Utah Jazz</h3>
+                    <div class="details">OVER 219.5</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">68.94%</div>
+                    <span class="label skip">SKIP</span>
+                </div>
+            </div>
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Washington Wizards @ Indiana Pacers</h3>
+                    <div class="details">OVER 218.5</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">62.99%</div>
+                    <span class="label skip">SKIP</span>
+                </div>
+            </div>
+
             <!-- Parlay Recommendation -->
             <div class="parlay-section">
                 <h3>🎯 Recommended Parlay</h3>
                 <div class="parlay-legs">
-'''
-        for i, p in enumerate(top_picks[:2]):
-            html += f'''
+
                     <div class="parlay-leg">
-                        <span>{p['game']}</span>
-                        <span>{p['mc_prob']}%</span>
+                        <span>San Antonio Spurs @ Denver Nuggets</span>
+                        <span>98.71%</span>
                     </div>
-'''
-        html += f'''
+
+                    <div class="parlay-leg">
+                        <span>Phoenix Suns @ Oklahoma City Thunder</span>
+                        <span>96.43%</span>
+                    </div>
+
                 </div>
                 <div class="parlay-combined">
                     <span class="label">Combined Probability (2-leg)</span>
-                    <span class="value">{combined_2leg:.1f}%</span>
+                    <span class="value">95.2%</span>
                 </div>
             </div>
-'''
-    
-    # Close MC Tab, Start Legacy Tab
-    html += f'''
+
         </div>
         
         <!-- Legacy Tab -->
@@ -675,15 +564,15 @@ def generate_dashboard():
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Record</div>
-                    <div class="stat-value">{legacy_record}</div>
+                    <div class="stat-value">73-5</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Win Rate</div>
-                    <div class="stat-value green">{legacy_win_rate}%</div>
+                    <div class="stat-value green">93.6%</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Pending</div>
-                    <div class="stat-value">{legacy_pending}</div>
+                    <div class="stat-value">20</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">System</div>
@@ -699,38 +588,117 @@ def generate_dashboard():
                 <span class="dot green"></span>
                 Recent Picks
             </div>
-'''
-    
-    # Add legacy picks
-    for pick in reversed(legacy_picks[-10:]):
-        result_class = pick['result'].lower()
-        label_class = result_class
-        
-        html += f'''
-            <div class="pick-card {result_class}">
+
+            <div class="pick-card correct_skip">
                 <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • {pick['decision']}</div>
+                    <h3>Dallas Mavericks @ Miami Heat</h3>
+                    <div class="details">OVER 220.5 • NO</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value">{pick['confidence']}%</div>
-                    <span class="label {label_class}">{pick['result']}</span>
+                    <div class="value">37.0%</div>
+                    <span class="label correct_skip">CORRECT_SKIP</span>
                 </div>
             </div>
-'''
-    
-    if not legacy_picks:
-        html += '''
-            <div class="pick-card">
+
+            <div class="pick-card would_win">
                 <div class="pick-info">
-                    <h3>No legacy picks loaded</h3>
-                    <div class="details">Run the tracker to see historical data</div>
+                    <h3>New Orleans Pelicans @ Dallas Mavericks</h3>
+                    <div class="details">OVER 211.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">38.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
                 </div>
             </div>
-'''
-    
-    # Close HTML
-    html += '''
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>Indiana Pacers @ Cleveland Cavaliers</h3>
+                    <div class="details">OVER 217.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">42.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>Chicago Bulls @ New Orleans Pelicans</h3>
+                    <div class="details">OVER 222.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">43.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
+            <div class="pick-card pending">
+                <div class="pick-info">
+                    <h3>Washington Wizards @ Indiana Pacers</h3>
+                    <div class="details">OVER 218.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">43.0%</div>
+                    <span class="label pending">PENDING</span>
+                </div>
+            </div>
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>Golden State Warriors @ New Orleans Pelicans</h3>
+                    <div class="details">OVER 206.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">43.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>Dallas Mavericks @ Washington Wizards</h3>
+                    <div class="details">OVER 207.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">44.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
+            <div class="pick-card pending">
+                <div class="pick-info">
+                    <h3>Dallas Mavericks @ Los Angeles Lakers</h3>
+                    <div class="details">OVER 208.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">45.0%</div>
+                    <span class="label pending">PENDING</span>
+                </div>
+            </div>
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>New Orleans Pelicans @ Phoenix Suns</h3>
+                    <div class="details">OVER 206.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">45.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
+            <div class="pick-card would_win">
+                <div class="pick-info">
+                    <h3>Milwaukee Bucks @ Dallas Mavericks</h3>
+                    <div class="details">OVER 209.5 • NO</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value">45.0%</div>
+                    <span class="label would_win">WOULD_WIN</span>
+                </div>
+            </div>
+
         </div>
         
         <!-- Footer -->
@@ -772,18 +740,3 @@ def generate_dashboard():
     </script>
 </body>
 </html>
-'''
-    
-    # Save dashboard
-    with open('index.html', 'w') as f:
-        f.write(html)
-    
-    print(f"✓ Dashboard generated: index.html")
-    print(f"  MC picks: {len([p for p in mc_picks if p['decision'] in ['STRONG_YES', 'YES']])}")
-    print(f"  Legacy pending: {legacy_pending}")
-    
-    return html
-
-
-if __name__ == "__main__":
-    generate_dashboard()

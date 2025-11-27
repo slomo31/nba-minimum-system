@@ -1,10 +1,12 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-e69335f9f4054ca683c7219dabdeac53,2025-11-26 17:10:00-05:00,Detroit Pistons,Boston Celtics,209.5,-870,DraftKings
-b054e05bbd0dadc5f4947032a332045e,2025-11-26 19:10:00-05:00,New York Knicks,Charlotte Hornets,217.5,-770,DraftKings
-54ab67c4d54079c2044f6de8397ad072,2025-11-26 19:40:00-05:00,Indiana Pacers,Toronto Raptors,211.5,-880,DraftKings
-932a6b46c8f41cd9df4a23db7aaf9988,2025-11-26 19:40:00-05:00,Milwaukee Bucks,Miami Heat,215.5,-800,DraftKings
-63748218430054c9c947b1beeab351c9,2025-11-26 19:40:00-05:00,Minnesota Timberwolves,Oklahoma City Thunder,205.5,-760,DraftKings
-7a866eae268b30cd60aacad8fd8f3786,2025-11-26 20:10:00-05:00,Memphis Grizzlies,New Orleans Pelicans,213.5,-830,DraftKings
-c728773fb406fb68e411f28e838ef9ed,2025-11-26 22:10:00-05:00,Houston Rockets,Golden State Warriors,203.5,-830,DraftKings
-640a3b0d618c26bd0e462da74aad454f,2025-11-26 22:10:00-05:00,Phoenix Suns,Sacramento Kings,211.5,-840,DraftKings
-9d56baa432e13e1879c5a7e08ac23e79,2025-11-26 22:10:00-05:00,San Antonio Spurs,Portland Trail Blazers,218.5,-710,DraftKings
+1af096075324c24f402566517cb35f91,2025-11-28 19:40:00-05:00,Cleveland Cavaliers,Atlanta Hawks,217.5,-780,DraftKings
+40e1962291b5902145ba33c2b8918fbf,2025-11-28 19:40:00-05:00,Philadelphia 76ers,Brooklyn Nets,206.5,-820,DraftKings
+589f752da246a95b470aa39b60870dd7,2025-11-28 19:40:00-05:00,Chicago Bulls,Charlotte Hornets,225.5,-760,DraftKings
+3681b95ecf2caed53d8d976c17ad4464,2025-11-28 19:40:00-05:00,Orlando Magic,Detroit Pistons,213.5,-800,DraftKings
+72d83440ea3e88d46514dd3eed0deddb,2025-11-28 19:40:00-05:00,Washington Wizards,Indiana Pacers,218.5,-770,DraftKings
+7352c74ba8dbdb543d750f378fc002d5,2025-11-28 19:40:00-05:00,Milwaukee Bucks,New York Knicks,213.5,-770,DraftKings
+e18835b33478d76175aa301ace433fd3,2025-11-28 21:40:00-05:00,San Antonio Spurs,Denver Nuggets,214.5,-960,DraftKings
+a06a55ea3f9818bd67a44c118b03bb31,2025-11-28 21:40:00-05:00,Phoenix Suns,Oklahoma City Thunder,205.5,-1040,DraftKings
+05b9527e25f5994ecbf5a9323a489a33,2025-11-28 21:40:00-05:00,Sacramento Kings,Utah Jazz,219.5,-840,DraftKings
+78aabf080c02d6b74d6d5a15ae2d2a81,2025-11-28 22:10:00-05:00,Dallas Mavericks,Los Angeles Lakers,208.5,-820,DraftKings
+835535f997beb1f330c480429f5fd48b,2025-11-28 22:10:00-05:00,Memphis Grizzlies,Los Angeles Clippers,205.5,-920,DraftKings
