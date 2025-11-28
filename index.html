@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Minimum Totals</title>
+    <title>NBA Minimum Totals V3.1</title>
     <meta http-equiv="refresh" content="300">
     <style>
         * {
@@ -341,17 +341,17 @@
             <h1>
                 <span class="emoji">🏀</span>
                 NBA Minimum Totals
-                <span class="badge">MONTE CARLO</span>
+                <span class="badge">V3.1 • 100%</span>
             </h1>
-            <p class="subtitle">Simulation-Based Analysis (10,000 sims per game)</p>
-            <p class="last-updated">Last updated: November 27, 2025 at 10:27 AM</p>
+            <p class="subtitle">Monte Carlo V3.1 • 62-0 backtest on 0-flag games</p>
+            <p class="last-updated">Last updated: November 28, 2025 at 04:53 AM</p>
         </div>
         
         <!-- Tab Navigation -->
         <div class="tab-nav">
             <button class="tab-btn active" onclick="showTab('mc')">
-                🎲 Monte Carlo
-                <span class="count">6</span>
+                🎲 V3.1 Picks
+                <span class="count">1</span>
             </button>
             <button class="tab-btn" onclick="showTab('legacy')">
                 📊 Legacy
@@ -372,188 +372,162 @@
                     <div class="stat-value green">0.0%</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Pending Picks</div>
-                    <div class="stat-value">6</div>
+                    <div class="stat-label">0-Flag Picks</div>
+                    <div class="stat-value">1</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Avg Hit Rate</div>
-                    <div class="stat-value green">91.8%</div>
+                    <div class="stat-label">Avg MC Prob</div>
+                    <div class="stat-value green">99.8%</div>
                 </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(22, 163, 74, 0.2) 100%); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px; border: 1px solid rgba(34, 197, 94, 0.3);">
+                <div style="font-size: 0.9rem; color: #22c55e; font-weight: 600;">✅ V3.1 STRICT MODE</div>
+                <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Backtest: 62-0 (100%) • Only betting 0-flag games</div>
             </div>
             
             <button class="refresh-btn" onclick="location.reload()">
                 🔄 Refresh Data
             </button>
             
-            <!-- STRONG YES Section -->
+            <!-- ZERO FLAG BETS Section -->
             <div class="section-header">
                 <span class="dot green"></span>
-                STRONG YES - Lock It In (3)
-                <span class="section-subtext">92%+ Hit Rate</span>
-            </div>
-
-            <div class="pick-card strong-yes">
-                <div class="pick-info">
-                    <h3>San Antonio Spurs @ Denver Nuggets</h3>
-                    <div class="details">OVER 214.5 • Sim avg: 241.9</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value green">98.71%</div>
-                    <span class="label yes">YES</span>
-                </div>
-            </div>
-
-            <div class="pick-card strong-yes">
-                <div class="pick-info">
-                    <h3>Phoenix Suns @ Oklahoma City Thunder</h3>
-                    <div class="details">OVER 205.5 • Sim avg: 235.0</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value green">96.43%</div>
-                    <span class="label yes">YES</span>
-                </div>
+                ✅ BET THESE - Zero Flags (1)
+                <span class="section-subtext">100% backtest win rate</span>
             </div>
 
             <div class="pick-card strong-yes">
                 <div class="pick-info">
                     <h3>Orlando Magic @ Detroit Pistons</h3>
-                    <div class="details">OVER 213.5 • Sim avg: 239.3</div>
+                    <div class="details">Line: 211.5 • Expected: 268 • Range: 241-287</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value green">94.61%</div>
-                    <span class="label yes">YES</span>
+                    <div class="value green">99.81%</div>
+                    <span class="label yes">0 FLAGS</span>
                 </div>
             </div>
 
-            <!-- YES Section -->
-            <div class="section-header">
-                <span class="dot yellow"></span>
-                YES - Bet These (3)
-                <span class="section-subtext">85%+ Hit Rate</span>
-            </div>
-
-            <div class="pick-card yes">
-                <div class="pick-info">
-                    <h3>Milwaukee Bucks @ New York Knicks</h3>
-                    <div class="details">OVER 213.5 • Sim avg: 237.0</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value lime">90.4%</div>
-                    <span class="label yes">YES</span>
-                </div>
-            </div>
-
-            <div class="pick-card yes">
-                <div class="pick-info">
-                    <h3>Dallas Mavericks @ Los Angeles Lakers</h3>
-                    <div class="details">OVER 208.5 • Sim avg: 228.3</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value lime">85.31%</div>
-                    <span class="label yes">YES</span>
-                </div>
-            </div>
-
-            <div class="pick-card yes">
-                <div class="pick-info">
-                    <h3>Cleveland Cavaliers @ Atlanta Hawks</h3>
-                    <div class="details">OVER 217.5 • Sim avg: 236.0</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value lime">85.06%</div>
-                    <span class="label yes">YES</span>
-                </div>
-            </div>
-
-            <!-- MAYBE Section -->
+            <!-- FLAGGED Section -->
             <div class="section-header">
                 <span class="dot orange"></span>
-                MAYBE - Consider (1)
-                <span class="section-subtext">78-85% Hit Rate - Higher Risk</span>
+                ⚠️ SKIP - Has Flags (10)
+                <span class="section-subtext">Risk factors detected</span>
             </div>
 
-            <div class="pick-card maybe">
+            <div class="pick-card skip">
                 <div class="pick-info">
-                    <h3>Philadelphia 76ers @ Brooklyn Nets</h3>
-                    <div class="details">OVER 206.5 • Sim avg: 219.7</div>
+                    <h3>Milwaukee Bucks @ New York Knicks</h3>
+                    <div class="details">Line: 212.5 • 🎲 Milwaukee Bucks high variance (±12.8)</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value orange">81.2%</div>
-                    <span class="label maybe">MAYBE</span>
+                    <div class="value gray">99.88%</div>
+                    <span class="label skip">1 FLAGS</span>
                 </div>
-            </div>
-
-            <!-- SKIP Section -->
-            <div class="section-header">
-                <span class="dot gray"></span>
-                SKIP (4)
-                <span class="section-subtext">Below 78% - Do Not Bet</span>
             </div>
 
             <div class="pick-card skip">
                 <div class="pick-info">
                     <h3>Chicago Bulls @ Charlotte Hornets</h3>
-                    <div class="details">OVER 225.5</div>
+                    <div class="details">Line: 226.5 • 🔄 Pace mismatch (4.2 difference)</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value gray">75.98%</div>
-                    <span class="label skip">SKIP</span>
+                    <div class="value gray">99.56%</div>
+                    <span class="label skip">1 FLAGS</span>
                 </div>
             </div>
 
             <div class="pick-card skip">
                 <div class="pick-info">
-                    <h3>Memphis Grizzlies @ Los Angeles Clippers</h3>
-                    <div class="details">OVER 205.5</div>
+                    <h3>Philadelphia 76ers @ Brooklyn Nets</h3>
+                    <div class="details">Line: 203.5 • 🐢 Brooklyn Nets slow pace (97.5); 🐢🐢 Both teams be...</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value gray">75.46%</div>
-                    <span class="label skip">SKIP</span>
+                    <div class="value gray">99.98%</div>
+                    <span class="label skip">2 FLAGS</span>
+                </div>
+            </div>
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>San Antonio Spurs @ Denver Nuggets</h3>
+                    <div class="details">Line: 216.5 • 🐢🐢 Both teams below avg pace (99.2 & 99.0); 🚗🛡️ Ro...</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">99.84%</div>
+                    <span class="label skip">2 FLAGS</span>
                 </div>
             </div>
 
             <div class="pick-card skip">
                 <div class="pick-info">
                     <h3>Sacramento Kings @ Utah Jazz</h3>
-                    <div class="details">OVER 219.5</div>
+                    <div class="details">Line: 218.5 • 🎲 Utah Jazz high variance (±17.1); 📉 Sacramento Ki...</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value gray">68.94%</div>
-                    <span class="label skip">SKIP</span>
+                    <div class="value gray">99.25%</div>
+                    <span class="label skip">2 FLAGS</span>
+                </div>
+            </div>
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Memphis Grizzlies @ Los Angeles Clippers</h3>
+                    <div class="details">Line: 204.5 • 🐢 Los Angeles Clippers slow pace (96.6); 🎲 Los Ang...</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">99.75%</div>
+                    <span class="label skip">3 FLAGS</span>
+                </div>
+            </div>
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Phoenix Suns @ Oklahoma City Thunder</h3>
+                    <div class="details">Line: 206.5 • 🛡️ Oklahoma City Thunder elite defense (DRtg: 104....</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">99.61%</div>
+                    <span class="label skip">3 FLAGS</span>
                 </div>
             </div>
 
             <div class="pick-card skip">
                 <div class="pick-info">
                     <h3>Washington Wizards @ Indiana Pacers</h3>
-                    <div class="details">OVER 218.5</div>
+                    <div class="details">Line: 218.5 • ⚠️ Both teams mediocre offense (109.0 vs 107.5); 📉...</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value gray">62.99%</div>
-                    <span class="label skip">SKIP</span>
+                    <div class="value gray">98.94%</div>
+                    <span class="label skip">3 FLAGS</span>
                 </div>
             </div>
 
-            <!-- Parlay Recommendation -->
-            <div class="parlay-section">
-                <h3>🎯 Recommended Parlay</h3>
-                <div class="parlay-legs">
-
-                    <div class="parlay-leg">
-                        <span>San Antonio Spurs @ Denver Nuggets</span>
-                        <span>98.71%</span>
-                    </div>
-
-                    <div class="parlay-leg">
-                        <span>Phoenix Suns @ Oklahoma City Thunder</span>
-                        <span>96.43%</span>
-                    </div>
-
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Cleveland Cavaliers @ Atlanta Hawks</h3>
+                    <div class="details">Line: 219.5 • 🎲 Cleveland Cavaliers high variance (±12.8); 🛡️🛡️ ...</div>
                 </div>
-                <div class="parlay-combined">
-                    <span class="label">Combined Probability (2-leg)</span>
-                    <span class="value">95.2%</span>
+                <div class="pick-prob">
+                    <div class="value gray">98.79%</div>
+                    <span class="label skip">3 FLAGS</span>
                 </div>
+            </div>
+
+            <div class="pick-card skip">
+                <div class="pick-info">
+                    <h3>Dallas Mavericks @ Los Angeles Lakers</h3>
+                    <div class="details">Line: 208.5 • 🎲 Dallas Mavericks high variance (±13.1); 📉 Dallas...</div>
+                </div>
+                <div class="pick-prob">
+                    <div class="value gray">98.18%</div>
+                    <span class="label skip">3 FLAGS</span>
+                </div>
+            </div>
+
+            <div class="parlay-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%); border-color: rgba(239, 68, 68, 0.3);">
+                <h3>⚠️ No Parlays Today</h3>
+                <div style="color: #94a3b8; font-size: 0.9rem;">Need at least 2 zero-flag picks for a parlay. Consider sitting today out.</div>
             </div>
 
         </div>

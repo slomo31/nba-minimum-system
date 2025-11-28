@@ -1,8 +1,10 @@
 """
-NBA Minimum Totals Dashboard Generator
-=======================================
-Creates a modern dashboard with Monte Carlo and Legacy tabs
-Matching the CBB dashboard style
+NBA Minimum Totals Dashboard Generator - V3.1
+==============================================
+Creates a modern dashboard with Monte Carlo V3.1 and Legacy tabs
+Shows flag counts and only recommends 0-flag games
+
+V3.1 Backtest: 62-0 (100%) on 0-flag games
 """
 
 import pandas as pd
@@ -37,7 +39,7 @@ def load_mc_results():
 
 
 def generate_dashboard():
-    """Generate the full dashboard HTML"""
+    """Generate the full dashboard HTML with V3.1 features"""
     
     # Load data
     mc_predictions = load_mc_predictions()
@@ -50,21 +52,32 @@ def generate_dashboard():
     mc_pending = 0
     mc_avg_hit_rate = "0.0"
     mc_picks = []
+    zero_flag_count = 0
     
     if mc_predictions is not None:
-        # Get YES and STRONG_YES picks
-        yes_picks = mc_predictions[mc_predictions['mc_decision'].isin(['STRONG_YES', 'YES'])]
-        mc_pending = len(yes_picks)
-        mc_avg_hit_rate = f"{yes_picks['mc_probability'].mean():.1f}" if len(yes_picks) > 0 else "0.0"
+        # Get 0-flag picks (the only bettable ones in V3.1)
+        if 'flag_count' in mc_predictions.columns:
+            zero_flag_picks = mc_predictions[mc_predictions['flag_count'] == 0]
+            zero_flag_count = len(zero_flag_picks)
+        else:
+            zero_flag_picks = mc_predictions[mc_predictions['mc_decision'].isin(['STRONG_YES', 'YES'])]
+        
+        mc_pending = len(zero_flag_picks)
+        mc_avg_hit_rate = f"{zero_flag_picks['mc_probability'].mean():.1f}" if len(zero_flag_picks) > 0 else "0.0"
         
         for _, row in mc_predictions.iterrows():
+            flag_count = row.get('flag_count', 0) if 'flag_count' in row else 0
             mc_picks.append({
                 'game': row.get('game', f"{row.get('away_team', '')} @ {row.get('home_team', '')}"),
-                'line': row.get('minimum_total', 0),
+                'line': row.get('minimum_line', row.get('minimum_total', 0)),
                 'mc_prob': row.get('mc_probability', 0),
                 'decision': row.get('mc_decision', 'NO'),
                 'avg_sim': row.get('avg_simulated_total', 0),
-                'risk_factors': row.get('risk_factors', '')
+                'total_expected': row.get('total_expected', 0),
+                'flag_count': flag_count,
+                'risk_flags': row.get('risk_flags', ''),
+                'percentile_10': row.get('percentile_10', 0),
+                'percentile_90': row.get('percentile_90', 0)
             })
     
     if mc_results is not None:
@@ -87,7 +100,6 @@ def generate_dashboard():
         legacy_win_rate = f"{wins/(wins+losses)*100:.1f}" if (wins+losses) > 0 else "0.0"
         legacy_pending = len(legacy_data[legacy_data['result'] == 'PENDING'])
         
-        # Get recent legacy picks
         for _, row in legacy_data.tail(20).iterrows():
             legacy_picks.append({
                 'game': row.get('game', ''),
@@ -97,14 +109,12 @@ def generate_dashboard():
                 'result': row.get('result', 'PENDING')
             })
     
-    # Sort MC picks by probability
-    mc_picks.sort(key=lambda x: x['mc_prob'], reverse=True)
+    # Sort MC picks by flags then probability
+    mc_picks.sort(key=lambda x: (x['flag_count'], -x['mc_prob']))
     
-    # Categorize MC picks
-    strong_yes_picks = [p for p in mc_picks if p['decision'] == 'STRONG_YES']
-    yes_picks = [p for p in mc_picks if p['decision'] == 'YES']
-    maybe_picks = [p for p in mc_picks if p['decision'] == 'MAYBE']
-    skip_picks = [p for p in mc_picks if p['decision'] in ['LEAN_NO', 'NO']]
+    # Categorize MC picks by flags
+    zero_flag_bets = [p for p in mc_picks if p['flag_count'] == 0 and p['mc_prob'] >= 88]
+    flagged_games = [p for p in mc_picks if p['flag_count'] > 0]
     
     # Generate HTML
     html = f'''<!DOCTYPE html>
@@ -112,7 +122,7 @@ def generate_dashboard():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Minimum Totals</title>
+    <title>NBA Minimum Totals V3.1</title>
     <meta http-equiv="refresh" content="300">
     <style>
         * {{
@@ -450,17 +460,17 @@ def generate_dashboard():
             <h1>
                 <span class="emoji">🏀</span>
                 NBA Minimum Totals
-                <span class="badge">MONTE CARLO</span>
+                <span class="badge">V3.1 • 100%</span>
             </h1>
-            <p class="subtitle">Simulation-Based Analysis (10,000 sims per game)</p>
+            <p class="subtitle">Monte Carlo V3.1 • 62-0 backtest on 0-flag games</p>
             <p class="last-updated">Last updated: {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
         </div>
         
         <!-- Tab Navigation -->
         <div class="tab-nav">
             <button class="tab-btn active" onclick="showTab('mc')">
-                🎲 Monte Carlo
-                <span class="count">{len([p for p in mc_picks if p['decision'] in ['STRONG_YES', 'YES']])}</span>
+                🎲 V3.1 Picks
+                <span class="count">{len(zero_flag_bets)}</span>
             </button>
             <button class="tab-btn" onclick="showTab('legacy')">
                 📊 Legacy
@@ -481,157 +491,103 @@ def generate_dashboard():
                     <div class="stat-value green">{mc_win_rate}%</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Pending Picks</div>
-                    <div class="stat-value">{len([p for p in mc_picks if p['decision'] in ['STRONG_YES', 'YES']])}</div>
+                    <div class="stat-label">0-Flag Picks</div>
+                    <div class="stat-value">{len(zero_flag_bets)}</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Avg Hit Rate</div>
+                    <div class="stat-label">Avg MC Prob</div>
                     <div class="stat-value green">{mc_avg_hit_rate}%</div>
                 </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(22, 163, 74, 0.2) 100%); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px; border: 1px solid rgba(34, 197, 94, 0.3);">
+                <div style="font-size: 0.9rem; color: #22c55e; font-weight: 600;">✅ V3.1 STRICT MODE</div>
+                <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Backtest: 62-0 (100%) • Only betting 0-flag games</div>
             </div>
             
             <button class="refresh-btn" onclick="location.reload()">
                 🔄 Refresh Data
             </button>
             
-            <!-- STRONG YES Section -->
+            <!-- ZERO FLAG BETS Section -->
             <div class="section-header">
                 <span class="dot green"></span>
-                STRONG YES - Lock It In ({len(strong_yes_picks)})
-                <span class="section-subtext">92%+ Hit Rate</span>
+                ✅ BET THESE - Zero Flags ({len(zero_flag_bets)})
+                <span class="section-subtext">100% backtest win rate</span>
             </div>
 '''
     
-    # Add STRONG YES picks
-    for pick in strong_yes_picks:
+    # Add zero-flag bettable picks
+    for pick in zero_flag_bets:
+        prob_class = 'green' if pick['mc_prob'] >= 95 else 'lime'
+        card_class = 'strong-yes' if pick['mc_prob'] >= 95 else 'yes'
+        
+        # Format details with expected and range
+        details = f"Line: {pick['line']} • Expected: {pick['total_expected']:.0f}"
+        if pick['percentile_10'] and pick['percentile_90']:
+            details += f" • Range: {pick['percentile_10']:.0f}-{pick['percentile_90']:.0f}"
+        
         html += f'''
-            <div class="pick-card strong-yes">
+            <div class="pick-card {card_class}">
                 <div class="pick-info">
                     <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
+                    <div class="details">{details}</div>
                 </div>
                 <div class="pick-prob">
-                    <div class="value green">{pick['mc_prob']}%</div>
-                    <span class="label yes">YES</span>
+                    <div class="value {prob_class}">{pick['mc_prob']}%</div>
+                    <span class="label yes">0 FLAGS</span>
                 </div>
             </div>
 '''
     
-    if not strong_yes_picks:
+    if not zero_flag_bets:
         html += '''
             <div class="pick-card">
                 <div class="pick-info">
-                    <h3>No STRONG YES picks today</h3>
-                    <div class="details">Check back later for updates</div>
+                    <h3>No safe picks today</h3>
+                    <div class="details">All games have risk flags - consider sitting out</div>
                 </div>
             </div>
 '''
     
-    # YES Section
+    # FLAGGED GAMES Section (Skip these)
     html += f'''
-            <!-- YES Section -->
-            <div class="section-header">
-                <span class="dot yellow"></span>
-                YES - Bet These ({len(yes_picks)})
-                <span class="section-subtext">85%+ Hit Rate</span>
-            </div>
-'''
-    
-    for pick in yes_picks:
-        html += f'''
-            <div class="pick-card yes">
-                <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value lime">{pick['mc_prob']}%</div>
-                    <span class="label yes">YES</span>
-                </div>
-            </div>
-'''
-    
-    if not yes_picks:
-        html += '''
-            <div class="pick-card">
-                <div class="pick-info">
-                    <h3>No YES picks today</h3>
-                    <div class="details">Check back later for updates</div>
-                </div>
-            </div>
-'''
-    
-    # MAYBE Section
-    html += f'''
-            <!-- MAYBE Section -->
+            <!-- FLAGGED Section -->
             <div class="section-header">
                 <span class="dot orange"></span>
-                MAYBE - Consider ({len(maybe_picks)})
-                <span class="section-subtext">78-85% Hit Rate - Higher Risk</span>
+                ⚠️ SKIP - Has Flags ({len(flagged_games)})
+                <span class="section-subtext">Risk factors detected</span>
             </div>
 '''
     
-    for pick in maybe_picks:
-        html += f'''
-            <div class="pick-card maybe">
-                <div class="pick-info">
-                    <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']} • Sim avg: {pick['avg_sim']}</div>
-                </div>
-                <div class="pick-prob">
-                    <div class="value orange">{pick['mc_prob']}%</div>
-                    <span class="label maybe">MAYBE</span>
-                </div>
-            </div>
-'''
-    
-    if not maybe_picks:
-        html += '''
-            <div class="pick-card">
-                <div class="pick-info">
-                    <h3>No MAYBE picks today</h3>
-                </div>
-            </div>
-'''
-    
-    # SKIP Section
-    html += f'''
-            <!-- SKIP Section -->
-            <div class="section-header">
-                <span class="dot gray"></span>
-                SKIP ({len(skip_picks)})
-                <span class="section-subtext">Below 78% - Do Not Bet</span>
-            </div>
-'''
-    
-    for pick in skip_picks[:5]:  # Only show first 5
+    for pick in flagged_games[:10]:  # Show first 10 flagged games
+        flag_text = pick['risk_flags'][:50] + '...' if len(str(pick['risk_flags'])) > 50 else pick['risk_flags']
         html += f'''
             <div class="pick-card skip">
                 <div class="pick-info">
                     <h3>{pick['game']}</h3>
-                    <div class="details">OVER {pick['line']}</div>
+                    <div class="details">Line: {pick['line']} • {flag_text}</div>
                 </div>
                 <div class="pick-prob">
                     <div class="value gray">{pick['mc_prob']}%</div>
-                    <span class="label skip">SKIP</span>
+                    <span class="label skip">{pick['flag_count']} FLAGS</span>
                 </div>
             </div>
 '''
     
-    if len(skip_picks) > 5:
+    if len(flagged_games) > 10:
         html += f'''
-            <div class="pick-card skip">
+            <div class="pick-card">
                 <div class="pick-info">
-                    <h3>... and {len(skip_picks) - 5} more</h3>
+                    <h3>... and {len(flagged_games) - 10} more flagged games</h3>
+                    <div class="details">All skipped due to risk factors</div>
                 </div>
             </div>
 '''
     
-    # Parlay Section
-    if len(strong_yes_picks) + len(yes_picks) >= 2:
-        all_yes = strong_yes_picks + yes_picks
-        all_yes.sort(key=lambda x: x['mc_prob'], reverse=True)
-        top_picks = all_yes[:3]
+    # Parlay Section for V3.1 (only 0-flag picks)
+    if len(zero_flag_bets) >= 2:
+        top_picks = zero_flag_bets[:3]
         
         combined_prob = 1.0
         for p in top_picks[:2]:
@@ -646,7 +602,7 @@ def generate_dashboard():
         html += f'''
             <!-- Parlay Recommendation -->
             <div class="parlay-section">
-                <h3>🎯 Recommended Parlay</h3>
+                <h3>🎯 Recommended Parlay (0-Flag Picks Only)</h3>
                 <div class="parlay-legs">
 '''
         for i, p in enumerate(top_picks[:2]):
@@ -662,6 +618,13 @@ def generate_dashboard():
                     <span class="label">Combined Probability (2-leg)</span>
                     <span class="value">{combined_2leg:.1f}%</span>
                 </div>
+            </div>
+'''
+    else:
+        html += '''
+            <div class="parlay-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%); border-color: rgba(239, 68, 68, 0.3);">
+                <h3>⚠️ No Parlays Today</h3>
+                <div style="color: #94a3b8; font-size: 0.9rem;">Need at least 2 zero-flag picks for a parlay. Consider sitting today out.</div>
             </div>
 '''
     

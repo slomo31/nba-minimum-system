@@ -4,7 +4,7 @@
 # EVENING (5 PM):
 cd ~/Documents/nba_minimun_system && \
 python master_workflow.py && \
-python compare_tonight_thresholds.py && \
+python master_workflow_mc.py && \
 python track_minimum_results.py && \
 python generate_dashboard.py && \
 git add . && \
@@ -16,6 +16,7 @@ git add . && git commit -m "Update" && git push origin main
 cd ~/Documents/nba_minimun_system && \
 python data_collection/game_results_collector.py && \
 python track_minimum_results.py && \
+python track_mc_results.py && \
 python generate_dashboard.py && \
 git add . && \
 git commit -m "Results $(date +%Y-%m-%d)" && \
