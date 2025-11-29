@@ -1,0 +1,15 @@
+prediction_date,game,away_team,home_team,minimum_total,mc_probability,mc_decision,actual_total,result,buffer
+2025-11-27,Cleveland Cavaliers @ Atlanta Hawks,Cleveland Cavaliers,Atlanta Hawks,217.5,85.06,YES,,PENDING,
+2025-11-27,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,213.5,94.61,STRONG_YES,251.0,WIN,37.5
+2025-11-27,Milwaukee Bucks @ New York Knicks,Milwaukee Bucks,New York Knicks,213.5,89.88,YES,,PENDING,
+2025-11-27,San Antonio Spurs @ Denver Nuggets,San Antonio Spurs,Denver Nuggets,214.5,98.86,STRONG_YES,,PENDING,
+2025-11-27,Phoenix Suns @ Oklahoma City Thunder,Phoenix Suns,Oklahoma City Thunder,205.5,98.05,STRONG_YES,,PENDING,
+2025-11-27,Dallas Mavericks @ Los Angeles Lakers,Dallas Mavericks,Los Angeles Lakers,208.5,85.56,YES,,PENDING,
+2025-11-28,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,,99.81,STRONG_YES,251.0,LOSS,
+2025-11-27,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,215.5,93.16,STRONG_YES,251.0,WIN,35.5
+2025-11-27,San Antonio Spurs @ Denver Nuggets,San Antonio Spurs,Denver Nuggets,215.5,98.34,STRONG_YES,,PENDING,
+2025-11-27,Phoenix Suns @ Oklahoma City Thunder,Phoenix Suns,Oklahoma City Thunder,206.5,96.11,STRONG_YES,,PENDING,
+2025-11-27,Cleveland Cavaliers @ Atlanta Hawks,Cleveland Cavaliers,Atlanta Hawks,216.5,86.35,YES,,PENDING,
+2025-11-27,Philadelphia 76ers @ Brooklyn Nets,Philadelphia 76ers,Brooklyn Nets,206.5,90.25,YES,234.0,WIN,27.5
+2025-11-27,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,211.5,96.04,STRONG_YES,251.0,WIN,39.5
+2025-11-27,Memphis Grizzlies @ Los Angeles Clippers,Memphis Grizzlies,Los Angeles Clippers,205.5,85.04,YES,,PENDING,
