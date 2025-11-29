@@ -1,0 +1,12 @@
+date,game,minimum_line,mc_probability,flag_count,risk_flags,bet_type,actual_total,result,buffer,version
+2025-11-27,Cleveland Cavaliers @ Atlanta Hawks,217.5,85.06,2,['🎲 Cleveland Cavaliers high variance (±12.8 PPG)'],SKIP,226.0,WIN,8.5,V3.0
+2025-11-27,Philadelphia 76ers @ Brooklyn Nets,206.5,81.2,2,['🐢 Brooklyn Nets slow pace (97.5)'],SKIP,234.0,WIN,27.5,V3.0
+2025-11-27,Chicago Bulls @ Charlotte Hornets,225.5,75.98,0,[],SKIP,239.0,WIN,13.5,V3.0
+2025-11-27,Orlando Magic @ Detroit Pistons,213.5,94.61,0,[],BET,251.0,WIN,37.5,V3.0
+2025-11-27,Washington Wizards @ Indiana Pacers,218.5,62.99,0,[],SKIP,205.0,LOSS,-13.5,V3.0
+2025-11-27,Milwaukee Bucks @ New York Knicks,213.5,90.4,2,['🎲 Milwaukee Bucks high variance (±12.8 PPG)'],SKIP,232.0,WIN,18.5,V3.0
+2025-11-27,San Antonio Spurs @ Denver Nuggets,214.5,98.71,0,[],BET,275.0,WIN,60.5,V3.0
+2025-11-27,Phoenix Suns @ Oklahoma City Thunder,205.5,96.43,1,['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.0)'],SKIP,242.0,WIN,36.5,V3.0
+2025-11-27,Sacramento Kings @ Utah Jazz,219.5,68.94,2,['🎲 Utah Jazz high variance (±17.1 PPG)'],SKIP,209.0,LOSS,-10.5,V3.0
+2025-11-27,Dallas Mavericks @ Los Angeles Lakers,208.5,85.31,2,['🎲 Dallas Mavericks high variance (±13.1 PPG)'],SKIP,,PENDING,,V3.0
+2025-11-27,Memphis Grizzlies @ Los Angeles Clippers,205.5,75.46,4,"['🎲 Los Angeles Clippers high variance (±13.0 PPG)', '🐢 Los Angeles Clippers slow pace (96.6)']",SKIP,219.0,WIN,13.5,V3.0
