@@ -1,0 +1,99 @@
+date,pred_date,game,line,actual,mc_prob,flags,flag_list,result,buffer,category
+"Tue, Nov 25, 2025",2025-11-25,Orlando Magic @ Philadelphia 76ers,206.5,247.0,96.89999999999999,0,[],WIN,40.5,0_flags
+"Tue, Nov 25, 2025",2025-11-25,Atlanta Hawks @ Washington Wizards,214.5,245.0,93.72,0,[],WIN,30.5,0_flags
+"Tue, Nov 25, 2025",2025-11-25,Los Angeles Clippers @ Los Angeles Lakers,207.5,253.0,96.39999999999999,0,[],WIN,45.5,0_flags
+"Tue, Nov 18, 2025",2025-11-18,Golden State Warriors @ Orlando Magic,201.5,234.0,95.12,0,[],WIN,32.5,0_flags
+"Tue, Nov 18, 2025",2025-11-18,Detroit Pistons @ Atlanta Hawks,207.5,232.0,96.16,0,[],WIN,24.5,0_flags
+"Tue, Nov 18, 2025",2025-11-18,Boston Celtics @ Brooklyn Nets,201.5,212.0,98.86,0,[],WIN,10.5,0_flags
+"Wed, Nov 26, 2025",2025-11-26,Detroit Pistons @ Boston Celtics,209.5,231.0,94.24,0,[],WIN,21.5,0_flags
+"Wed, Nov 26, 2025",2025-11-26,Houston Rockets @ Golden State Warriors,203.5,204.0,93.52000000000001,0,[],WIN,0.5,0_flags
+"Wed, Nov 26, 2025",2025-11-26,New York Knicks @ Charlotte Hornets,217.5,230.0,93.74,0,[],WIN,12.5,0_flags
+"Wed, Nov 26, 2025",2025-11-26,Phoenix Suns @ Sacramento Kings,211.5,212.0,91.52,0,[],WIN,0.5,0_flags
+"Wed, Nov 19, 2025",2025-11-19,Toronto Raptors @ Philadelphia 76ers,212.5,233.0,90.0,0,[],WIN,20.5,0_flags
+"Wed, Nov 19, 2025",2025-11-19,Chicago Bulls @ Portland Trail Blazers,222.5,243.0,90.72,0,[],WIN,20.5,0_flags
+"Wed, Nov 19, 2025",2025-11-19,Denver Nuggets @ New Orleans Pelicans,212.5,243.0,96.24000000000001,0,[],WIN,30.5,0_flags
+"Wed, Nov 19, 2025",2025-11-19,Washington Wizards @ Minnesota Timberwolves,216.5,229.0,93.78,0,[],WIN,12.5,0_flags
+"Sat, Nov 15, 2025",2025-11-15,Los Angeles Lakers @ Milwaukee Bucks,208.5,214.0,96.74000000000001,0,[],WIN,5.5,0_flags
+"Sat, Nov 15, 2025",2025-11-15,Denver Nuggets @ Minnesota Timberwolves,213.5,235.0,97.24000000000001,0,[],WIN,21.5,0_flags
+"Tue, Nov 4, 2025",2025-11-04,Philadelphia 76ers @ Chicago Bulls,218.5,224.0,91.86,0,[],WIN,5.5,0_flags
+"Tue, Nov 4, 2025",2025-11-04,Orlando Magic @ Atlanta Hawks,207.5,239.0,96.61999999999999,0,[],WIN,31.5,0_flags
+"Tue, Nov 4, 2025",2025-11-04,Charlotte Hornets @ New Orleans Pelicans,212.5,228.0,94.36,0,[],WIN,15.5,0_flags
+"Sat, Nov 8, 2025",2025-11-08,Los Angeles Lakers @ Atlanta Hawks,208.5,224.0,96.86,0,[],WIN,15.5,0_flags
+"Sat, Nov 8, 2025",2025-11-08,Phoenix Suns @ Los Angeles Clippers,206.5,217.0,94.58,0,[],WIN,10.5,0_flags
+"Sat, Nov 8, 2025",2025-11-08,New Orleans Pelicans @ San Antonio Spurs,202.5,245.0,97.0,0,[],WIN,42.5,0_flags
+"Fri, Nov 28, 2025",2025-11-27,Philadelphia 76ers @ Brooklyn Nets,206.5,218.0,97.76,0,[],WIN,11.5,0_flags
+"Fri, Nov 28, 2025",2025-11-27,Orlando Magic @ Detroit Pistons,213.5,221.0,92.47999999999999,0,[],WIN,7.5,0_flags
+"Fri, Nov 28, 2025",2025-11-27,Milwaukee Bucks @ New York Knicks,213.5,227.0,94.14,0,[],WIN,13.5,0_flags
+"Fri, Nov 28, 2025",2025-11-27,San Antonio Spurs @ Denver Nuggets,214.5,275.0,92.28,0,[],WIN,60.5,0_flags
+"Fri, Nov 28, 2025",2025-11-27,Memphis Grizzlies @ Los Angeles Clippers,205.5,219.0,93.38,0,[],WIN,13.5,0_flags
+"Fri, Nov 21, 2025",2025-11-21,Denver Nuggets @ Houston Rockets,213.5,221.0,95.24000000000001,0,[],WIN,7.5,0_flags
+"Fri, Nov 21, 2025",2025-11-21,Brooklyn Nets @ Boston Celtics,200.5,218.0,99.22,0,[],WIN,17.5,0_flags
+"Fri, Nov 21, 2025",2025-11-21,Minnesota Timberwolves @ Phoenix Suns,212.5,227.0,93.46,0,[],WIN,14.5,0_flags
+"Wed, Nov 5, 2025",2025-11-05,Minnesota Timberwolves @ New York Knicks,205.5,251.0,98.78,0,[],WIN,45.5,0_flags
+"Wed, Nov 5, 2025",2025-11-05,San Antonio Spurs @ Los Angeles Lakers,205.5,234.0,96.98,0,[],WIN,28.5,0_flags
+"Wed, Nov 5, 2025",2025-11-05,Golden State Warriors @ Sacramento Kings,203.5,237.0,94.28,0,[],WIN,33.5,0_flags
+"Mon, Nov 17, 2025",2025-11-17,Chicago Bulls @ Denver Nuggets,218.5,257.0,95.28,0,[],WIN,38.5,0_flags
+"Mon, Nov 17, 2025",2025-11-17,Los Angeles Clippers @ Philadelphia 76ers,199.5,218.0,98.46000000000001,0,[],WIN,18.5,0_flags
+"Sat, Nov 22, 2025",2025-11-22,New York Knicks @ Orlando Magic,207.5,254.0,97.54,0,[],WIN,46.5,0_flags
+"Sat, Nov 22, 2025",2025-11-22,Detroit Pistons @ Milwaukee Bucks,201.5,245.0,98.58,0,[],WIN,43.5,0_flags
+"Sat, Nov 22, 2025",2025-11-22,Sacramento Kings @ Denver Nuggets,215.5,251.0,94.62,0,[],WIN,35.5,0_flags
+"Sat, Nov 22, 2025",2025-11-22,Los Angeles Clippers @ Charlotte Hornets,205.5,247.0,97.18,0,[],WIN,41.5,0_flags
+"Sat, Nov 22, 2025",2025-11-22,Atlanta Hawks @ New Orleans Pelicans,208.5,213.0,95.52000000000001,0,[],WIN,4.5,0_flags
+"Mon, Nov 24, 2025",2025-11-24,Denver Nuggets @ Memphis Grizzlies,212.5,240.0,94.36,0,[],WIN,27.5,0_flags
+"Mon, Nov 24, 2025",2025-11-24,Portland Trail Blazers @ Milwaukee Bucks,212.5,218.0,94.38,0,[],WIN,5.5,0_flags
+"Mon, Nov 24, 2025",2025-11-24,New York Knicks @ Brooklyn Nets,208.5,213.0,98.36,0,[],WIN,4.5,0_flags
+"Mon, Nov 24, 2025",2025-11-24,Minnesota Timberwolves @ Sacramento Kings,216.5,229.0,91.42,0,[],WIN,12.5,0_flags
+"Mon, Nov 24, 2025",2025-11-24,Houston Rockets @ Phoenix Suns,203.5,206.0,96.94,0,[],WIN,2.5,0_flags
+"Thu, Nov 20, 2025",2025-11-20,Atlanta Hawks @ San Antonio Spurs,210.5,261.0,91.28,0,[],WIN,50.5,0_flags
+"Thu, Nov 20, 2025",2025-11-20,Philadelphia 76ers @ Milwaukee Bucks,204.5,237.0,97.28,0,[],WIN,32.5,0_flags
+"Thu, Nov 20, 2025",2025-11-20,Los Angeles Clippers @ Orlando Magic,197.5,230.0,99.0,0,[],WIN,32.5,0_flags
+"Sun, Nov 9, 2025",2025-11-09,Houston Rockets @ Milwaukee Bucks,210.5,237.0,93.34,0,[],WIN,26.5,0_flags
+"Sun, Nov 9, 2025",2025-11-09,Detroit Pistons @ Philadelphia 76ers,210.5,219.0,94.56,0,[],WIN,8.5,0_flags
+"Sun, Nov 9, 2025",2025-11-09,Minnesota Timberwolves @ Sacramento Kings,214.5,261.0,93.36,0,[],WIN,46.5,0_flags
+"Sun, Nov 9, 2025",2025-11-09,Brooklyn Nets @ New York Knicks,206.5,232.0,98.36,0,[],WIN,25.5,0_flags
+"Sun, Nov 9, 2025",2025-11-09,Boston Celtics @ Orlando Magic,206.5,218.0,96.24000000000001,0,[],WIN,11.5,0_flags
+"Tue, Nov 11, 2025",2025-11-11,Memphis Grizzlies @ New York Knicks,210.5,253.0,93.76,0,[],WIN,42.5,0_flags
+"Tue, Nov 11, 2025",2025-11-11,Boston Celtics @ Philadelphia 76ers,209.5,202.0,93.94,0,[],LOSS,-7.5,0_flags
+"Tue, Nov 11, 2025",2025-11-11,Toronto Raptors @ Brooklyn Nets,212.5,228.0,91.52,0,[],WIN,15.5,0_flags
+"Sun, Nov 16, 2025",2025-11-16,Atlanta Hawks @ Phoenix Suns,207.5,246.0,95.16,0,[],WIN,38.5,0_flags
+"Sun, Nov 16, 2025",2025-11-16,Orlando Magic @ Houston Rockets,204.5,230.0,97.58,0,[],WIN,25.5,0_flags
+"Sun, Nov 16, 2025",2025-11-16,Los Angeles Clippers @ Boston Celtics,199.5,239.0,98.11999999999999,0,[],WIN,39.5,0_flags
+"Sun, Nov 16, 2025",2025-11-16,Brooklyn Nets @ Washington Wizards,212.5,235.0,95.84,0,[],WIN,22.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,Los Angeles Lakers @ Charlotte Hornets,208.5,232.0,98.3,0,[],WIN,23.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,San Antonio Spurs @ Chicago Bulls,213.5,238.0,92.97999999999999,0,[],WIN,24.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,Portland Trail Blazers @ Orlando Magic,213.5,227.0,94.26,0,[],WIN,13.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,Washington Wizards @ Detroit Pistons,213.5,272.0,95.08,0,[],WIN,58.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,Atlanta Hawks @ Los Angeles Clippers,201.5,207.0,98.02,0,[],WIN,5.5,0_flags
+"Mon, Nov 10, 2025",2025-11-10,New Orleans Pelicans @ Phoenix Suns,206.5,219.0,95.44,0,[],WIN,12.5,0_flags
+"Sun, Nov 23, 2025",2025-11-23,Orlando Magic @ Boston Celtics,199.5,267.0,98.74000000000001,0,[],WIN,67.5,0_flags
+"Sun, Nov 23, 2025",2025-11-23,Charlotte Hornets @ Atlanta Hawks,210.5,223.0,95.66,0,[],WIN,12.5,0_flags
+"Sun, Nov 23, 2025",2025-11-23,Brooklyn Nets @ Toronto Raptors,207.5,228.0,95.46,0,[],WIN,20.5,0_flags
+"Fri, Nov 28, 2025",2025-11-28,Philadelphia 76ers @ Brooklyn Nets,203.5,218.0,98.98,0,[],WIN,14.5,0_flags
+"Fri, Nov 28, 2025",2025-11-28,Orlando Magic @ Detroit Pistons,211.5,221.0,94.39999999999999,0,[],WIN,9.5,0_flags
+"Fri, Nov 28, 2025",2025-11-28,Milwaukee Bucks @ New York Knicks,212.5,227.0,94.1,0,[],WIN,14.5,0_flags
+"Fri, Nov 28, 2025",2025-11-28,San Antonio Spurs @ Denver Nuggets,216.5,275.0,90.2,0,[],WIN,58.5,0_flags
+"Fri, Nov 28, 2025",2025-11-28,Memphis Grizzlies @ Los Angeles Clippers,204.5,219.0,94.34,0,[],WIN,14.5,0_flags
+"Tue, Nov 18, 2025",2025-11-18,Phoenix Suns @ Portland Trail Blazers,215.5,237.0,89.92,1,['📉 Floor risk: 10th pctl (215.5) < line (215.5)'],WIN,21.5,1_flag
+"Tue, Nov 18, 2025",2025-11-18,Utah Jazz @ Los Angeles Lakers,216.5,266.0,90.84,1,['🎲 Utah Jazz extreme variance (±25.7)'],WIN,49.5,1_flag
+"Wed, Nov 26, 2025",2025-11-26,Minnesota Timberwolves @ Oklahoma City Thunder,205.5,218.0,91.46,1,['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2)'],WIN,12.5,1_flag
+"Wed, Nov 19, 2025",2025-11-19,Houston Rockets @ Cleveland Cavaliers,211.5,218.0,89.96,1,['📉 Floor risk: 10th pctl (211.4) < line (211.5)'],WIN,6.5,1_flag
+"Sat, Nov 15, 2025",2025-11-15,Oklahoma City Thunder @ Charlotte Hornets,203.5,205.0,94.36,1,['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2)'],WIN,1.5,1_flag
+"Wed, Nov 5, 2025",2025-11-05,Utah Jazz @ Detroit Pistons,210.5,217.0,92.78,1,['🎲 Utah Jazz extreme variance (±25.7)'],WIN,6.5,1_flag
+"Wed, Nov 5, 2025",2025-11-05,Philadelphia 76ers @ Cleveland Cavaliers,214.5,253.0,88.34,1,['📉 Floor risk: 10th pctl (213.0) < line (214.5)'],WIN,38.5,1_flag
+"Wed, Nov 5, 2025",2025-11-05,Houston Rockets @ Memphis Grizzlies,211.5,233.0,89.3,1,['📉 Floor risk: 10th pctl (210.9) < line (211.5)'],WIN,21.5,1_flag
+"Wed, Nov 5, 2025",2025-11-05,Washington Wizards @ Boston Celtics,210.5,243.0,95.14,1,['🔄 Large pace mismatch (6.2 difference)'],WIN,32.5,1_flag
+"Mon, Nov 17, 2025",2025-11-17,Charlotte Hornets @ Toronto Raptors,216.5,218.0,89.3,1,['📉 Floor risk: 10th pctl (215.8) < line (216.5)'],WIN,1.5,1_flag
+"Mon, Nov 17, 2025",2025-11-17,Milwaukee Bucks @ Cleveland Cavaliers,213.5,224.0,88.44,1,['📉 Floor risk: 10th pctl (211.9) < line (213.5)'],WIN,10.5,1_flag
+"Sat, Nov 22, 2025",2025-11-22,Washington Wizards @ Chicago Bulls,221.5,241.0,92.32000000000001,1,['🎲🎲 BOTH teams high variance (18.5 & 18.9)'],WIN,19.5,1_flag
+"Thu, Nov 20, 2025",2025-11-20,Sacramento Kings @ Memphis Grizzlies,212.5,233.0,88.88000000000001,1,['📉 Floor risk: 10th pctl (211.6) < line (212.5)'],WIN,20.5,1_flag
+"Tue, Nov 11, 2025",2025-11-11,Denver Nuggets @ Sacramento Kings,221.5,230.0,88.46000000000001,1,['📉 Floor risk: 10th pctl (220.0) < line (221.5)'],WIN,8.5,1_flag
+"Sun, Nov 16, 2025",2025-11-16,Golden State Warriors @ New Orleans Pelicans,206.5,230.0,91.38,1,['🎲🎲 BOTH teams high variance (21.4 & 18.1)'],WIN,23.5,1_flag
+"Mon, Nov 10, 2025",2025-11-10,Minnesota Timberwolves @ Utah Jazz,212.5,233.0,92.62,1,['🎲 Utah Jazz extreme variance (±25.7)'],WIN,20.5,1_flag
+"Sun, Nov 23, 2025",2025-11-23,Los Angeles Clippers @ Cleveland Cavaliers,206.5,225.0,94.42,1,['🎲🎲 BOTH teams high variance (18.7 & 19.0)'],WIN,18.5,1_flag
+"Tue, Nov 4, 2025",2025-11-04,Oklahoma City Thunder @ Los Angeles Clippers,199.5,233.0,93.88,2,"['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2)', '🎲🎲 BOTH teams high variance (19.1 & 18.7)']",WIN,33.5,2_flags
+"Sat, Nov 8, 2025",2025-11-08,Chicago Bulls @ Cleveland Cavaliers,217.5,250.0,89.98,2,"['🎲🎲 BOTH teams high variance (18.9 & 19.0)', '📉 Floor risk: 10th pctl (217.4) < line (217.5)']",WIN,32.5,2_flags
+"Sat, Nov 8, 2025",2025-11-08,Indiana Pacers @ Denver Nuggets,213.5,217.0,88.8,2,"['📉 Indiana Pacers weak offense (ORtg: 106.8)', '📉 Floor risk: 10th pctl (212.0) < line (213.5)']",WIN,3.5,2_flags
+"Fri, Nov 21, 2025",2025-11-21,Washington Wizards @ Toronto Raptors,218.5,250.0,88.2,2,"['🎲🎲 BOTH teams high variance (18.5 & 19.3)', '📉 Floor risk: 10th pctl (216.6) < line (218.5)']",WIN,31.5,2_flags
+"Wed, Nov 5, 2025",2025-11-05,Oklahoma City Thunder @ Portland Trail Blazers,208.5,240.0,89.46,2,"['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2)', '📉 Floor risk: 10th pctl (207.9) < line (208.5)']",WIN,31.5,2_flags
+"Sun, Nov 16, 2025",2025-11-16,Chicago Bulls @ Utah Jazz,221.5,297.0,88.46000000000001,2,"['🎲 Utah Jazz extreme variance (±25.7)', '📉 Floor risk: 10th pctl (219.8) < line (221.5)']",WIN,75.5,2_flags
+"Mon, Nov 17, 2025",2025-11-17,Oklahoma City Thunder @ New Orleans Pelicans,205.5,235.0,89.64,3,"['🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2)', '🎲🎲 BOTH teams high variance (19.1 & 18.1)', '📉 Floor risk: 10th pctl (205.0) < line (205.5)']",WIN,29.5,3+_flags

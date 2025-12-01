@@ -1,0 +1,163 @@
+date,away_team,home_team,minimum_line,actual_total,mc_probability,flag_count,flags,floor_safe,result,category
+"Fri, Nov 14, 2025",Sacramento Kings,Minnesota Timberwolves,217.00608408847842,234.0,90.68,0,,True,WIN,0_flags
+"Fri, Nov 14, 2025",Los Angeles Lakers,New Orleans Pelicans,197.26237201889757,222.0,99.53999999999999,0,,True,WIN,0_flags
+"Fri, Nov 14, 2025",Philadelphia 76ers,Detroit Pistons,203.65558267466187,219.0,98.56,0,,True,WIN,0_flags
+"Fri, Nov 14, 2025",Brooklyn Nets,Orlando Magic,179.3860234213591,203.0,100.0,0,,True,WIN,0_flags
+"Fri, Nov 14, 2025",Golden State Warriors,San Antonio Spurs,199.84896856851785,217.0,93.62,0,,True,WIN,0_flags
+"Fri, Nov 21, 2025",Brooklyn Nets,Boston Celtics,201.9752929494582,218.0,98.78,0,,True,WIN,0_flags
+"Fri, Nov 21, 2025",Denver Nuggets,Houston Rockets,201.27655526405837,221.0,99.2,0,,True,WIN,0_flags
+"Fri, Nov 21, 2025",Minnesota Timberwolves,Phoenix Suns,211.24110540019046,227.0,94.62,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Charlotte Hornets,Miami Heat,210.23244066755922,234.0,94.19999999999999,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Toronto Raptors,Atlanta Hawks,184.18898173542658,206.0,99.72,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Detroit Pistons,Brooklyn Nets,209.94588924444153,232.0,96.56,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Houston Rockets,San Antonio Spurs,206.84818377767255,231.0,94.06,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Chicago Bulls,Milwaukee Bucks,215.1079072939159,236.0,94.19999999999999,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Golden State Warriors,Denver Nuggets,213.58047939117822,233.0,90.0,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Boston Celtics,Orlando Magic,210.14589248349967,233.0,93.52000000000001,0,,True,WIN,0_flags
+"Fri, Nov 7, 2025",Utah Jazz,Minnesota Timberwolves,217.01484116122546,234.0,88.82,2,🎲 Utah Jazz extreme variance (±25.7); 📉 Floor risk: 10th pctl (215.9) < line (217.01484116122546),False,WIN,2_flags
+"Fri, Oct 24, 2025",Atlanta Hawks,Orlando Magic,194.63757953981744,218.0,99.48,0,,True,WIN,0_flags
+"Fri, Oct 24, 2025",Boston Celtics,New York Knicks,179.01861659907422,200.0,99.96000000000001,0,,True,WIN,0_flags
+"Fri, Oct 24, 2025",Detroit Pistons,Houston Rockets,208.38929871248732,226.0,95.6,0,,True,WIN,0_flags
+"Fri, Oct 24, 2025",Minnesota Timberwolves,Los Angeles Lakers,216.62845708955314,238.0,94.86,0,,True,WIN,0_flags
+"Fri, Oct 24, 2025",Phoenix Suns,Los Angeles Clippers,207.95329675009367,231.0,93.67999999999999,0,,True,WIN,0_flags
+"Fri, Oct 24, 2025",Utah Jazz,Sacramento Kings,191.03306377573844,209.0,99.26,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Fri, Oct 31, 2025",Toronto Raptors,Cleveland Cavaliers,189.98026277292047,213.0,98.98,1,🎲🎲 BOTH teams high variance (19.3 & 19.0),True,WIN,1_flag
+"Fri, Oct 31, 2025",Los Angeles Lakers,Memphis Grizzlies,205.65349517535248,229.0,97.22,0,,True,WIN,0_flags
+"Fri, Oct 31, 2025",Utah Jazz,Phoenix Suns,192.92211876878147,214.0,98.66,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Fri, Oct 31, 2025",Boston Celtics,Philadelphia 76ers,193.8402801573319,217.0,99.42,0,,True,WIN,0_flags
+"Fri, Oct 31, 2025",Denver Nuggets,Portland Trail Blazers,200.7143086748712,216.0,99.66000000000001,0,,True,WIN,0_flags
+"Mon, Nov 10, 2025",Atlanta Hawks,Los Angeles Clippers,185.781959792243,207.0,99.82,0,,True,WIN,0_flags
+"Mon, Nov 10, 2025",New Orleans Pelicans,Phoenix Suns,203.18767438237154,219.0,97.42,0,,True,WIN,0_flags
+"Mon, Nov 10, 2025",San Antonio Spurs,Chicago Bulls,213.5276056803344,238.0,93.14,0,,True,WIN,0_flags
+"Mon, Nov 10, 2025",Portland Trail Blazers,Orlando Magic,208.223196420982,227.0,97.42,0,,True,WIN,0_flags
+"Mon, Nov 10, 2025",Minnesota Timberwolves,Utah Jazz,214.68655133855498,233.0,90.96,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Mon, Nov 10, 2025",Los Angeles Lakers,Charlotte Hornets,215.4198042941971,232.0,94.76,0,,True,WIN,0_flags
+"Mon, Nov 17, 2025",Dallas Mavericks,Minnesota Timberwolves,195.4290373552373,216.0,95.22,1,📉 Dallas Mavericks weak offense (ORtg: 105.4),True,WIN,1_flag
+"Mon, Nov 17, 2025",Charlotte Hornets,Toronto Raptors,195.39686884169876,218.0,99.22,0,,True,WIN,0_flags
+"Mon, Nov 17, 2025",Milwaukee Bucks,Cleveland Cavaliers,199.2405396622929,224.0,97.78,0,,True,WIN,0_flags
+"Mon, Nov 17, 2025",Los Angeles Clippers,Philadelphia 76ers,196.56034952724704,218.0,98.64,0,,True,WIN,0_flags
+"Mon, Nov 17, 2025",New York Knicks,Miami Heat,203.0042542791461,228.0,97.2,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Houston Rockets,Phoenix Suns,187.84566139706618,206.0,99.7,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Minnesota Timberwolves,Sacramento Kings,205.85995064246958,229.0,98.83999999999999,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Portland Trail Blazers,Milwaukee Bucks,200.44560840178193,218.0,98.82,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Denver Nuggets,Memphis Grizzlies,215.44077696841964,240.0,91.44,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Dallas Mavericks,Miami Heat,191.41756651131587,208.0,93.96,2,📉 Dallas Mavericks weak offense (ORtg: 105.4); 🎲🎲 BOTH teams high variance (21.3 & 21.8),True,WIN,2_flags
+"Mon, Nov 24, 2025",New York Knicks,Brooklyn Nets,191.4097035705101,213.0,99.98,0,,True,WIN,0_flags
+"Mon, Nov 24, 2025",Cleveland Cavaliers,Toronto Raptors,190.47386318305206,209.0,98.86,1,🎲🎲 BOTH teams high variance (19.0 & 19.3),True,WIN,1_flag
+"Mon, Nov 3, 2025",Detroit Pistons,Memphis Grizzlies,200.64216689596222,220.0,98.1,0,,True,WIN,0_flags
+"Mon, Nov 3, 2025",Minnesota Timberwolves,Brooklyn Nets,217.44601134357558,234.0,93.04,0,,True,WIN,0_flags
+"Mon, Nov 3, 2025",Dallas Mavericks,Houston Rockets,187.2528115638566,212.0,97.66,2,📉 Dallas Mavericks weak offense (ORtg: 105.4); 🔄 Large pace mismatch (6.2 difference),True,WIN,2_flags
+"Mon, Nov 3, 2025",Washington Wizards,New York Knicks,203.26682912086986,221.0,99.28,0,,True,WIN,0_flags
+"Mon, Nov 3, 2025",Utah Jazz,Boston Celtics,185.68350256416517,208.0,99.62,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Mon, Nov 3, 2025",Los Angeles Lakers,Portland Trail Blazers,213.60407684966805,238.0,95.36,0,,True,WIN,0_flags
+"Mon, Oct 27, 2025",Boston Celtics,New Orleans Pelicans,192.20362319150948,212.0,99.42,0,,True,WIN,0_flags
+"Mon, Oct 27, 2025",Denver Nuggets,Minnesota Timberwolves,220.76798125851502,241.0,91.74,0,,True,WIN,0_flags
+"Mon, Oct 27, 2025",Cleveland Cavaliers,Detroit Pistons,192.95497916251233,211.0,99.33999999999999,0,,True,WIN,0_flags
+"Mon, Oct 27, 2025",Portland Trail Blazers,Los Angeles Lakers,213.06376935725424,230.0,96.34,0,,True,WIN,0_flags
+"Mon, Oct 27, 2025",Oklahoma City Thunder,Dallas Mavericks,178.27055648460478,195.0,97.1,3,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2); 📉 Dallas Mavericks weak offense (ORtg: 105.4); 🎲🎲 BOTH teams high variance (19.1 & 21.3),True,WIN,3+_flags
+"Mon, Oct 27, 2025",Toronto Raptors,San Antonio Spurs,202.46975370057118,224.0,94.62,0,,True,WIN,0_flags
+"Sat, Nov 1, 2025",Minnesota Timberwolves,Charlotte Hornets,204.82664206876302,227.0,99.36,0,,True,WIN,0_flags
+"Sat, Nov 1, 2025",Houston Rockets,Boston Celtics,205.64415298588213,229.0,95.86,0,,True,WIN,0_flags
+"Sat, Nov 1, 2025",Orlando Magic,Washington Wizards,202.13775302886398,219.0,99.02,0,,True,WIN,0_flags
+"Sat, Nov 1, 2025",Golden State Warriors,Indiana Pacers,199.95860962828965,223.0,90.32,2,📉 Indiana Pacers weak offense (ORtg: 106.8); 🎲🎲 BOTH teams high variance (21.4 & 21.9),True,WIN,2_flags
+"Sat, Nov 15, 2025",Memphis Grizzlies,Cleveland Cavaliers,185.14109093309952,208.0,99.7,0,,True,WIN,0_flags
+"Sat, Nov 15, 2025",Oklahoma City Thunder,Charlotte Hornets,187.5152250752522,205.0,99.36,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Sat, Nov 15, 2025",Denver Nuggets,Minnesota Timberwolves,215.40381350434706,235.0,96.78,0,,True,WIN,0_flags
+"Sat, Nov 15, 2025",Los Angeles Lakers,Milwaukee Bucks,192.15917859575765,214.0,99.83999999999999,0,,True,WIN,0_flags
+"Sat, Nov 22, 2025",Memphis Grizzlies,Dallas Mavericks,181.11281177667652,198.0,98.18,1,📉 Dallas Mavericks weak offense (ORtg: 105.4),True,WIN,1_flag
+"Sat, Nov 22, 2025",Washington Wizards,Chicago Bulls,223.65690797964695,241.0,89.86,2,🎲🎲 BOTH teams high variance (18.5 & 18.9); 📉 Floor risk: 10th pctl (223.5) < line (223.65690797964695),False,WIN,2_flags
+"Sat, Nov 22, 2025",Atlanta Hawks,New Orleans Pelicans,197.39093077826269,213.0,99.14,0,,True,WIN,0_flags
+"Sat, Nov 8, 2025",Los Angeles Lakers,Atlanta Hawks,200.70694246411165,224.0,99.14,0,,True,WIN,0_flags
+"Sat, Nov 8, 2025",Indiana Pacers,Denver Nuggets,192.62170393464655,217.0,98.72,1,📉 Indiana Pacers weak offense (ORtg: 106.8),True,WIN,1_flag
+"Sat, Nov 8, 2025",Dallas Mavericks,Washington Wizards,196.96593394921933,216.0,93.26,2,📉 Dallas Mavericks weak offense (ORtg: 105.4); 🎲🎲 BOTH teams high variance (21.3 & 18.5),True,WIN,2_flags
+"Sat, Nov 8, 2025",Phoenix Suns,Los Angeles Clippers,196.26365279443448,217.0,98.58,0,,True,WIN,0_flags
+"Sat, Oct 25, 2025",Chicago Bulls,Orlando Magic,188.26760562771418,208.0,99.9,0,,True,WIN,0_flags
+"Sat, Oct 25, 2025",Oklahoma City Thunder,Atlanta Hawks,199.58233055619408,217.0,94.36,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Sun, Nov 16, 2025",Orlando Magic,Houston Rockets,208.51219041417738,230.0,95.92,0,,True,WIN,0_flags
+"Sun, Nov 16, 2025",Sacramento Kings,San Antonio Spurs,212.475528967615,233.0,89.92,1,📉 Floor risk: 10th pctl (212.4) < line (212.475528967615),False,WIN,1_flag
+"Sun, Nov 16, 2025",Brooklyn Nets,Washington Wizards,217.0017497773776,235.0,92.12,0,,True,WIN,0_flags
+"Sun, Nov 2, 2025",Philadelphia 76ers,Brooklyn Nets,215.47494487382923,234.0,91.62,0,,True,WIN,0_flags
+"Sun, Nov 2, 2025",Utah Jazz,Charlotte Hornets,212.4967876794457,229.0,94.16,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Sun, Nov 2, 2025",Chicago Bulls,New York Knicks,222.26412943011437,244.0,90.4,0,,True,WIN,0_flags
+"Sun, Nov 2, 2025",Atlanta Hawks,Cleveland Cavaliers,210.6533438587333,226.0,91.36,0,,True,WIN,0_flags
+"Sun, Nov 2, 2025",Memphis Grizzlies,Toronto Raptors,202.77966307035535,221.0,94.56,0,,True,WIN,0_flags
+"Sun, Nov 23, 2025",Charlotte Hornets,Atlanta Hawks,200.40987391365542,223.0,99.03999999999999,0,,True,WIN,0_flags
+"Sun, Nov 23, 2025",Brooklyn Nets,Toronto Raptors,204.56809436637366,228.0,97.04,0,,True,WIN,0_flags
+"Sun, Nov 23, 2025",Los Angeles Clippers,Cleveland Cavaliers,200.70157502837313,225.0,96.28,1,🎲🎲 BOTH teams high variance (18.7 & 19.0),True,WIN,1_flag
+"Sun, Nov 23, 2025",San Antonio Spurs,Phoenix Suns,189.898616686815,213.0,99.5,0,,True,WIN,0_flags
+"Sun, Nov 23, 2025",Los Angeles Lakers,Utah Jazz,197.95704483660845,214.0,98.72,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Sun, Nov 23, 2025",Portland Trail Blazers,Oklahoma City Thunder,192.8828591791501,217.0,98.46000000000001,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Sun, Nov 9, 2025",Detroit Pistons,Philadelphia 76ers,201.55355499580708,219.0,98.78,0,,True,WIN,0_flags
+"Sun, Nov 9, 2025",Indiana Pacers,Golden State Warriors,181.53563900208266,197.0,98.34,2,📉 Indiana Pacers weak offense (ORtg: 106.8); 🎲🎲 BOTH teams high variance (21.9 & 21.4),True,WIN,2_flags
+"Sun, Nov 9, 2025",Boston Celtics,Orlando Magic,196.44503485064487,218.0,99.28,0,,True,WIN,0_flags
+"Sun, Nov 9, 2025",Brooklyn Nets,New York Knicks,211.26748505261241,232.0,97.06,0,,True,WIN,0_flags
+"Sun, Nov 9, 2025",Oklahoma City Thunder,Memphis Grizzlies,192.7964685559654,214.0,96.78,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Sun, Nov 9, 2025",Houston Rockets,Milwaukee Bucks,215.15816271154708,237.0,89.0,1,📉 Floor risk: 10th pctl (214.5) < line (215.15816271154708),False,WIN,1_flag
+"Sun, Oct 26, 2025",Brooklyn Nets,San Antonio Spurs,201.90065112762815,225.0,98.02,0,,True,WIN,0_flags
+"Sun, Oct 26, 2025",Boston Celtics,Detroit Pistons,210.78822542491554,232.0,93.0,0,,True,WIN,0_flags
+"Sun, Oct 26, 2025",New York Knicks,Miami Heat,197.72017482578372,222.0,98.74000000000001,0,,True,WIN,0_flags
+"Sun, Oct 26, 2025",Milwaukee Bucks,Cleveland Cavaliers,206.92926421048074,231.0,94.32000000000001,0,,True,WIN,0_flags
+"Sun, Oct 26, 2025",Indiana Pacers,Minnesota Timberwolves,201.91246632046787,224.0,95.22,1,📉 Indiana Pacers weak offense (ORtg: 106.8),True,WIN,1_flag
+"Sun, Oct 26, 2025",Portland Trail Blazers,Los Angeles Clippers,200.97918371392026,221.0,98.44000000000001,0,,True,WIN,0_flags
+"Thu, Nov 20, 2025",Los Angeles Clippers,Orlando Magic,209.04326859911455,230.0,94.22,0,,True,WIN,0_flags
+"Thu, Nov 20, 2025",Sacramento Kings,Memphis Grizzlies,211.0013397783747,233.0,90.78,0,,True,WIN,0_flags
+"Thu, Nov 6, 2025",Los Angeles Clippers,Phoenix Suns,195.16469055221532,217.0,99.06,0,,True,WIN,0_flags
+"Thu, Oct 30, 2025",Golden State Warriors,Milwaukee Bucks,207.03140930398834,230.0,90.3,0,,True,WIN,0_flags
+"Thu, Oct 30, 2025",Miami Heat,San Antonio Spurs,189.1161751067343,208.0,99.26,0,,True,WIN,0_flags
+"Thu, Oct 30, 2025",Orlando Magic,Charlotte Hornets,214.67499549172598,230.0,94.84,0,,True,WIN,0_flags
+"Tue, Nov 11, 2025",Denver Nuggets,Sacramento Kings,208.69386342147052,230.0,98.04,0,,True,WIN,0_flags
+"Tue, Nov 11, 2025",Toronto Raptors,Brooklyn Nets,210.307640586616,228.0,93.34,0,,True,WIN,0_flags
+"Tue, Nov 11, 2025",Boston Celtics,Philadelphia 76ers,186.34690130819416,202.0,99.98,0,,True,WIN,0_flags
+"Tue, Nov 18, 2025",Phoenix Suns,Portland Trail Blazers,217.17725164093076,237.0,88.72,1,📉 Floor risk: 10th pctl (216.0) < line (217.17725164093076),False,WIN,1_flag
+"Tue, Nov 18, 2025",Memphis Grizzlies,San Antonio Spurs,191.94889548653632,212.0,99.0,0,,True,WIN,0_flags
+"Tue, Nov 18, 2025",Boston Celtics,Brooklyn Nets,193.11559141667573,212.0,99.9,0,,True,WIN,0_flags
+"Tue, Nov 18, 2025",Detroit Pistons,Atlanta Hawks,209.24369535569113,232.0,95.52000000000001,0,,True,WIN,0_flags
+"Tue, Nov 4, 2025",Milwaukee Bucks,Toronto Raptors,210.52562551075675,228.0,91.52,0,,True,WIN,0_flags
+"Tue, Nov 4, 2025",Philadelphia 76ers,Chicago Bulls,204.33659787850502,224.0,98.58,0,,True,WIN,0_flags
+"Tue, Nov 4, 2025",Charlotte Hornets,New Orleans Pelicans,212.79407536332576,228.0,93.92,0,,True,WIN,0_flags
+"Tue, Nov 4, 2025",Phoenix Suns,Golden State Warriors,204.03820899445094,225.0,91.92,0,,True,WIN,0_flags
+"Tue, Oct 21, 2025",Golden State Warriors,Los Angeles Lakers,204.77902630526222,228.0,94.67999999999999,0,,True,WIN,0_flags
+"Tue, Oct 28, 2025",New York Knicks,Milwaukee Bucks,207.68345196237033,232.0,97.24000000000001,0,,True,WIN,0_flags
+"Tue, Oct 28, 2025",Sacramento Kings,Oklahoma City Thunder,186.43140985537434,208.0,99.33999999999999,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Tue, Oct 28, 2025",Los Angeles Clippers,Golden State Warriors,154.07921948651966,177.0,100.0,1,🎲🎲 BOTH teams high variance (18.7 & 21.4),True,WIN,1_flag
+"Wed, Nov 12, 2025",Orlando Magic,New York Knicks,211.6623388359318,231.0,95.96000000000001,0,,True,WIN,0_flags
+"Wed, Nov 12, 2025",Chicago Bulls,Detroit Pistons,218.02114100898044,237.0,92.46,0,,True,WIN,0_flags
+"Wed, Nov 12, 2025",Memphis Grizzlies,Boston Celtics,209.86480222390276,226.0,90.96,0,,True,WIN,0_flags
+"Wed, Nov 12, 2025",Los Angeles Lakers,Oklahoma City Thunder,197.13578428815367,213.0,97.28,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Wed, Nov 12, 2025",Atlanta Hawks,Sacramento Kings,209.59210083250096,233.0,94.24,0,,True,WIN,0_flags
+"Wed, Nov 12, 2025",Milwaukee Bucks,Charlotte Hornets,190.76688398870243,211.0,99.78,0,,True,WIN,0_flags
+"Wed, Nov 12, 2025",Denver Nuggets,Los Angeles Clippers,221.3443280357852,246.0,88.38000000000001,1,📉 Floor risk: 10th pctl (220.0) < line (221.3443280357852),False,WIN,1_flag
+"Wed, Nov 19, 2025",Sacramento Kings,Oklahoma City Thunder,187.75536366653463,212.0,99.24,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Wed, Nov 19, 2025",Washington Wizards,Minnesota Timberwolves,205.00386852805795,229.0,99.28,0,,True,WIN,0_flags
+"Wed, Nov 19, 2025",Golden State Warriors,Miami Heat,181.0440956139137,206.0,99.4,1,🎲🎲 BOTH teams high variance (21.4 & 21.8),True,WIN,1_flag
+"Wed, Nov 19, 2025",Houston Rockets,Cleveland Cavaliers,199.20906198459585,218.0,97.72,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",Minnesota Timberwolves,Oklahoma City Thunder,195.2464417679646,218.0,98.3,1,🛡️ Oklahoma City Thunder elite defense (DRtg: 104.2),True,WIN,1_flag
+"Wed, Nov 26, 2025",Detroit Pistons,Boston Celtics,206.4764545610018,231.0,96.12,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",New York Knicks,Charlotte Hornets,210.70022929173678,230.0,97.2,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",Milwaukee Bucks,Miami Heat,189.0875787333899,209.0,99.36,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",Indiana Pacers,Toronto Raptors,169.09284905329218,192.0,100.0,2,📉 Indiana Pacers weak offense (ORtg: 106.8); 🎲🎲 BOTH teams high variance (21.9 & 19.3),True,WIN,2_flags
+"Wed, Nov 26, 2025",Houston Rockets,Golden State Warriors,182.94398159026784,204.0,99.74,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",San Antonio Spurs,Portland Trail Blazers,195.08316263297286,217.0,99.32,0,,True,WIN,0_flags
+"Wed, Nov 26, 2025",Phoenix Suns,Sacramento Kings,187.4296945019238,212.0,99.8,0,,True,WIN,0_flags
+"Wed, Nov 5, 2025",Miami Heat,Denver Nuggets,213.9980768508647,234.0,93.34,1,🔄 Large pace mismatch (6.2 difference),True,WIN,1_flag
+"Wed, Nov 5, 2025",New Orleans Pelicans,Dallas Mavericks,181.97336154678015,200.0,98.34,2,📉 Dallas Mavericks weak offense (ORtg: 105.4); 🎲🎲 BOTH teams high variance (18.1 & 21.3),True,WIN,2_flags
+"Wed, Nov 5, 2025",Houston Rockets,Memphis Grizzlies,209.70911131937422,233.0,91.28,0,,True,WIN,0_flags
+"Wed, Nov 5, 2025",Brooklyn Nets,Indiana Pacers,190.36755040091552,215.0,99.0,1,📉 Indiana Pacers weak offense (ORtg: 106.8),True,WIN,1_flag
+"Wed, Nov 5, 2025",San Antonio Spurs,Los Angeles Lakers,215.45249586979023,234.0,88.22,1,📉 Floor risk: 10th pctl (213.9) < line (215.45249586979023),False,WIN,1_flag
+"Wed, Nov 5, 2025",Utah Jazz,Detroit Pistons,199.02677774175538,217.0,98.28,1,🎲 Utah Jazz extreme variance (±25.7),True,WIN,1_flag
+"Wed, Oct 22, 2025",Cleveland Cavaliers,New York Knicks,212.61592094322995,230.0,92.97999999999999,0,,True,WIN,0_flags
+"Wed, Oct 22, 2025",Sacramento Kings,Phoenix Suns,214.07020024179127,236.0,88.32,1,📉 Floor risk: 10th pctl (212.8) < line (214.07020024179127),False,WIN,1_flag
+"Wed, Oct 22, 2025",Minnesota Timberwolves,Portland Trail Blazers,210.49832213563042,232.0,97.86,0,,True,WIN,0_flags
+"Wed, Oct 22, 2025",San Antonio Spurs,Dallas Mavericks,197.76449266741048,217.0,88.4,2,📉 Dallas Mavericks weak offense (ORtg: 105.4); 📉 Floor risk: 10th pctl (196.3) < line (197.76449266741048),False,WIN,2_flags
+"Wed, Oct 22, 2025",Detroit Pistons,Chicago Bulls,203.30109146881813,226.0,99.02,0,,True,WIN,0_flags
+"Wed, Oct 22, 2025",Philadelphia 76ers,Boston Celtics,210.4783001037475,233.0,93.17999999999999,0,,True,WIN,0_flags
+"Wed, Oct 29, 2025",Los Angeles Lakers,Minnesota Timberwolves,206.46767735433443,231.0,99.52,0,,True,WIN,0_flags
+"Wed, Oct 29, 2025",New Orleans Pelicans,Denver Nuggets,188.57199187243748,210.0,99.96000000000001,0,,True,WIN,0_flags
+"Wed, Oct 29, 2025",Atlanta Hawks,Brooklyn Nets,205.78225402665572,229.0,97.74000000000001,0,,True,WIN,0_flags
+"Wed, Oct 29, 2025",Memphis Grizzlies,Phoenix Suns,207.13462836371465,227.0,91.97999999999999,0,,True,WIN,0_flags
+"Fri, Nov 28, 2025",Philadelphia 76ers,Brooklyn Nets,200.33707092451246,218.0,99.18,0,,True,WIN,0_flags
+"Fri, Nov 28, 2025",Chicago Bulls,Charlotte Hornets,214.99297285389073,239.0,96.16,0,,True,WIN,0_flags
+"Fri, Nov 28, 2025",Orlando Magic,Detroit Pistons,202.76577469898186,221.0,98.22,0,,True,WIN,0_flags
+"Fri, Nov 28, 2025",Washington Wizards,Indiana Pacers,186.25100316173692,205.0,99.52,2,📉 Indiana Pacers weak offense (ORtg: 106.8); 🎲🎲 BOTH teams high variance (18.5 & 21.9),True,WIN,2_flags
+"Fri, Nov 28, 2025",Milwaukee Bucks,New York Knicks,210.68413622163905,227.0,95.48,0,,True,WIN,0_flags
+"Fri, Nov 28, 2025",Memphis Grizzlies,Los Angeles Clippers,197.95088053106423,219.0,97.66,0,,True,WIN,0_flags
