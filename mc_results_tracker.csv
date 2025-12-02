@@ -14,3 +14,5 @@ prediction_date,game,away_team,home_team,minimum_total,mc_probability,mc_decisio
 2025-11-27,Philadelphia 76ers @ Brooklyn Nets,Philadelphia 76ers,Brooklyn Nets,206.5,90.25,YES,218.0,WIN,11.5
 2025-11-27,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,211.5,96.04,STRONG_YES,221.0,WIN,9.5
 2025-11-27,Memphis Grizzlies @ Los Angeles Clippers,Memphis Grizzlies,Los Angeles Clippers,205.5,85.04,YES,219.0,WIN,13.5
+2025-11-28,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,,99.81,STRONG_YES,221.0,LOSS,
+2025-12-01,Atlanta Hawks @ Detroit Pistons,Atlanta Hawks,Detroit Pistons,,99.82,STRONG_YES,197.0,LOSS,
