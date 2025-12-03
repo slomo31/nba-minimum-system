@@ -16,3 +16,7 @@ prediction_date,game,away_team,home_team,minimum_total,mc_probability,mc_decisio
 2025-11-27,Memphis Grizzlies @ Los Angeles Clippers,Memphis Grizzlies,Los Angeles Clippers,205.5,85.04,YES,219.0,WIN,13.5
 2025-11-28,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,,99.81,STRONG_YES,221.0,LOSS,
 2025-12-01,Atlanta Hawks @ Detroit Pistons,Atlanta Hawks,Detroit Pistons,,99.82,STRONG_YES,197.0,LOSS,
+2025-12-02,Portland Trail Blazers @ Toronto Raptors,Portland Trail Blazers,Toronto Raptors,,99.86,STRONG_YES,239.0,LOSS,
+2025-12-02,Memphis Grizzlies @ San Antonio Spurs,Memphis Grizzlies,San Antonio Spurs,,99.65,STRONG_YES,245.0,LOSS,
+2025-11-28,Orlando Magic @ Detroit Pistons,Orlando Magic,Detroit Pistons,,99.81,STRONG_YES,221.0,LOSS,
+2025-12-01,Atlanta Hawks @ Detroit Pistons,Atlanta Hawks,Detroit Pistons,,99.82,STRONG_YES,197.0,LOSS,

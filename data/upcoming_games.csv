@@ -1,7 +1,10 @@
 event_id,game_time,away_team,home_team,minimum_total,minimum_odds,bookmaker
-82945fcefbdab5eff92ea10d50b8b9ed,2025-12-02 19:10:00-05:00,Washington Wizards,Philadelphia 76ers,213.5,-810,DraftKings
-ff9201c6fd745a1a31bee1cbc13dd384,2025-12-02 19:40:00-05:00,Portland Trail Blazers,Toronto Raptors,210.5,-830,DraftKings
-a96eb37cc51deec2f9e98a274c081b4e,2025-12-02 20:10:00-05:00,New York Knicks,Boston Celtics,209.5,-820,DraftKings
-c8fb3e3641461ee52981c6d8c8ee12f8,2025-12-02 20:10:00-05:00,Memphis Grizzlies,San Antonio Spurs,209.5,-850,DraftKings
-a9330ca996e7fd641237adcfa998259f,2025-12-02 20:10:00-05:00,Minnesota Timberwolves,New Orleans Pelicans,213.5,-820,DraftKings
-4372c5c8b6de02e12518da9a10ae76c3,2025-12-02 23:10:00-05:00,Oklahoma City Thunder,Golden State Warriors,200.5,-840,DraftKings
+bcd9318487d7479baa6c67c6dac77d82,2025-12-03 19:10:00-05:00,Portland Trail Blazers,Cleveland Cavaliers,218.5,-740,DraftKings
+ab009f7f2a7d899ac245a0c7d959c172,2025-12-03 19:10:00-05:00,Denver Nuggets,Indiana Pacers,213.5,-820,DraftKings
+936b0e45efe15e5fd011019517643b4f,2025-12-03 19:10:00-05:00,San Antonio Spurs,Orlando Magic,211.5,-870,DraftKings
+9e2229439904067904831257668485a4,2025-12-03 19:40:00-05:00,Los Angeles Clippers,Atlanta Hawks,206.5,-830,DraftKings
+6303a20d9193cbb7cad95eb1a593f830,2025-12-03 19:40:00-05:00,Charlotte Hornets,New York Knicks,214.5,-810,DraftKings
+9421da303e9d1d538a8e49b3287d052c,2025-12-03 20:10:00-05:00,Brooklyn Nets,Chicago Bulls,210.5,-840,DraftKings
+f1911824d4907eed6e6f89a9be9a84ed,2025-12-03 20:10:00-05:00,Sacramento Kings,Houston Rockets,208.5,-870,DraftKings
+156b51c1cdfdee88329898e7923855ee,2025-12-03 20:11:00-05:00,Detroit Pistons,Milwaukee Bucks,209.5,-840,DraftKings
+598be080fed3a6c477b581ad0744d1a0,2025-12-03 20:30:00-05:00,Miami Heat,Dallas Mavericks,219.5,-720,DraftKings
